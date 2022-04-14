@@ -136,6 +136,8 @@ public class CharacterController2D : MonoBehaviour
 
 	}
 
+	//KOMENTARCINA
+
 
 	private void Flip()
 	{
