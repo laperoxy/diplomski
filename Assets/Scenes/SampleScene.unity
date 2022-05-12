@@ -492,6 +492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 171639130}
+  animator: {fileID: 171639134}
   runSpeed: 40
   LaunchOffset: {fileID: 407478166}
 --- !u!114 &171639129

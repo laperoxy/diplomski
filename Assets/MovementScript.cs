@@ -6,6 +6,7 @@ public class MovementScript : MonoBehaviour
 {
 
     public CharacterController2D controller;
+    public Animator animator; 
 
     float horizontalMove = 0f;
     public float runSpeed = 40f;
@@ -16,11 +17,15 @@ public class MovementScript : MonoBehaviour
     public static ProjectileScript ProjectilePrefab;
     public Transform LaunchOffset;
 
+
+
     // Update is called once per frame
     // My comment
     private void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal")*runSpeed;
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
         if (Input.GetButtonDown("Jump"))
         {
