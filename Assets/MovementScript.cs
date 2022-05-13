@@ -17,7 +17,16 @@ public class MovementScript : MonoBehaviour
     public static ProjectileScript ProjectilePrefab;
     public Transform LaunchOffset;
 
+    public int maxHealth = 20;
+    public int currentHealth;
 
+    public HealthBar healthBar;
+
+    private void Start()
+    {
+        currentHealth = maxHealth;
+        healthBar.setMaxHealth(maxHealth);
+    }
 
     // Update is called once per frame
     // My comment
@@ -30,6 +39,7 @@ public class MovementScript : MonoBehaviour
         if (Input.GetButtonDown("Jump"))
         {
             jump = true;
+            TakeDamage(2);
         }
 
         if(transform.localScale.x == 1)
@@ -58,6 +68,12 @@ public class MovementScript : MonoBehaviour
     public static void setProjectilePrefab(ProjectileScript prefab)
     {
         ProjectilePrefab = prefab;
+    }
+
+    void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
+        healthBar.setHealth(currentHealth);
     }
 
 }
