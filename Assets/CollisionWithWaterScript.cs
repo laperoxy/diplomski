@@ -2,24 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CollisionWithWaterScript : MonoBehaviour
 {
 
-    public Transform playerPos;
-    public Vector3 startingPosition;
-    private void Start()
-    {
-        startingPosition = playerPos.position;
-    }
+    public MovementScript ms;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Water"))
         {
-            playerPos.position = startingPosition;
-            //Destroy(gameObject);
+            ms.TakeDamage(ms.maxHealth);
         }
     }
-
 
 }

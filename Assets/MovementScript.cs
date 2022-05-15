@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovementScript : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class MovementScript : MonoBehaviour
     public int currentHealth;
 
     public HealthBar healthBar;
+
+    public Rigidbody2D rb;
 
     private void Start()
     {
@@ -70,10 +73,25 @@ public class MovementScript : MonoBehaviour
         ProjectilePrefab = prefab;
     }
 
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        rb.bodyType = RigidbodyType2D.Static;
+        animator.SetTrigger("Death");
+    }
+
+    private void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }
