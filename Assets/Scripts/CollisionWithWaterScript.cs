@@ -11,7 +11,15 @@ public class CollisionWithWaterScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Water"))
+        if (collision.gameObject.CompareTag("End"))
+        {
+            ms.TakeDamage(ms.maxHealth);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("End"))
         {
             ms.TakeDamage(ms.maxHealth);
         }
