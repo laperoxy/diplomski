@@ -1,32 +1,40 @@
-using System.Collections;
-using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    public static UIManager instance;
-
-    public GameObject startMenu;
-    public InputField usernameField;
+    [SerializeField] private Button startServerButton;
+    [SerializeField] private Button startHostButton;
+    [SerializeField] private Button startClientButton;
 
     private void Awake()
     {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else if (instance != this)
-        {
-            Destroy(this);
-        }
+        Cursor.visible = true;
     }
 
-    public void ConnectToServer()
+    private void Start()
     {
-        startMenu.SetActive(false);
-        usernameField.interactable = false;
-        Client.instance.ConnectToServer();
+        startHostButton.onClick.AddListener(() =>
+        {
+            if (NetworkManager.Singleton.StartHost()) DisableAllButtons();
+        });
 
+        startServerButton.onClick.AddListener(() =>
+        {
+            if (NetworkManager.Singleton.StartServer()) DisableAllButtons();
+        });
+
+        startClientButton.onClick.AddListener(() =>
+        {
+            if (NetworkManager.Singleton.StartClient()) DisableAllButtons();
+        });
+    }
+
+    private void DisableAllButtons()
+    {
+        startHostButton.gameObject.SetActive(false);
+        startServerButton.gameObject.SetActive(false);
+        startClientButton.gameObject.SetActive(false);
     }
 }
