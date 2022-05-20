@@ -2775,6 +2775,7 @@ MonoBehaviour:
   startServerButton: {fileID: 1977093087}
   startHostButton: {fileID: 1977093087}
   startClientButton: {fileID: 1036257628}
+  dummyCamera: {fileID: 1679196734}
 --- !u!4 &1099284957
 Transform:
   m_ObjectHideFlags: 0
