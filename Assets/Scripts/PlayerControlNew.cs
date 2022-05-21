@@ -21,18 +21,23 @@ public class PlayerControlNew : NetworkBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (IsServer) updateServer();
-
-        if (IsClient && IsOwner) UpdateClient();
+        if (IsClient && IsOwner) UpdateClientInput();
+        UpdateClientPosition();
     }
 
-    private void updateServer()
+    private void UpdateClientPosition()
     {
-        controller.Move(xAxisOffset.Value * Time.fixedDeltaTime, jump.Value);
-        jump.Value = false;
+        // if (xAxisOffset.Value != 0 || jump.Value)
+        // {
+            controller.Move(xAxisOffset.Value * Time.fixedDeltaTime, jump.Value);
+            if (IsServer)
+            {
+                jump.Value = false;
+            }
+        // }
     }
 
-    private void UpdateClient()
+    private void UpdateClientInput()
     {
         var xAxisOffsetVar = Input.GetAxisRaw("Horizontal") * runSpeed;
         var jumpVar = Input.GetButtonDown("Jump");
@@ -50,9 +55,9 @@ public class PlayerControlNew : NetworkBehaviour
     }
 
     [ServerRpc]
-    public void updateClientPositionsServerRpc(float xAxisPositionVar, bool jumpVar)
+    public void updateClientPositionsServerRpc(float xAxisOffsetVar, bool jumpVar)
     {
-        xAxisOffset.Value = xAxisPositionVar;
+        xAxisOffset.Value = xAxisOffsetVar;
         jump.Value = jumpVar;
     }
 }
