@@ -9,7 +9,6 @@ public class PlayerControlNew : NetworkBehaviour
 
     [SerializeField] private NetworkVariable<float> xAxisOffset = new NetworkVariable<float>();
     [SerializeField] private NetworkVariable<bool> jump = new NetworkVariable<bool>();
-    private bool cachedClientJump;
 
     // client chaches positions
     private float cachedClientXAxisOffset;
@@ -30,6 +29,7 @@ public class PlayerControlNew : NetworkBehaviour
     private void updateServer()
     {
         controller.Move(xAxisOffset.Value * Time.fixedDeltaTime, jump.Value);
+        jump.Value = false;
     }
 
     private void UpdateClient()
@@ -40,14 +40,13 @@ public class PlayerControlNew : NetworkBehaviour
         if (isValueDifferentFromClientCachedOne(xAxisOffsetVar, jumpVar))
         {
             cachedClientXAxisOffset = xAxisOffsetVar;
-            cachedClientJump = jumpVar;
             updateClientPositionsServerRpc(xAxisOffsetVar, jumpVar);
         }
     }
 
     private bool isValueDifferentFromClientCachedOne(float xAxisOffsetVar, bool jumpVar)
     {
-        return cachedClientXAxisOffset != xAxisOffsetVar || jumpVar != cachedClientJump;
+        return cachedClientXAxisOffset != xAxisOffsetVar || jumpVar;
     }
 
     [ServerRpc]
