@@ -69,8 +69,7 @@ public class CharacterController2D : MonoBehaviour
                 Flip();
         }
 
-        // If the player should jump...
-        if (m_Grounded && jump)
+        if (ShouldPlayerJump(jump))
         {
             // Add a vertical force to the player.
             m_Grounded = false;
@@ -78,11 +77,21 @@ public class CharacterController2D : MonoBehaviour
         }
     }
 
+    private bool ShouldPlayerJump(bool jump)
+    {
+        return m_Grounded && jump;
+    }
+
 
     private void Flip()
     {
         // Switch the way the player is labelled as facing.
         m_FacingRight = !m_FacingRight;
+        RotateOnXAxis();
+    }
+
+    private void RotateOnXAxis()
+    {
         // Multiply the player's x local scale by -1.
         var theScale = transform.localScale;
         theScale.x *= -1;
