@@ -65,7 +65,7 @@ public class MovementScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
+        controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
         jump = false;
 
         if (CanStaminaRefill())
