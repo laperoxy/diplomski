@@ -1,27 +1,23 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MovementScript : MonoBehaviour
 {
+    private const int MaxHealth = 20;
+
+    private const float MaxStamina = 20f;
+
+    private const float StaminaRefillValue = 0.05f;
+    private static ProjectileScript s_ProjectilePrefab;
 
     public CharacterController2D controller;
-    public Animator animator; 
+    public Animator animator;
 
-    float horizontalMove = 0f;
+    public float horizontalMove;
     public float runSpeed = 40f;
-
-    bool jump = false;
-
-
-    public static ProjectileScript ProjectilePrefab;
     public Transform LaunchOffset;
-
-    public int maxHealth = 20;
     public int currentHealth;
-
-    public float maxStamina = 20f;
     public float currentStamina;
 
     public HealthBar healthBar;
@@ -31,31 +27,29 @@ public class MovementScript : MonoBehaviour
 
     public Canvas playerCanvas;
 
+    private bool jump;
+
     private void Start()
     {
-        currentHealth = maxHealth;
-        healthBar.setMaxHealth(maxHealth);
+        currentHealth = MaxHealth;
+        healthBar.setMaxHealth(MaxHealth);
 
-        currentStamina = maxStamina;
-        staminaBar.setMaxStamina(maxStamina);
+        currentStamina = MaxStamina;
+        staminaBar.setMaxStamina(MaxStamina);
     }
 
     // Update is called once per frame
-    // My comment
     private void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal")*runSpeed;
+        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if (Input.GetButtonDown("Jump"))
-        {
-            jump = true;
-        }
+        if (Input.GetButtonDown("Jump")) jump = true;
 
-        if(transform.localScale.x == 1)
+        if (transform.localScale.x == 1)
         {
-            LaunchOffset.transform.right = new Vector3(1,0,0);
+            LaunchOffset.transform.right = new Vector3(1, 0, 0);
             playerCanvas.GetComponent<Transform>().localScale = new Vector3(0.01f, 0.01f, 0.01f);
         }
         else
@@ -65,50 +59,58 @@ public class MovementScript : MonoBehaviour
         }
 
         if (Input.GetButtonDown("Fire1"))
-        {
-            if(StaminaDamage(5))
-                Instantiate(ProjectilePrefab, LaunchOffset.position, LaunchOffset.rotation);
-        }
-
+            if (StaminaDamage(5))
+                Instantiate(s_ProjectilePrefab, LaunchOffset.position, LaunchOffset.rotation);
     }
 
     private void FixedUpdate()
     {
-        controller.Move(horizontalMove*Time.fixedDeltaTime,false, jump);
+        controller.Move(horizontalMove * Time.fixedDeltaTime, false, jump);
         jump = false;
 
-        if (currentStamina + 0.001f < maxStamina)
+        if (CanStaminaRefill())
         {
-            currentStamina += 0.05f;
+            currentStamina = Math.Min(currentStamina + StaminaRefillValue, MaxStamina);
             staminaBar.setStamina(currentStamina);
         }
+    }
 
+    private bool CanStaminaRefill()
+    {
+        return currentStamina < MaxStamina;
     }
 
     public static void setProjectilePrefab(ProjectileScript prefab)
     {
-        ProjectilePrefab = prefab;
+        s_ProjectilePrefab = prefab;
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
         healthBar.setHealth(currentHealth);
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        dieIfZeroHealth();
+    }
+
+    public void TakeWaterDamage()
+    {
+        currentHealth = 0;
+        healthBar.setHealth(currentHealth);
+        dieIfZeroHealth();
+    }
+
+    private void dieIfZeroHealth()
+    {
+        if (currentHealth <= 0) Die();
     }
 
     public void getHealthBack(int health)
     {
-
-        if (currentHealth + health < maxHealth)
+        if (currentHealth + health < MaxHealth)
             currentHealth += health;
         else
-            currentHealth = maxHealth;
+            currentHealth = MaxHealth;
         healthBar.setHealth(currentHealth);
-     
     }
 
     private void Die()
@@ -123,7 +125,7 @@ public class MovementScript : MonoBehaviour
     }
 
 
-    public bool StaminaDamage(int attack)
+    private bool StaminaDamage(int attack)
     {
         if (currentStamina - attack >= 0)
         {
@@ -131,10 +133,7 @@ public class MovementScript : MonoBehaviour
             staminaBar.setStamina(currentStamina);
             return true;
         }
-        else
-        {
-            return false;
-        }
-    }
 
+        return false;
+    }
 }
