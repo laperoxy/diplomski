@@ -59,14 +59,8 @@ public class CharacterController2D : MonoBehaviour
             m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity,
                 m_MovementSmoothing);
 
-            // If the input is moving the player right and the player is facing left...
-            if (move > 0 && !m_FacingRight)
-                // ... flip the player.
-                Flip();
-            // Otherwise if the input is moving the player left and the player is facing right...
-            else if (move < 0 && m_FacingRight)
-                // ... flip the player.
-                Flip();
+
+            if (ShouldRotatePlayer(move)) Flip();
         }
 
         if (ShouldPlayerJump(jump))
@@ -75,6 +69,11 @@ public class CharacterController2D : MonoBehaviour
             m_Grounded = false;
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
         }
+    }
+
+    private bool ShouldRotatePlayer(float move)
+    {
+        return (move > 0 && !m_FacingRight) || (move < 0 && m_FacingRight);
     }
 
     private bool ShouldPlayerJump(bool jump)
