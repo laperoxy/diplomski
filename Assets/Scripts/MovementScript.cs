@@ -14,7 +14,7 @@ public class MovementScript : MonoBehaviour
     public CharacterController2D controller;
     public Animator animator;
 
-    public float horizontalMove;
+    public float potentialHorizontalMove;
     public float runSpeed = 40f;
     public Transform LaunchOffset;
     public int currentHealth;
@@ -41,13 +41,13 @@ public class MovementScript : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+        potentialHorizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
-        animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+        animator.SetFloat("Speed", Mathf.Abs(potentialHorizontalMove));
 
         if (Input.GetButtonDown("Jump")) jump = true;
 
-        if (transform.localScale.x == 1)
+        if (transform.localScale.x.Equals(1))
         {
             LaunchOffset.transform.right = new Vector3(1, 0, 0);
             playerCanvas.GetComponent<Transform>().localScale = new Vector3(0.01f, 0.01f, 0.01f);
@@ -65,7 +65,7 @@ public class MovementScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
+        controller.Move(potentialHorizontalMove * Time.fixedDeltaTime, jump);
         jump = false;
 
         if (CanStaminaRefill())
