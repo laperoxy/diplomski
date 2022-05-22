@@ -1,7 +1,55 @@
 fileFormatVersion: 2
 guid: a6f11a430d4f1fd459d2b68f507b11af
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6907617070763148777
+    second: Gates & Fences1_0
+  - first:
+      213: 1066793894462618860
+    second: Gates & Fences1_1
+  - first:
+      213: -5066726938424123363
+    second: Gates & Fences1_2
+  - first:
+      213: -4334862722130935946
+    second: Gates & Fences1_3
+  - first:
+      213: -3290588802438067124
+    second: Gates & Fences1_4
+  - first:
+      213: -1406396021909748116
+    second: Gates & Fences1_5
+  - first:
+      213: -7291731000011448895
+    second: Gates & Fences1_6
+  - first:
+      213: 1848063910100903748
+    second: Gates & Fences1_7
+  - first:
+      213: 3812185407028180067
+    second: Gates & Fences1_8
+  - first:
+      213: 1562190580584310467
+    second: Gates & Fences1_9
+  - first:
+      213: -7804374470084706233
+    second: Gates & Fences1_10
+  - first:
+      213: -9021656088951245402
+    second: Gates & Fences1_11
+  - first:
+      213: -6549762499056670195
+    second: Gates & Fences1_12
+  - first:
+      213: -2576961617607207008
+    second: Gates & Fences1_13
+  - first:
+      213: 6870852399483070009
+    second: Gates & Fences1_14
+  - first:
+      213: 6316424835482577851
+    second: Gates & Fences1_15
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +89,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +123,357 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Gates & Fences1_0
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 4849
+        width: 831
+        height: 1090
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71afcbc4fd63320a0800000000000000
+      internalID: -6907617070763148777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_1
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 4848
+        width: 1487
+        height: 1254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cecfff715630ece00800000000000000
+      internalID: 1066793894462618860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_2
+      rect:
+        serializedVersion: 2
+        x: 3575
+        y: 4840
+        width: 850
+        height: 1108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10e355b1be5fa9b0800000000000000
+      internalID: -5066726938424123363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_3
+      rect:
+        serializedVersion: 2
+        x: 4676
+        y: 4839
+        width: 1506
+        height: 1272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f7d41425977d3c0800000000000000
+      internalID: -4334862722130935946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_4
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 3354
+        width: 820
+        height: 1047
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c0dc02bea7552d0800000000000000
+      internalID: -3290588802438067124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_5
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 3354
+        width: 1493
+        height: 1210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c660c8cf44a7b7ce0800000000000000
+      internalID: -1406396021909748116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_6
+      rect:
+        serializedVersion: 2
+        x: 3588
+        y: 3342
+        width: 837
+        height: 1070
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd1d9ae9419eca90800000000000000
+      internalID: -7291731000011448895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_7
+      rect:
+        serializedVersion: 2
+        x: 4676
+        y: 3342
+        width: 1511
+        height: 1233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447a8c3b554a5a910800000000000000
+      internalID: 1848063910100903748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_8
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1827
+        width: 810
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 364b7db0e6a97e430800000000000000
+      internalID: 3812185407028180067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_9
+      rect:
+        serializedVersion: 2
+        x: 1433
+        y: 1838
+        width: 1493
+        height: 1230
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c660336e040ea510800000000000000
+      internalID: 1562190580584310467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_10
+      rect:
+        serializedVersion: 2
+        x: 3597
+        y: 1816
+        width: 828
+        height: 984
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7404970d4ca41b390800000000000000
+      internalID: -7804374470084706233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_11
+      rect:
+        serializedVersion: 2
+        x: 4676
+        y: 1828
+        width: 1512
+        height: 1250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5325cf593acc280800000000000000
+      internalID: -9021656088951245402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_12
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 285
+        width: 818
+        height: 1095
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a6d8095b19a15a0800000000000000
+      internalID: -6549762499056670195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_13
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 300
+        width: 1492
+        height: 1253
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7d4b6ef0bcc3cd0800000000000000
+      internalID: -2576961617607207008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_14
+      rect:
+        serializedVersion: 2
+        x: 3597
+        y: 274
+        width: 838
+        height: 1118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936245f9adb2a5f50800000000000000
+      internalID: 6870852399483070009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gates & Fences1_15
+      rect:
+        serializedVersion: 2
+        x: 4677
+        y: 290
+        width: 1511
+        height: 1272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbe4690ce278a750800000000000000
+      internalID: 6316424835482577851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
