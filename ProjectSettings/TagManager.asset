@@ -49,9 +49,18 @@ TagManager:
   - name: Background
     uniqueID: 3292707577
     locked: 0
+  - name: ForestBack
+    uniqueID: 1808893855
+    locked: 0
+  - name: BackgroundEnv
+    uniqueID: 1333958167
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
   - name: Foreground
     uniqueID: 3902266629
+    locked: 0
+  - name: ForestFront
+    uniqueID: 2330814979
     locked: 0
