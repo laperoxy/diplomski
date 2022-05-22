@@ -481,8 +481,6 @@ GameObject:
   - component: {fileID: 5210620077115366207}
   - component: {fileID: 5210620077115366206}
   - component: {fileID: 5210620077115366194}
-  - component: {fileID: 5210620077115366193}
-  - component: {fileID: 5210620077115366195}
   - component: {fileID: 5210620077115366196}
   - component: {fileID: 5210620077115366198}
   - component: {fileID: 5210620077115366197}
@@ -585,33 +583,6 @@ MonoBehaviour:
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5210620077115366193
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5210620077115366204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05a819ec207de87448355a26098b6954, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  coinsText: {fileID: 0}
-  ms: {fileID: 0}
---- !u!114 &5210620077115366195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5210620077115366204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10260878fbf01f045ab9035300e4a097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ms: {fileID: 0}
 --- !u!114 &5210620077115366196
 MonoBehaviour:
   m_ObjectHideFlags: 0
