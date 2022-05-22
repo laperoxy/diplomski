@@ -26,7 +26,15 @@ public class PlayerControlNew : NetworkBehaviour
         if (IsClient && IsOwner)
         {
             transform.position = new Vector3(0.93f, 0, 0);
+            focusCameraOnPlayer();
         }
+    }
+    
+    
+    private void focusCameraOnPlayer()
+    {
+        Camera.main.GetComponent<FollowPlayerScript>().target = transform;
+        
     }
 
     // Update is called once per frame
