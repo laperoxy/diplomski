@@ -37,6 +37,6 @@ public class UIManager : MonoBehaviour
         startHostButton.gameObject.SetActive(false);
         startServerButton.gameObject.SetActive(false);
         startClientButton.gameObject.SetActive(false);
-        dummyCamera.SetActive(false);
+        // dummyCamera.SetActive(false);
     }
 }
