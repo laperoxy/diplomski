@@ -23,10 +23,6 @@ public class CharacterController2D : MonoBehaviour
     private void Awake()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
-
-        //if (OnLandEvent == null)
-        //   OnLandEvent = new UnityEvent();
-        // ovo je alternativa ovome dole, samo unity ima brzi nacin da se to zapise
         OnLandEvent ??= new UnityEvent();
     }
 
