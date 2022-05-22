@@ -423,10 +423,10 @@ MonoBehaviour:
   NetworkConfig:
     ProtocolVersion: 0
     NetworkTransport: {fileID: 45277377}
-    PlayerPrefab: {fileID: 5210620077115366204, guid: e5f3f972af88c3e4290269a7e5bffbf1, type: 3}
+    PlayerPrefab: {fileID: 7540275624017944556, guid: e5f3f972af88c3e4290269a7e5bffbf1, type: 3}
     NetworkPrefabs:
     - Override: 0
-      Prefab: {fileID: 5210620077115366204, guid: e5f3f972af88c3e4290269a7e5bffbf1, type: 3}
+      Prefab: {fileID: 7540275624017944556, guid: e5f3f972af88c3e4290269a7e5bffbf1, type: 3}
       SourcePrefabToOverride: {fileID: 0}
       SourceHashToOverride: 0
       OverridingTargetPrefab: {fileID: 0}
@@ -8379,7 +8379,7 @@ GameObject:
   - component: {fileID: 1679196739}
   m_Layer: 0
   m_Name: MainCamera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8397,7 +8397,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  offset: {x: 0, y: 0, z: -10}
+  offset: {x: 0, y: 3.25, z: -10}
   smoothFactor: 5
 --- !u!81 &1679196736
 AudioListener:
