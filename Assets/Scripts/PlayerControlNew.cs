@@ -1,3 +1,4 @@
+using System;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -5,17 +6,27 @@ public class PlayerControlNew : NetworkBehaviour
 {
     [SerializeField] private float runSpeed = 40f;
 
-    public CharacterController2D controller;
+    private CharacterController2D controller;
+    private Animator animator;
 
-    [SerializeField] private NetworkVariable<float> xAxisOffset = new NetworkVariable<float>();
-    [SerializeField] private NetworkVariable<bool> jump = new NetworkVariable<bool>();
+    [SerializeField] private NetworkVariable<float> networkXAxisOffset = new NetworkVariable<float>();
+    [SerializeField] private NetworkVariable<bool> networkJump = new NetworkVariable<bool>();
 
     // client chaches positions
     private float cachedClientXAxisOffset;
 
+    private void Awake()
+    {
+        controller = GetComponent<CharacterController2D>();
+        animator = GetComponent<Animator>();
+    }
+
     private void Start()
     {
-        transform.position = new Vector3(0.93f, 0, 0);
+        if (IsClient && IsOwner)
+        {
+            transform.position = new Vector3(0.93f, 0, 0);
+        }
     }
 
     // Update is called once per frame
@@ -23,18 +34,21 @@ public class PlayerControlNew : NetworkBehaviour
     {
         if (IsClient && IsOwner) UpdateClientInput();
         UpdateClientPosition();
+        UpdateClientVisuals();
     }
 
     private void UpdateClientPosition()
     {
-        // if (xAxisOffset.Value != 0 || jump.Value)
-        // {
-            controller.Move(xAxisOffset.Value * Time.fixedDeltaTime, jump.Value);
-            if (IsServer)
-            {
-                jump.Value = false;
-            }
-        // }
+        controller.Move(networkXAxisOffset.Value * Time.fixedDeltaTime, networkJump.Value);
+        if (IsServer)
+        {
+            networkJump.Value = false;
+        }
+    }
+
+    private void UpdateClientVisuals()
+    {
+        animator.SetFloat("Speed", Mathf.Abs(networkXAxisOffset.Value));
     }
 
     private void UpdateClientInput()
@@ -57,7 +71,8 @@ public class PlayerControlNew : NetworkBehaviour
     [ServerRpc]
     public void updateClientPositionsServerRpc(float xAxisOffsetVar, bool jumpVar)
     {
-        xAxisOffset.Value = xAxisOffsetVar;
-        jump.Value = jumpVar;
+        networkXAxisOffset.Value = xAxisOffsetVar;
+        networkJump.Value = jumpVar;
     }
+
 }
