@@ -43,42 +43,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Layer_0
-    uniqueID: 4080214935
+  - name: Sky
+    uniqueID: 3737896267
     locked: 0
-  - name: Layer_1
-    uniqueID: 1167539421
-    locked: 0
-  - name: SnowLayer_2
-    uniqueID: 610153927
-    locked: 0
-  - name: SnowLayer_3
-    uniqueID: 1882544395
-    locked: 0
-  - name: Layer_2
-    uniqueID: 3309597005
-    locked: 0
-  - name: Layer_3
-    uniqueID: 1318232125
-    locked: 0
-  - name: Layer_4
-    uniqueID: 638242919
-    locked: 0
-  - name: Tower
-    uniqueID: 3203663659
+  - name: Background
+    uniqueID: 3292707577
     locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Back
-    uniqueID: 1068289517
-    locked: 0
-  - name: Body
-    uniqueID: 2159289569
-    locked: 0
-  - name: Front
-    uniqueID: 2211710503
-    locked: 0
-  - name: Water
-    uniqueID: 3693211117
+  - name: Foreground
+    uniqueID: 3902266629
     locked: 0
