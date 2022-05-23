@@ -5,34 +5,25 @@ using UnityEngine;
 public class ProjectileScript : MonoBehaviour
 {
     public float Speed = 4.5f;
-    public Animator animator;
-    public Rigidbody2D rb;
-    private bool done;
+    public float lifeTime;
 
     private void Start()
     {
-        done = false;
+        Invoke("DestroyProjectiles",lifeTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if(!done)
-            transform.position += transform.right * Time.deltaTime * Speed;
+        
+        transform.Translate(Vector2.up*Speed*Time.deltaTime);
 
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        rb.bodyType = RigidbodyType2D.Static;
-        animator.SetTrigger("Explosion");
-        done = true;
-    }
-
-    private void destroyProjectile()
+    void DestroyProjectiles()
     {
         Destroy(gameObject);
     }
+    
 }
 
