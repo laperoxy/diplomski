@@ -11,11 +11,11 @@ public class DestroyPillarScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             rb.bodyType = RigidbodyType2D.Dynamic;
-            Invoke("destroyObject",2f);
+            Invoke(nameof(DestroyObject),2f);
         }
     }
 
-    private void destroyObject()
+    private void DestroyObject()
     {
         Destroy(gameObject);
     }
