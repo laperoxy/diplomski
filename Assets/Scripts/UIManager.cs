@@ -1,3 +1,4 @@
+using TMPro;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +8,6 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Button startServerButton;
     [SerializeField] private Button startHostButton;
     [SerializeField] private Button startClientButton;
-    [SerializeField] private GameObject dummyCamera;
 
     private void Awake()
     {
@@ -37,6 +37,5 @@ public class UIManager : MonoBehaviour
         startHostButton.gameObject.SetActive(false);
         startServerButton.gameObject.SetActive(false);
         startClientButton.gameObject.SetActive(false);
-        // dummyCamera.SetActive(false);
     }
 }
