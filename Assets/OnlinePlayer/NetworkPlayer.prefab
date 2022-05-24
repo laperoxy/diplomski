@@ -368,7 +368,7 @@ MonoBehaviour:
   offset: -90
   projectile: {fileID: 1056437412288882, guid: cf092d2417ee54748bbf2a2d20ed29b3, type: 3}
   shotPoint: {fileID: 2627067632667300993}
-  startTimeBtwShots: 0.3
+  startTimeBtwShots: 0.25
   staminaBar: {fileID: 1817804595768511994}
 --- !u!1 &4973064463221299084
 GameObject:
