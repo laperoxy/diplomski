@@ -7,18 +7,18 @@ public class AudioTriggerScript : MonoBehaviour
 {
     public AudioClip SoundToPlay;
     public float Volume;
-    private AudioSource audio;
+    private AudioSource audioToPlay;
     public bool alreadyPlayed = false;
     void Start()
     {
-        audio = GetComponent<AudioSource>();
+        audioToPlay = GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (!alreadyPlayed)
         {
-            audio.PlayOneShot(SoundToPlay,Volume);
+            audioToPlay.PlayOneShot(SoundToPlay,Volume);
             alreadyPlayed = true;
         }
     }
