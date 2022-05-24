@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,7 +6,11 @@ using UnityEngine.UIElements;
 
 public class WeaponScript : MonoBehaviour
 {
+    
+    private const float MaxStamina = 20f;
+    private const float StaminaRefillValue = 0.05f;
 
+    private float currentStamina;
     public float offset;
 
 
@@ -14,6 +19,15 @@ public class WeaponScript : MonoBehaviour
 
     private float timeBtwShots;
     public float startTimeBtwShots;
+    
+    public StaminaBar staminaBar;
+    
+    private void Start()
+    {
+        currentStamina = MaxStamina;
+        staminaBar.setMaxStamina(MaxStamina);
+    }
+    
     void Update()
     {
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -22,9 +36,10 @@ public class WeaponScript : MonoBehaviour
 
         if (timeBtwShots <= 0)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && StaminaDamage(5))
             {
                 Instantiate(projectile, shotPoint.position, transform.rotation);
+                timeBtwShots = startTimeBtwShots;
             }
         }
         else
@@ -32,5 +47,31 @@ public class WeaponScript : MonoBehaviour
             timeBtwShots -= Time.deltaTime;
         }
 
+    }
+
+    private void FixedUpdate()
+    {
+        if (CanStaminaRefill())
+        {
+            currentStamina = Math.Min(currentStamina + StaminaRefillValue, MaxStamina);
+            staminaBar.setStamina(currentStamina);
+        }
+    }
+    
+    private bool CanStaminaRefill()
+    {
+        return currentStamina < MaxStamina;
+    }
+
+    private bool StaminaDamage(int attack)
+    {
+        if (currentStamina >= 0)
+        {
+            currentStamina -= attack;
+            staminaBar.setStamina(currentStamina);
+            return true;
+        }
+
+        return false;
     }
 }

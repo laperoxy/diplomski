@@ -368,7 +368,8 @@ MonoBehaviour:
   offset: -90
   projectile: {fileID: 1056437412288882, guid: cf092d2417ee54748bbf2a2d20ed29b3, type: 3}
   shotPoint: {fileID: 2627067632667300993}
-  startTimeBtwShots: 0.25
+  startTimeBtwShots: 0.3
+  staminaBar: {fileID: 1817804595768511994}
 --- !u!1 &4973064463221299084
 GameObject:
   m_ObjectHideFlags: 0
@@ -481,7 +482,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.01, y: 2.6711}
+  m_AnchoredPosition: {x: 0.01, y: 2.49}
   m_SizeDelta: {x: 286.7888, y: 147.9076}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &4832750657333305852
@@ -833,7 +834,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &2961394165926176467
 BoxCollider2D:
