@@ -13386,7 +13386,6 @@ MonoBehaviour:
   startServerButton: {fileID: 1977093087}
   startHostButton: {fileID: 1977093087}
   startClientButton: {fileID: 1036257628}
-  dummyCamera: {fileID: 1679196734}
 --- !u!4 &1099284957
 Transform:
   m_ObjectHideFlags: 0
@@ -26990,12 +26989,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5551526904381113647, guid: 6922072dba610314aba216faae645097, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 25.80809
+      objectReference: {fileID: 0}
+    - target: {fileID: 5551526904381113647, guid: 6922072dba610314aba216faae645097, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 106.40315
+      value: 87.838
       objectReference: {fileID: 0}
     - target: {fileID: 5551526904381113647, guid: 6922072dba610314aba216faae645097, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.574374
+      value: 16.1
       objectReference: {fileID: 0}
     - target: {fileID: 5551526904381113647, guid: 6922072dba610314aba216faae645097, type: 3}
       propertyPath: m_LocalPosition.z
