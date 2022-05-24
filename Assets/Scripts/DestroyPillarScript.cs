@@ -17,6 +17,6 @@ public class DestroyPillarScript : MonoBehaviour
 
     private void DestroyObject()
     {
-        Destroy(gameObject);
+        Destroy(GameObject.FindWithTag("Destroy"));
     }
 }
