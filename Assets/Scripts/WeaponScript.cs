@@ -22,10 +22,13 @@ public class WeaponScript : MonoBehaviour
     
     public StaminaBar staminaBar;
     
+    private Animator animator;
+    
     private void Start()
     {
         currentStamina = MaxStamina;
         staminaBar.setMaxStamina(MaxStamina);
+        animator = GetComponentInParent<Animator>();
     }
     
     void Update()
@@ -38,6 +41,7 @@ public class WeaponScript : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0) && StaminaDamage(5))
             {
+                animator.SetTrigger("Shooting");
                 Instantiate(projectile, shotPoint.position, transform.rotation);
                 timeBtwShots = startTimeBtwShots;
             }
