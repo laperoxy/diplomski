@@ -49,6 +49,7 @@ public class PlayerControlNew : NetworkBehaviour
     private void UpdateClientPosition()
     {
         controller.Move(networkXAxisOffset.Value * Time.fixedDeltaTime, networkJump.Value);
+        animator.SetBool("isJumping",networkJump.Value);
         if (IsServer)
         {
             networkJump.Value = false;
