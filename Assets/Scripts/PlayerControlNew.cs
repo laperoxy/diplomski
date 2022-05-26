@@ -43,13 +43,13 @@ public class PlayerControlNew : NetworkBehaviour
     {
         if (IsClient && IsOwner) UpdateClientInput();
         UpdateClientPosition();
-        UpdateClientVisuals();
+
     }
 
     private void UpdateClientPosition()
     {
         controller.Move(networkXAxisOffset.Value * Time.fixedDeltaTime, networkJump.Value);
-        animator.SetBool("isJumping",networkJump.Value);
+        UpdateClientVisuals();
         if (IsServer)
         {
             networkJump.Value = false;
@@ -59,6 +59,7 @@ public class PlayerControlNew : NetworkBehaviour
     private void UpdateClientVisuals()
     {
         animator.SetFloat("Speed", Mathf.Abs(networkXAxisOffset.Value));
+        animator.SetBool("isJumping",networkJump.Value);
     }
 
     private void UpdateClientInput()
