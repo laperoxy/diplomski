@@ -3,19 +3,22 @@ using UnityEngine.UI;
 
 public class ChangeAttackScript : MonoBehaviour
 {
+    [SerializeField] private Text attackSwitch;
+    [SerializeField] private Image attack;
+    
+    [SerializeField] private Sprite soulPushSprite;
+    [SerializeField] private Sprite soulFragmentSprite;
 
-    [SerializeField] public Text attackSwitch;
-    [SerializeField] public Image attack;
+    private WeaponScript ws;
 
-    public ProjectileScript prefabSplash;
-    public ProjectileScript prefabWave;
-
-    public Sprite sprite1;
-    public Sprite sprite2;
+    public GameObject soulPush;
+    public GameObject soulFragment;
+    
+    
 
     private void Start()
     {
-        MovementScript.setProjectilePrefab(prefabSplash);
+        ws = GetComponent<WeaponScript>();
     }
 
     // Update is called once per frame
@@ -23,19 +26,18 @@ public class ChangeAttackScript : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire3"))
         {
-            if(attackSwitch.text.Equals("Water Splash"))
+            if (ws.getProjectile().Equals(soulPush))
             {
-                attackSwitch.text = "Wave Attack";
-                attack.sprite = sprite2;
-                MovementScript.setProjectilePrefab(prefabWave);
+                ws.setProjectile(soulFragment);
+                attackSwitch.text = "Soul fragment";
+                attack.sprite = soulFragmentSprite;
             }
             else
             {
-                attackSwitch.text = "Water Splash";
-                attack.sprite = sprite1;
-                MovementScript.setProjectilePrefab(prefabSplash);
+                ws.setProjectile(soulPush);
+                attackSwitch.text = "Soul Push";
+                attack.sprite = soulPushSprite;
             }
-
         }
     }
 }
