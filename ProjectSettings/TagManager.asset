@@ -10,6 +10,7 @@ TagManager:
   - Heart
   - NextLevel
   - Destroy
+  - key
   layers:
   - Default
   - TransparentFX
