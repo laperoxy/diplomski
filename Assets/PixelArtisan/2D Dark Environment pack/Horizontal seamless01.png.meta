@@ -1,7 +1,124 @@
 fileFormatVersion: 2
 guid: 6a9109a77ed19dd4e9aad54f0d2efaac
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 8569534377705260533
+    second: Horizontal seamless01_0
+  - first:
+      213: 2369018811502162731
+    second: Horizontal seamless01_1
+  - first:
+      213: 9143116934016003397
+    second: Horizontal seamless01_2
+  - first:
+      213: -2010576416606822147
+    second: Horizontal seamless01_3
+  - first:
+      213: -362357509752383578
+    second: Horizontal seamless01_4
+  - first:
+      213: -5060550076574840963
+    second: Horizontal seamless01_5
+  - first:
+      213: 4349037276798023901
+    second: Horizontal seamless01_6
+  - first:
+      213: -5006164139945532022
+    second: Horizontal seamless01_7
+  - first:
+      213: 2324580865388261063
+    second: Horizontal seamless01_8
+  - first:
+      213: 2245566314091736520
+    second: Horizontal seamless01_9
+  - first:
+      213: 6770440868486809403
+    second: Horizontal seamless01_10
+  - first:
+      213: 8137917286566166582
+    second: Horizontal seamless01_11
+  - first:
+      213: 96900190513756714
+    second: Horizontal seamless01_12
+  - first:
+      213: 6716084947305570487
+    second: Horizontal seamless01_13
+  - first:
+      213: 2502385090193105325
+    second: Horizontal seamless01_14
+  - first:
+      213: 2289774001542887301
+    second: Horizontal seamless01_15
+  - first:
+      213: -7547719939576961055
+    second: Horizontal seamless01_16
+  - first:
+      213: 6363218309375606711
+    second: Horizontal seamless01_17
+  - first:
+      213: -4572200673592624788
+    second: Horizontal seamless01_18
+  - first:
+      213: 6925983426636762757
+    second: Horizontal seamless01_19
+  - first:
+      213: 7742529834554167123
+    second: Horizontal seamless01_20
+  - first:
+      213: -551502436343987920
+    second: Horizontal seamless01_21
+  - first:
+      213: -2557157844179689253
+    second: Horizontal seamless01_22
+  - first:
+      213: -1499472546266288381
+    second: Horizontal seamless01_23
+  - first:
+      213: -1097942768335883980
+    second: Horizontal seamless01_24
+  - first:
+      213: 4198277904639868019
+    second: Horizontal seamless01_25
+  - first:
+      213: -5321412102316130038
+    second: Horizontal seamless01_26
+  - first:
+      213: -4857707325797956879
+    second: Horizontal seamless01_27
+  - first:
+      213: -6083907929167577211
+    second: Horizontal seamless01_28
+  - first:
+      213: 8549141886484035743
+    second: Horizontal seamless01_29
+  - first:
+      213: -4842286524885901872
+    second: Horizontal seamless01_30
+  - first:
+      213: -4258454495932808626
+    second: Horizontal seamless01_31
+  - first:
+      213: 5415028869995538771
+    second: Horizontal seamless01_32
+  - first:
+      213: -6771156203363476275
+    second: Horizontal seamless01_33
+  - first:
+      213: -2805492092788317699
+    second: Horizontal seamless01_34
+  - first:
+      213: -8794662305927766191
+    second: Horizontal seamless01_35
+  - first:
+      213: -8052292179946516246
+    second: Horizontal seamless01_36
+  - first:
+      213: 1705177815262753042
+    second: Horizontal seamless01_37
+  - first:
+      213: -7666868502340259937
+    second: Horizontal seamless01_38
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +158,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +192,840 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Horizontal seamless01_0
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 4611
+        width: 523
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f5ce99fc1a1de670800000000000000
+      internalID: 8569534377705260533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_1
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 4611
+        width: 1031
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23fdc5be0270e020800000000000000
+      internalID: 2369018811502162731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_2
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 4611
+        width: 520
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54de1efb860e2ee70800000000000000
+      internalID: 9143116934016003397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_3
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 4267
+        width: 521
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df06f5ec66ff814e0800000000000000
+      internalID: -2010576416606822147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_4
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 4267
+        width: 1031
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a79385c3c5a8faf0800000000000000
+      internalID: -362357509752383578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_5
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 4267
+        width: 520
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d774ead648055c9b0800000000000000
+      internalID: -5060550076574840963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_6
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 3921
+        width: 521
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd87a7e6c52ea5c30800000000000000
+      internalID: 4349037276798023901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_7
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 3921
+        width: 1031
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a856f3f0d38868ab0800000000000000
+      internalID: -5006164139945532022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_8
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3921
+        width: 520
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ce232d1bf1924020800000000000000
+      internalID: 2324580865388261063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_9
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 3575
+        width: 521
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd65074aaad92f10800000000000000
+      internalID: 2245566314091736520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_10
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 3577
+        width: 1031
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3781fa391075fd50800000000000000
+      internalID: 6770440868486809403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_11
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3577
+        width: 517
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6308945d7a0bfe070800000000000000
+      internalID: 8137917286566166582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_12
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 3231
+        width: 521
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2a7d3ab532485100800000000000000
+      internalID: 96900190513756714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_13
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 3231
+        width: 1031
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b02f7d1da3543d50800000000000000
+      internalID: 6716084947305570487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_14
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 3231
+        width: 520
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da1a1383bf14ab220800000000000000
+      internalID: 2502385090193105325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_15
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 2887
+        width: 521
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58773e99259e6cf10800000000000000
+      internalID: 2289774001542887301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_16
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2887
+        width: 1031
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7e16954bc114790800000000000000
+      internalID: -7547719939576961055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_17
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 2887
+        width: 520
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf389ea651be4850800000000000000
+      internalID: 6363218309375606711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_18
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 2541
+        width: 523
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c69b5b046b74c80c0800000000000000
+      internalID: -4572200673592624788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_19
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2541
+        width: 1031
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58e4de82b390e1060800000000000000
+      internalID: 6925983426636762757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_20
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 2541
+        width: 520
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35f0773ecddf27b60800000000000000
+      internalID: 7742529834554167123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_21
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 2197
+        width: 521
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03144f4c47ba858f0800000000000000
+      internalID: -551502436343987920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_22
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 2197
+        width: 1031
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0e0173d76238cd0800000000000000
+      internalID: -2557157844179689253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_23
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 2197
+        width: 520
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30fe859e9adc03be0800000000000000
+      internalID: -1499472546266288381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_24
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1826
+        width: 523
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43171ad8ed253c0f0800000000000000
+      internalID: -1097942768335883980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_25
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1826
+        width: 1031
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c3e66c287434a30800000000000000
+      internalID: 4198277904639868019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_26
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 1826
+        width: 520
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a018bf113eb8626b0800000000000000
+      internalID: -5321412102316130038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_27
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 1479
+        width: 521
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f20007ace4f59cb0800000000000000
+      internalID: -4857707325797956879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_28
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1479
+        width: 1031
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fb8cbe8fd919ba0800000000000000
+      internalID: -6083907929167577211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_29
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 1479
+        width: 519
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f983b4e1047a4a670800000000000000
+      internalID: 8549141886484035743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_30
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 1136
+        width: 523
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddd387af0ebcccb0800000000000000
+      internalID: -4842286524885901872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_31
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 1136
+        width: 1031
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4282cdb23ee6e4c0800000000000000
+      internalID: -4258454495932808626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_32
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 1136
+        width: 519
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359a194311c062b40800000000000000
+      internalID: 5415028869995538771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_33
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 790
+        width: 521
+        height: 207
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc56d3ee450802a0800000000000000
+      internalID: -6771156203363476275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_34
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 789
+        width: 1031
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df16f254ec3e019d0800000000000000
+      internalID: -2805492092788317699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_35
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 789
+        width: 519
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f58a79a3513f580800000000000000
+      internalID: -8794662305927766191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_36
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 349
+        width: 593
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0d1aadce2804090800000000000000
+      internalID: -8052292179946516246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_37
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 349
+        width: 1100
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211fc9540320aa710800000000000000
+      internalID: 1705177815262753042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horizontal seamless01_38
+      rect:
+        serializedVersion: 2
+        x: 2297
+        y: 349
+        width: 591
+        height: 254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9fa06ac7bfc99590800000000000000
+      internalID: -7666868502340259937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

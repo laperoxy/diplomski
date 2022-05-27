@@ -1,7 +1,175 @@
 fileFormatVersion: 2
 guid: 6d10c48ccb2b3e44293f7c517784be13
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 652368696135413129
+    second: Plates Vertical_0
+  - first:
+      213: 309816220746724876
+    second: Plates Vertical_1
+  - first:
+      213: 1648427375108178904
+    second: Plates Vertical_2
+  - first:
+      213: -8111731423302246407
+    second: Plates Vertical_3
+  - first:
+      213: -5823305078992061937
+    second: Plates Vertical_4
+  - first:
+      213: 4546229567824846068
+    second: Plates Vertical_5
+  - first:
+      213: 4887082792481198012
+    second: Plates Vertical_6
+  - first:
+      213: 2883882961164454909
+    second: Plates Vertical_7
+  - first:
+      213: -7770108686081047987
+    second: Plates Vertical_8
+  - first:
+      213: 3120526841560709851
+    second: Plates Vertical_9
+  - first:
+      213: -6245857672554507625
+    second: Plates Vertical_10
+  - first:
+      213: -6711067519003400167
+    second: Plates Vertical_11
+  - first:
+      213: -3379411095974892087
+    second: Plates Vertical_12
+  - first:
+      213: 1785836036680033598
+    second: Plates Vertical_13
+  - first:
+      213: -2942725791016303634
+    second: Plates Vertical_14
+  - first:
+      213: 6664405772693959942
+    second: Plates Vertical_15
+  - first:
+      213: 161223933069280437
+    second: Plates Vertical_16
+  - first:
+      213: 6936495203829253330
+    second: Plates Vertical_17
+  - first:
+      213: -5342903087182286445
+    second: Plates Vertical_18
+  - first:
+      213: -7424584869582310017
+    second: Plates Vertical_19
+  - first:
+      213: 7528441244002138583
+    second: Plates Vertical_20
+  - first:
+      213: 4845616690209841714
+    second: Plates Vertical_21
+  - first:
+      213: 546796302275374857
+    second: Plates Vertical_22
+  - first:
+      213: 211508422314280421
+    second: Plates Vertical_23
+  - first:
+      213: -2317671872400152831
+    second: Plates Vertical_24
+  - first:
+      213: 1285781584721969420
+    second: Plates Vertical_25
+  - first:
+      213: -3494169487280528855
+    second: Plates Vertical_26
+  - first:
+      213: -446814201514538380
+    second: Plates Vertical_27
+  - first:
+      213: 4839102744834670410
+    second: Plates Vertical_28
+  - first:
+      213: 8043580794215511192
+    second: Plates Vertical_29
+  - first:
+      213: 5051748725159484852
+    second: Plates Vertical_30
+  - first:
+      213: 7627836300604605251
+    second: Plates Vertical_31
+  - first:
+      213: -4013915459948722499
+    second: Plates Vertical_32
+  - first:
+      213: 3475282308584921452
+    second: Plates Vertical_33
+  - first:
+      213: 7465796006481766369
+    second: Plates Vertical_34
+  - first:
+      213: 4524048895381925496
+    second: Plates Vertical_35
+  - first:
+      213: -8403436781581344881
+    second: Plates Vertical_36
+  - first:
+      213: 875583266596680178
+    second: Plates Vertical_37
+  - first:
+      213: 4019824456298336930
+    second: Plates Vertical_38
+  - first:
+      213: -1130046932905234177
+    second: Plates Vertical_39
+  - first:
+      213: 6047963901220160196
+    second: Plates Vertical_40
+  - first:
+      213: -5779566982928502016
+    second: Plates Vertical_41
+  - first:
+      213: 4313239220702635358
+    second: Plates Vertical_42
+  - first:
+      213: 9029715088923071620
+    second: Plates Vertical_43
+  - first:
+      213: -2358753589105857472
+    second: Plates Vertical_44
+  - first:
+      213: 5824855191088672360
+    second: Plates Vertical_45
+  - first:
+      213: -2230218156866348953
+    second: Plates Vertical_46
+  - first:
+      213: -4248863323173713726
+    second: Plates Vertical_47
+  - first:
+      213: -7327216640001858588
+    second: Plates Vertical_48
+  - first:
+      213: -2727077653650462160
+    second: Plates Vertical_49
+  - first:
+      213: -4148595914292013346
+    second: Plates Vertical_50
+  - first:
+      213: 5325607702321311030
+    second: Plates Vertical_51
+  - first:
+      213: -4102197203654833167
+    second: Plates Vertical_52
+  - first:
+      213: 1311706795222372780
+    second: Plates Vertical_53
+  - first:
+      213: 2938300354692174402
+    second: Plates Vertical_54
+  - first:
+      213: -7615794406652873400
+    second: Plates Vertical_55
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +209,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +243,1197 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Plates Vertical_0
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 2280
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d6cbb6fddad0900800000000000000
+      internalID: 652368696135413129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 2280
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0633471630bc4400800000000000000
+      internalID: 309816220746724876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_2
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 2280
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d34a53c6f360e610800000000000000
+      internalID: 1648427375108178904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_3
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 2280
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff12b09f375d6f80800000000000000
+      internalID: -8111731423302246407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_4
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 2280
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0a33f342e67f2fa0800000000000000
+      internalID: -5823305078992061937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_5
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 2280
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcd39974b3771f30800000000000000
+      internalID: 4546229567824846068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_6
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 2280
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf04c928e762d340800000000000000
+      internalID: 4887082792481198012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_7
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 2280
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb4202164c950820800000000000000
+      internalID: 2883882961164454909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_8
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 2280
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4246fb51570b2490800000000000000
+      internalID: -7770108686081047987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_9
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 2280
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda3c4f01a65e4b20800000000000000
+      internalID: 3120526841560709851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_10
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 2280
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7929dbde9814259a0800000000000000
+      internalID: -6245857672554507625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_11
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 2280
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918e322f5af7dd2a0800000000000000
+      internalID: -6711067519003400167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_12
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 2280
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd276a538be911d0800000000000000
+      internalID: -3379411095974892087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_13
+      rect:
+        serializedVersion: 2
+        x: 2346
+        y: 2280
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e35a761e96098c810800000000000000
+      internalID: 1785836036680033598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_14
+      rect:
+        serializedVersion: 2
+        x: 2519
+        y: 2280
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3c71bfb765927d0800000000000000
+      internalID: -2942725791016303634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_15
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1570
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6057c70adb9bc7c50800000000000000
+      internalID: 6664405772693959942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_16
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1570
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b4c2eb1058cc3200800000000000000
+      internalID: 161223933069280437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_17
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 1570
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d4817203a1634060800000000000000
+      internalID: 6936495203829253330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_18
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 1570
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391792b33f13ad5b0800000000000000
+      internalID: -5342903087182286445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_19
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 1570
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f757ec3f56396f890800000000000000
+      internalID: -7424584869582310017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_20
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 1570
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d9b52d8c656a7860800000000000000
+      internalID: 7528441244002138583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_21
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 1570
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23269a1e4b61f3340800000000000000
+      internalID: 4845616690209841714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_22
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 1570
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90fee91075c969700800000000000000
+      internalID: 546796302275374857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_23
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 1570
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e5cb0b1acd6fe200800000000000000
+      internalID: 211508422314280421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_24
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 1570
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107acab26b9f5dfd0800000000000000
+      internalID: -2317671872400152831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_25
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 1570
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c018718f98308d110800000000000000
+      internalID: 1285781584721969420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_26
+      rect:
+        serializedVersion: 2
+        x: 1998
+        y: 1570
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 922a2ad3d57328fc0800000000000000
+      internalID: -3494169487280528855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_27
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 1570
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a402ed9d89cc9f0800000000000000
+      internalID: -446814201514538380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_28
+      rect:
+        serializedVersion: 2
+        x: 2346
+        y: 1570
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ffc79ce42f72340800000000000000
+      internalID: 4839102744834670410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_29
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 1570
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894be599d1a80af60800000000000000
+      internalID: 8043580794215511192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_30
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 860
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdd9a143ba6b1640800000000000000
+      internalID: 5051748725159484852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_31
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 860
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3430e5e83b48bd960800000000000000
+      internalID: 7627836300604605251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_32
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 860
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db6ce43e725bb48c0800000000000000
+      internalID: -4013915459948722499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_33
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 860
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c695769c8deaa3030800000000000000
+      internalID: 3475282308584921452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_34
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 860
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e720e399e5db9760800000000000000
+      internalID: 7465796006481766369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_35
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 860
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87eecbb3086a8ce30800000000000000
+      internalID: 4524048895381925496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_36
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 860
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f546d35cef06b80800000000000000
+      internalID: -8403436781581344881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_37
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 860
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f175c88752b62c00800000000000000
+      internalID: 875583266596680178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_38
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 860
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a217198b0949c730800000000000000
+      internalID: 4019824456298336930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_39
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 860
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0f9a04d444150f0800000000000000
+      internalID: -1130046932905234177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_40
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 860
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c20d9aef1faee350800000000000000
+      internalID: 6047963901220160196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_41
+      rect:
+        serializedVersion: 2
+        x: 1996
+        y: 860
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00378f2537adacfa0800000000000000
+      internalID: -5779566982928502016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_42
+      rect:
+        serializedVersion: 2
+        x: 2172
+        y: 860
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e55634df734bbdb30800000000000000
+      internalID: 4313239220702635358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_43
+      rect:
+        serializedVersion: 2
+        x: 2346
+        y: 860
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4849e3a280eff4d70800000000000000
+      internalID: 9029715088923071620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_44
+      rect:
+        serializedVersion: 2
+        x: 2521
+        y: 860
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ceaa0ab16044fd0800000000000000
+      internalID: -2358753589105857472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_45
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 150
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e2ee45fea06d050800000000000000
+      internalID: 5824855191088672360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_46
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 150
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768da5c076cac01e0800000000000000
+      internalID: -2230218156866348953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_47
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 150
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c88b0ba1510905c0800000000000000
+      internalID: -4248863323173713726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_48
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 150
+        width: 90
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e3ab54894f705a90800000000000000
+      internalID: -7327216640001858588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_49
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 150
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a224b9259772ad0800000000000000
+      internalID: -2727077653650462160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_50
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 150
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed6dcf30ff93d66c0800000000000000
+      internalID: -4148595914292013346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_51
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 150
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d22fd2dfb58e940800000000000000
+      internalID: 5325607702321311030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_52
+      rect:
+        serializedVersion: 2
+        x: 1301
+        y: 150
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fb8d8da0611217c0800000000000000
+      internalID: -4102197203654833167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_53
+      rect:
+        serializedVersion: 2
+        x: 1475
+        y: 150
+        width: 92
+        height: 624
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca112ba616e143210800000000000000
+      internalID: 1311706795222372780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_54
+      rect:
+        serializedVersion: 2
+        x: 1752
+        y: 113
+        width: 168
+        height: 699
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242d4d4da90f6c820800000000000000
+      internalID: 2938300354692174402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Vertical_55
+      rect:
+        serializedVersion: 2
+        x: 2148
+        y: 133
+        width: 126
+        height: 657
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8457c0d56534f4690800000000000000
+      internalID: -7615794406652873400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
