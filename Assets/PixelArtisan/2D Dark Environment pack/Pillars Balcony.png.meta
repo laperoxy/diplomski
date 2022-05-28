@@ -1,7 +1,199 @@
 fileFormatVersion: 2
 guid: 99c6103f66f3ba04bbb63c745eae85cc
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4714824894601079984
+    second: Pillars Balcony_0
+  - first:
+      213: -8786513584160558173
+    second: Pillars Balcony_1
+  - first:
+      213: -6911853835924283973
+    second: Pillars Balcony_2
+  - first:
+      213: 9051702099968946555
+    second: Pillars Balcony_3
+  - first:
+      213: 5749483857845906775
+    second: Pillars Balcony_4
+  - first:
+      213: -5244842443624154015
+    second: Pillars Balcony_5
+  - first:
+      213: -9119878727776211596
+    second: Pillars Balcony_6
+  - first:
+      213: 5615564995643489665
+    second: Pillars Balcony_7
+  - first:
+      213: -1868919866243396531
+    second: Pillars Balcony_8
+  - first:
+      213: -2735724038034663037
+    second: Pillars Balcony_9
+  - first:
+      213: -6016085654874006521
+    second: Pillars Balcony_10
+  - first:
+      213: 6292549895697542077
+    second: Pillars Balcony_11
+  - first:
+      213: 7992832047232307183
+    second: Pillars Balcony_12
+  - first:
+      213: -5072426890140590559
+    second: Pillars Balcony_13
+  - first:
+      213: -912032581801773634
+    second: Pillars Balcony_14
+  - first:
+      213: 3285349933136721670
+    second: Pillars Balcony_15
+  - first:
+      213: 2448950671722223821
+    second: Pillars Balcony_16
+  - first:
+      213: 6687349376476814858
+    second: Pillars Balcony_17
+  - first:
+      213: -6653342572785372190
+    second: Pillars Balcony_18
+  - first:
+      213: -3824121802928623311
+    second: Pillars Balcony_19
+  - first:
+      213: -2621591921082389235
+    second: Pillars Balcony_20
+  - first:
+      213: -5239921696670116066
+    second: Pillars Balcony_21
+  - first:
+      213: -6222011083582620693
+    second: Pillars Balcony_22
+  - first:
+      213: -565864301309977782
+    second: Pillars Balcony_23
+  - first:
+      213: 5439611702110590006
+    second: Pillars Balcony_24
+  - first:
+      213: -2836674895709516291
+    second: Pillars Balcony_25
+  - first:
+      213: 2934059025678815554
+    second: Pillars Balcony_26
+  - first:
+      213: 6775279653409573957
+    second: Pillars Balcony_27
+  - first:
+      213: -9188472942604003161
+    second: Pillars Balcony_28
+  - first:
+      213: 5519574786161937867
+    second: Pillars Balcony_29
+  - first:
+      213: -4687397938871701142
+    second: Pillars Balcony_30
+  - first:
+      213: 4608161432721100388
+    second: Pillars Balcony_31
+  - first:
+      213: -3407753856580756498
+    second: Pillars Balcony_32
+  - first:
+      213: -8631862255932588230
+    second: Pillars Balcony_33
+  - first:
+      213: -5643252999341526597
+    second: Pillars Balcony_34
+  - first:
+      213: 7353072456920326954
+    second: Pillars Balcony_35
+  - first:
+      213: 2231061964643778061
+    second: Pillars Balcony_36
+  - first:
+      213: 1069320622897004706
+    second: Pillars Balcony_37
+  - first:
+      213: 4825190426497416261
+    second: Pillars Balcony_38
+  - first:
+      213: -8056200705620907616
+    second: Pillars Balcony_39
+  - first:
+      213: 3120785937153199645
+    second: Pillars Balcony_40
+  - first:
+      213: 4609648252073659718
+    second: Pillars Balcony_41
+  - first:
+      213: 715055084193918315
+    second: Pillars Balcony_42
+  - first:
+      213: 8255048033271312057
+    second: Pillars Balcony_43
+  - first:
+      213: -963297790756924857
+    second: Pillars Balcony_44
+  - first:
+      213: 1437855287402756477
+    second: Pillars Balcony_45
+  - first:
+      213: -2983516964715157352
+    second: Pillars Balcony_46
+  - first:
+      213: -7951296011021500786
+    second: Pillars Balcony_47
+  - first:
+      213: 1513700883533118913
+    second: Pillars Balcony_48
+  - first:
+      213: -2120282943199655413
+    second: Pillars Balcony_49
+  - first:
+      213: 2916431474735706440
+    second: Pillars Balcony_50
+  - first:
+      213: -5734445986085582316
+    second: Pillars Balcony_51
+  - first:
+      213: -8535113290753661839
+    second: Pillars Balcony_52
+  - first:
+      213: 5404156463172577470
+    second: Pillars Balcony_53
+  - first:
+      213: -8098074002591727949
+    second: Pillars Balcony_54
+  - first:
+      213: 7941275826058767174
+    second: Pillars Balcony_55
+  - first:
+      213: -6307981906225310931
+    second: Pillars Balcony_56
+  - first:
+      213: 5530979620065136380
+    second: Pillars Balcony_57
+  - first:
+      213: -2093676588204108802
+    second: Pillars Balcony_58
+  - first:
+      213: 8219351932978490648
+    second: Pillars Balcony_59
+  - first:
+      213: 6654681354648651809
+    second: Pillars Balcony_60
+  - first:
+      213: 3980876615373821503
+    second: Pillars Balcony_61
+  - first:
+      213: 7568706526294669107
+    second: Pillars Balcony_62
+  - first:
+      213: 7791021625809205688
+    second: Pillars Balcony_63
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +233,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +267,1365 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Pillars Balcony_0
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 4463
+        width: 156
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcaddce24c6e6140800000000000000
+      internalID: 4714824894601079984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_1
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 4464
+        width: 156
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a337f9b278001680800000000000000
+      internalID: -8786513584160558173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_2
+      rect:
+        serializedVersion: 2
+        x: 827
+        y: 4464
+        width: 156
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbddf4a8e892410a0800000000000000
+      internalID: -6911853835924283973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_3
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 4796
+        width: 122
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b717e491a1b1e9d70800000000000000
+      internalID: 9051702099968946555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_4
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 4458
+        width: 185
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75d6fbc4b154acf40800000000000000
+      internalID: 5749483857845906775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_5
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 4784
+        width: 148
+        height: 189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cf3ecf5939637b0800000000000000
+      internalID: -5244842443624154015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_6
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 4464
+        width: 156
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47de144cd9eaf6180800000000000000
+      internalID: -9119878727776211596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_7
+      rect:
+        serializedVersion: 2
+        x: 2001
+        y: 4458
+        width: 186
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18db27a6c9e7eed40800000000000000
+      internalID: 5615564995643489665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_8
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 3843
+        width: 109
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c44ea98434016e0800000000000000
+      internalID: -1868919866243396531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_9
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 3844
+        width: 107
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 389527d5b71c80ad0800000000000000
+      internalID: -2735724038034663037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_10
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 3844
+        width: 109
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c59e2b8f1928ca0800000000000000
+      internalID: -6016085654874006521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_11
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 4093
+        width: 104
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb29707ac0a35750800000000000000
+      internalID: 6292549895697542077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_12
+      rect:
+        serializedVersion: 2
+        x: 1619
+        y: 3837
+        width: 139
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fefc3ac266e3cee60800000000000000
+      internalID: 7992832047232307183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_13
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 4088
+        width: 134
+        height: 265
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ed7084e9e1b99b0800000000000000
+      internalID: -5072426890140590559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_14
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 3844
+        width: 107
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb57f12f23fc753f0800000000000000
+      internalID: -912032581801773634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_15
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 3837
+        width: 136
+        height: 236
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607b77f8b58e79d20800000000000000
+      internalID: 3285349933136721670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_16
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 3225
+        width: 132
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc8157c29ab6cf120800000000000000
+      internalID: 2448950671722223821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_17
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 3225
+        width: 134
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e94d9a3dc3ecc50800000000000000
+      internalID: 6687349376476814858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_18
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 3225
+        width: 132
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3f4245e249aa3a0800000000000000
+      internalID: -6653342572785372190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_19
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 3570
+        width: 114
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131fc963b7dfdeac0800000000000000
+      internalID: -3824121802928623311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_20
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 3217
+        width: 164
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0da9dd990c3e9bd0800000000000000
+      internalID: -2621591921082389235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_21
+      rect:
+        serializedVersion: 2
+        x: 2028
+        y: 3565
+        width: 142
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e179d1baafe0847b0800000000000000
+      internalID: -5239921696670116066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_22
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 3225
+        width: 132
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bebb38692e9f6a9a0800000000000000
+      internalID: -6222011083582620693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_23
+      rect:
+        serializedVersion: 2
+        x: 2014
+        y: 3217
+        width: 161
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b18518a65a528f0800000000000000
+      internalID: -565864301309977782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_24
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 2605
+        width: 114
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6341c54d5026d7b40800000000000000
+      internalID: 5439611702110590006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_25
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 2605
+        width: 117
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd47f1363b12a8d0800000000000000
+      internalID: -2836674895709516291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_26
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 2604
+        width: 116
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2415d97732fd7b820800000000000000
+      internalID: 2934059025678815554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_27
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 2890
+        width: 109
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54cc863a2f0a60e50800000000000000
+      internalID: 6775279653409573957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_28
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 2597
+        width: 147
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8dcc39a8cfb7080800000000000000
+      internalID: -9188472942604003161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_29
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 2885
+        width: 139
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd82682608799c40800000000000000
+      internalID: 5519574786161937867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_30
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 2605
+        width: 116
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6177a4d86403feb0800000000000000
+      internalID: -4687397938871701142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_31
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 2600
+        width: 146
+        height: 223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e0ff0786a73ff30800000000000000
+      internalID: 4608161432721100388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_32
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1985
+        width: 129
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb59882ce935b0d0800000000000000
+      internalID: -3407753856580756498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_33
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1984
+        width: 128
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f39050307753880800000000000000
+      internalID: -8631862255932588230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_34
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 1985
+        width: 128
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1379cdb432fa1b0800000000000000
+      internalID: -5643252999341526597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_35
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 2188
+        width: 109
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a23e17af07c5b0660800000000000000
+      internalID: 7353072456920326954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_36
+      rect:
+        serializedVersion: 2
+        x: 1612
+        y: 1977
+        width: 158
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0e3a72490356fe10800000000000000
+      internalID: 2231061964643778061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_37
+      rect:
+        serializedVersion: 2
+        x: 2045
+        y: 2180
+        width: 137
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a086c6e07df6de00800000000000000
+      internalID: 1069320622897004706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_38
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1985
+        width: 129
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c7ef0c02586f240800000000000000
+      internalID: 4825190426497416261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_39
+      rect:
+        serializedVersion: 2
+        x: 2029
+        y: 1980
+        width: 158
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9e63e4420a23090800000000000000
+      internalID: -8056200705620907616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_40
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1359
+        width: 136
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e0d0476424f4b20800000000000000
+      internalID: 3120785937153199645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_41
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 1359
+        width: 138
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64dc95c89a2c8ff30800000000000000
+      internalID: 4609648252073659718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_42
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1359
+        width: 139
+        height: 495
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d27308fc26ce900800000000000000
+      internalID: 715055084193918315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_43
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 1734
+        width: 139
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be6ceaf272df8270800000000000000
+      internalID: 8255048033271312057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_44
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 1354
+        width: 171
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742d30953cda1a2f0800000000000000
+      internalID: -963297790756924857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_45
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 1722
+        width: 169
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79fe0c04c944f310800000000000000
+      internalID: 1437855287402756477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_46
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 1359
+        width: 127
+        height: 284
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8982dc0c02b6896d0800000000000000
+      internalID: -2983516964715157352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_47
+      rect:
+        serializedVersion: 2
+        x: 2021
+        y: 1354
+        width: 159
+        height: 303
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e351fd76257a190800000000000000
+      internalID: -7951296011021500786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_48
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 737
+        width: 96
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdbf230feeb10510800000000000000
+      internalID: 1513700883533118913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_49
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 737
+        width: 94
+        height: 492
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0ac34b95ed3392e0800000000000000
+      internalID: -2120282943199655413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_50
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 737
+        width: 97
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841f36f69fe397820800000000000000
+      internalID: 2916431474735706440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_51
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 1097
+        width: 97
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a44bf02c72b60b0800000000000000
+      internalID: -5734445986085582316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_52
+      rect:
+        serializedVersion: 2
+        x: 1629
+        y: 732
+        width: 129
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174a9eadeaf2d8980800000000000000
+      internalID: -8535113290753661839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_53
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 1089
+        width: 127
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8680abbab6ffa40800000000000000
+      internalID: 5404156463172577470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_54
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 739
+        width: 97
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beb1be999cdd9f80800000000000000
+      internalID: -8098074002591727949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_55
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 734
+        width: 129
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b21a30a44153e60800000000000000
+      internalID: 7941275826058767174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_56
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 176
+        width: 99
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2359dd90eb8578a0800000000000000
+      internalID: -6307981906225310931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_57
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 176
+        width: 97
+        height: 496
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe48e9f8acf1cc40800000000000000
+      internalID: 5530979620065136380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_58
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 179
+        width: 97
+        height: 493
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef3da8d5c34c1f2e0800000000000000
+      internalID: -2093676588204108802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_59
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 499
+        width: 98
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d6a19f801011270800000000000000
+      internalID: 8219351932978490648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_60
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 171
+        width: 129
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1288f3d1f6d2a5c50800000000000000
+      internalID: 6654681354648651809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_61
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 494
+        width: 129
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f36140aa03aee3730800000000000000
+      internalID: 3980876615373821503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_62
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 178
+        width: 97
+        height: 203
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33779f42c72790960800000000000000
+      internalID: 7568706526294669107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pillars Balcony_63
+      rect:
+        serializedVersion: 2
+        x: 2036
+        y: 171
+        width: 129
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b97ebbd3e44f1c60800000000000000
+      internalID: 7791021625809205688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

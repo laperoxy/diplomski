@@ -1,7 +1,61 @@
 fileFormatVersion: 2
 guid: 42c79720977fa494aa7b811aa00df683
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 4655885657197248780
+    second: Arch5_0
+  - first:
+      213: -8196223052937648960
+    second: Arch5_1
+  - first:
+      213: 8284189133064883542
+    second: Arch5_2
+  - first:
+      213: 6210031310824248228
+    second: Arch5_3
+  - first:
+      213: -7872679743905163191
+    second: Arch5_4
+  - first:
+      213: 3982768114432368350
+    second: Arch5_5
+  - first:
+      213: -2692950861657150080
+    second: Arch5_6
+  - first:
+      213: -682303214339801162
+    second: Arch5_7
+  - first:
+      213: -3112042923088481960
+    second: Arch5_8
+  - first:
+      213: -6420682401330786728
+    second: Arch5_9
+  - first:
+      213: 5226000447585961824
+    second: Arch5_10
+  - first:
+      213: 8709371700376980656
+    second: Arch5_11
+  - first:
+      213: -3002938529899591867
+    second: Arch5_12
+  - first:
+      213: 655008171887948011
+    second: Arch5_13
+  - first:
+      213: 2323972016640079850
+    second: Arch5_14
+  - first:
+      213: 1471047950434552692
+    second: Arch5_15
+  - first:
+      213: -7071735234198901560
+    second: Arch5_16
+  - first:
+      213: -2221330255998552397
+    second: Arch5_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +95,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,9 +129,399 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Arch5_0
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 7896
+        width: 1719
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01041856570d9040800000000000000
+      internalID: 4655885657197248780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_1
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 7896
+        width: 1718
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4a8cd0f8a214e80800000000000000
+      internalID: -8196223052937648960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_2
+      rect:
+        serializedVersion: 2
+        x: 4551
+        y: 7896
+        width: 1717
+        height: 807
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65dcb70002a57f270800000000000000
+      internalID: 8284189133064883542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_3
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 6800
+        width: 1722
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a39bb533967e2650800000000000000
+      internalID: 6210031310824248228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_4
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 6800
+        width: 1721
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9489e12fb7f9eb290800000000000000
+      internalID: -7872679743905163191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_5
+      rect:
+        serializedVersion: 2
+        x: 4551
+        y: 6800
+        width: 1719
+        height: 805
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede5e7b9f72a54730800000000000000
+      internalID: 3982768114432368350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_6
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 5710
+        width: 1722
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08de75d8577b0aad0800000000000000
+      internalID: -2692950861657150080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_7
+      rect:
+        serializedVersion: 2
+        x: 2407
+        y: 5710
+        width: 1719
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf3b2077d8f786f0800000000000000
+      internalID: -682303214339801162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_8
+      rect:
+        serializedVersion: 2
+        x: 4551
+        y: 5710
+        width: 1719
+        height: 800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851fa83237dcfc4d0800000000000000
+      internalID: -3112042923088481960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 3907
+        width: 1793
+        height: 841
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e831dcf5725e6a0800000000000000
+      internalID: -6420682401330786728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_10
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3877
+        width: 1855
+        height: 903
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067c462f7bb768840800000000000000
+      internalID: 5226000447585961824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_11
+      rect:
+        serializedVersion: 2
+        x: 4489
+        y: 4623
+        width: 1783
+        height: 869
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc4fc1da67edd870800000000000000
+      internalID: 8709371700376980656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_12
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 2653
+        width: 1962
+        height: 900
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 547400b315b6356d0800000000000000
+      internalID: -3002938529899591867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_13
+      rect:
+        serializedVersion: 2
+        x: 2414
+        y: 2627
+        width: 2026
+        height: 959
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be0fb52467e071900800000000000000
+      internalID: 655008171887948011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_14
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 1435
+        width: 1927
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae7b7c77c38604020800000000000000
+      internalID: 2323972016640079850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_15
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1403
+        width: 1988
+        height: 959
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bc73521563a6410800000000000000
+      internalID: 1471047950434552692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_16
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 282
+        width: 1910
+        height: 918
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cce5fba5462cdd90800000000000000
+      internalID: -7071735234198901560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Arch5_17
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 252
+        width: 1975
+        height: 981
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6f06ab6ef3c21e0800000000000000
+      internalID: -2221330255998552397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

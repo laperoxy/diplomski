@@ -1,7 +1,37 @@
 fileFormatVersion: 2
 guid: 905dae775d774d34890214c832e424b1
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6947770447080784104
+    second: Clock frames_0
+  - first:
+      213: -258404390212571942
+    second: Clock frames_1
+  - first:
+      213: -2425818797034485237
+    second: Clock frames_2
+  - first:
+      213: -4529541530737642243
+    second: Clock frames_3
+  - first:
+      213: -9028064953499335753
+    second: Clock frames_4
+  - first:
+      213: 8600445247117221138
+    second: Clock frames_5
+  - first:
+      213: -6289374562666993596
+    second: Clock frames_6
+  - first:
+      213: 795398890911122152
+    second: Clock frames_7
+  - first:
+      213: -1654218854958683754
+    second: Clock frames_8
+  - first:
+      213: -629692048416026627
+    second: Clock frames_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +71,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +105,231 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Clock frames_0
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 3134
+        width: 838
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ffac8d69f849f90800000000000000
+      internalID: -6947770447080784104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock frames_1
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 3134
+        width: 840
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adc6af08396f96cf0800000000000000
+      internalID: -258404390212571942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock frames_2
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 3136
+        width: 838
+        height: 855
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a4b4918a2c55ed0800000000000000
+      internalID: -2425818797034485237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock frames_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 2145
+        width: 839
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df4f001f9f5d321c0800000000000000
+      internalID: -4529541530737642243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock frames_4
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 2145
+        width: 840
+        height: 859
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3c48de1ced5b280800000000000000
+      internalID: -9028064953499335753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock frames_5
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 2145
+        width: 839
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d5e98926bea5770800000000000000
+      internalID: 8600445247117221138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock frames_6
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 1156
+        width: 838
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4482bd46827a7b8a0800000000000000
+      internalID: -6289374562666993596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock frames_7
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 1156
+        width: 840
+        height: 858
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e24f7bb313d90b00800000000000000
+      internalID: 795398890911122152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock frames_8
+      rect:
+        serializedVersion: 2
+        x: 2081
+        y: 1156
+        width: 841
+        height: 856
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6992f6147b80b09e0800000000000000
+      internalID: -1654218854958683754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Clock frames_9
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 110
+        width: 911
+        height: 914
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dff46401b62e247f0800000000000000
+      internalID: -629692048416026627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -1,7 +1,178 @@
 fileFormatVersion: 2
 guid: 78d3b536fab902346adeed65d7933b38
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6334662286897698835
+    second: Plates Square_0
+  - first:
+      213: 1632628680655940604
+    second: Plates Square_1
+  - first:
+      213: 2216039069335633384
+    second: Plates Square_2
+  - first:
+      213: -5369257181614174454
+    second: Plates Square_3
+  - first:
+      213: 6609754674948890992
+    second: Plates Square_4
+  - first:
+      213: -6145004066597609558
+    second: Plates Square_5
+  - first:
+      213: -4008321770909256862
+    second: Plates Square_6
+  - first:
+      213: 4294455410638688491
+    second: Plates Square_7
+  - first:
+      213: 4134339575917169377
+    second: Plates Square_8
+  - first:
+      213: 8078536618798606543
+    second: Plates Square_9
+  - first:
+      213: -9180182007265000216
+    second: Plates Square_10
+  - first:
+      213: 900545872843446704
+    second: Plates Square_11
+  - first:
+      213: -2081724888379988800
+    second: Plates Square_12
+  - first:
+      213: -2233573515710548585
+    second: Plates Square_13
+  - first:
+      213: -3682045305054064804
+    second: Plates Square_14
+  - first:
+      213: -4730937665888982909
+    second: Plates Square_15
+  - first:
+      213: 8340567860856310468
+    second: Plates Square_16
+  - first:
+      213: -7394957682086242858
+    second: Plates Square_17
+  - first:
+      213: 4351293841690899052
+    second: Plates Square_18
+  - first:
+      213: 2735955221572030829
+    second: Plates Square_19
+  - first:
+      213: -77844761863847292
+    second: Plates Square_20
+  - first:
+      213: 1573431155692474273
+    second: Plates Square_21
+  - first:
+      213: 4388625242299648379
+    second: Plates Square_22
+  - first:
+      213: -8556770410536386294
+    second: Plates Square_23
+  - first:
+      213: 279342958820164674
+    second: Plates Square_24
+  - first:
+      213: 599076881035899122
+    second: Plates Square_25
+  - first:
+      213: -4291477647804864936
+    second: Plates Square_26
+  - first:
+      213: 7466075894215575780
+    second: Plates Square_27
+  - first:
+      213: 2211842217940529538
+    second: Plates Square_28
+  - first:
+      213: -175103208772900543
+    second: Plates Square_29
+  - first:
+      213: 698950441482222212
+    second: Plates Square_30
+  - first:
+      213: 4479754814360931375
+    second: Plates Square_31
+  - first:
+      213: 2297832161094519799
+    second: Plates Square_32
+  - first:
+      213: -3732621877418455778
+    second: Plates Square_33
+  - first:
+      213: 6038403637913379842
+    second: Plates Square_34
+  - first:
+      213: -1188023247740475425
+    second: Plates Square_35
+  - first:
+      213: -4199190823903511633
+    second: Plates Square_36
+  - first:
+      213: -6674352900575723051
+    second: Plates Square_37
+  - first:
+      213: 2057274826368316045
+    second: Plates Square_38
+  - first:
+      213: 7160482238022587616
+    second: Plates Square_39
+  - first:
+      213: -8816218490424710132
+    second: Plates Square_40
+  - first:
+      213: 7009272025604853595
+    second: Plates Square_41
+  - first:
+      213: -6421962584132569786
+    second: Plates Square_42
+  - first:
+      213: 5097712527206463099
+    second: Plates Square_43
+  - first:
+      213: 3051660685455661174
+    second: Plates Square_44
+  - first:
+      213: -2720933763993570826
+    second: Plates Square_45
+  - first:
+      213: 5029655774902372690
+    second: Plates Square_46
+  - first:
+      213: -1556064414250244167
+    second: Plates Square_47
+  - first:
+      213: 5867993892515824038
+    second: Plates Square_48
+  - first:
+      213: 4756860993683533972
+    second: Plates Square_49
+  - first:
+      213: 9213158607365579109
+    second: Plates Square_50
+  - first:
+      213: -6309720823259776659
+    second: Plates Square_51
+  - first:
+      213: -8975845550241867231
+    second: Plates Square_52
+  - first:
+      213: -711589254072928690
+    second: Plates Square_53
+  - first:
+      213: 966005910083277810
+    second: Plates Square_54
+  - first:
+      213: -4379997093561924463
+    second: Plates Square_55
+  - first:
+      213: 4196595355272783823
+    second: Plates Square_56
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +212,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +246,1218 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Plates Square_0
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 3207
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de726696632c618a0800000000000000
+      internalID: -6334662286897698835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_1
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 3207
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfbac90922348a610800000000000000
+      internalID: 1632628680655940604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_2
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 3207
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed3320eac3f0ce10800000000000000
+      internalID: 2216039069335633384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_3
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 3207
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0f0c267a019c75b0800000000000000
+      internalID: -5369257181614174454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_4
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 3207
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0716ecc5bd09abb50800000000000000
+      internalID: 6609754674948890992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_5
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 2934
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aaf5e1beb5f88baa0800000000000000
+      internalID: -6145004066597609558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_6
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 2934
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2633d7b16949f58c0800000000000000
+      internalID: -4008321770909256862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_7
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2934
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be09fd66178f89b30800000000000000
+      internalID: 4294455410638688491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_8
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 2934
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eac16b80ff106930800000000000000
+      internalID: 4134339575917169377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_9
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 2934
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc8e97cb04abc1070800000000000000
+      internalID: 8078536618798606543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_10
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 2662
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e489836a11799080800000000000000
+      internalID: -9180182007265000216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_11
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 2662
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b917c633b16f7c00800000000000000
+      internalID: 900545872843446704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_12
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2662
+        width: 183
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c465045e3a3c13e0800000000000000
+      internalID: -2081724888379988800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_13
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 2662
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7953a50b8b0c001e0800000000000000
+      internalID: -2233573515710548585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_14
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 2662
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5f8b59ad4fb6ecc0800000000000000
+      internalID: -3682045305054064804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_15
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 2389
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388eb2a2245585eb0800000000000000
+      internalID: -4730937665888982909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_16
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 2389
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca416b7746afb370800000000000000
+      internalID: 8340567860856310468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_17
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2389
+        width: 183
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d514361b25df5990800000000000000
+      internalID: -7394957682086242858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_18
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 2389
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62b453e1b6e26c30800000000000000
+      internalID: 4351293841690899052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_19
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 2389
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d611d2f37c018f520800000000000000
+      internalID: 2735955221572030829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_20
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 2119
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4820b7df9907beef0800000000000000
+      internalID: -77844761863847292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_21
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 2119
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af0599bc43f5d510800000000000000
+      internalID: 1573431155692474273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_22
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 2119
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79459be76787ec30800000000000000
+      internalID: 4388625242299648379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_23
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 2119
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01c767b5ae304980800000000000000
+      internalID: -8556770410536386294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_24
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 2119
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2448bf6e0fc60e300800000000000000
+      internalID: 279342958820164674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_25
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1846
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f03b4fcf39505800800000000000000
+      internalID: 599076881035899122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_26
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1846
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856ef0901db9174c0800000000000000
+      internalID: -4291477647804864936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_27
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1846
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e883d40874dc9760800000000000000
+      internalID: 7466075894215575780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_28
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1846
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281be8347ca02be10800000000000000
+      internalID: 2211842217940529538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_29
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1846
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1496f023f88e19df0800000000000000
+      internalID: -175103208772900543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_30
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1574
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a762c29bb23b900800000000000000
+      internalID: 698950441482222212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_31
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1574
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2c44d6d4494b2e30800000000000000
+      internalID: 4479754814360931375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_32
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1574
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbc1831d2a83ef10800000000000000
+      internalID: 2297832161094519799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_33
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1574
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1d0f93cd20133cc0800000000000000
+      internalID: -3732621877418455778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_34
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1574
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 204e048ad18bcc350800000000000000
+      internalID: 6038403637913379842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_35
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1301
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7e58d862b438fe0800000000000000
+      internalID: -1188023247740475425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_36
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1301
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fabb625a13a79b5c0800000000000000
+      internalID: -4199190823903511633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_37
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1301
+        width: 183
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1069f266fef53a0800000000000000
+      internalID: -6674352900575723051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_38
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1301
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82790ffd88ec8c10800000000000000
+      internalID: 2057274826368316045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_39
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1301
+        width: 185
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e494d958a42f5360800000000000000
+      internalID: 7160482238022587616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_40
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 1031
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0c21084eff76a580800000000000000
+      internalID: -8816218490424710132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_41
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 1031
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f824445cfe54160800000000000000
+      internalID: 7009272025604853595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_42
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1031
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645bde30e0b90e6a0800000000000000
+      internalID: -6421962584132569786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_43
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1031
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76333fd886beb640800000000000000
+      internalID: 5097712527206463099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_44
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 1031
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6781c9b993da95a20800000000000000
+      internalID: 3051660685455661174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_45
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 758
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1fbc3682d4d3ad0800000000000000
+      internalID: -2720933763993570826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_46
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 758
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2594c8d674decc540800000000000000
+      internalID: 5029655774902372690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_47
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 758
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7ecfcd8afb76ae0800000000000000
+      internalID: -1556064414250244167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_48
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 758
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a14193fa5d4f6150800000000000000
+      internalID: 5867993892515824038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_49
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 758
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4903b6eeed3c30240800000000000000
+      internalID: 4756860993683533972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_50
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 486
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 561ab53a0f6bbdf70800000000000000
+      internalID: 9213158607365579109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_51
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 486
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6937b1775e5f68a0800000000000000
+      internalID: -6309720823259776659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_52
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 486
+        width: 183
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a101337046f6380800000000000000
+      internalID: -8975845550241867231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_53
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 486
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e467ff4f75def16f0800000000000000
+      internalID: -711589254072928690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_54
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 486
+        width: 185
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f31171d141f76d00800000000000000
+      internalID: 966005910083277810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_55
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 139
+        width: 218
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1948ff089df1733c0800000000000000
+      internalID: -4379997093561924463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Plates Square_56
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 118
+        width: 260
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7a619bd3d4d3a30800000000000000
+      internalID: 4196595355272783823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
