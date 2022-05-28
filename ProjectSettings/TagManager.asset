@@ -11,6 +11,8 @@ TagManager:
   - NextLevel
   - Destroy
   - key
+  - CityEnterance
+  - GroundCheck
   layers:
   - Default
   - TransparentFX
@@ -68,4 +70,7 @@ TagManager:
     locked: 0
   - name: ForestFront
     uniqueID: 2330814979
+    locked: 0
+  - name: Front
+    uniqueID: 598184821
     locked: 0

@@ -7,9 +7,9 @@ public class BecomeSolidOnTrigger : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.CompareTag("Player"))
+        if (col.CompareTag("GroundCheck"))
         {
-            Invoke("BecomeSolid",1f);
+            Invoke("BecomeSolid",0.5f);
         }
     }
 

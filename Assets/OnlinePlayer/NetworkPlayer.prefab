@@ -684,6 +684,7 @@ GameObject:
   - component: {fileID: 5868828862883569358}
   - component: {fileID: 4344789585974963764}
   - component: {fileID: 1499043654072048251}
+  - component: {fileID: 8183043857613660436}
   m_Layer: 3
   m_Name: NetworkPlayer
   m_TagString: Player
@@ -922,6 +923,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Animator: {fileID: 898016080350765649}
+--- !u!114 &8183043857613660436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4433069094075326453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05a819ec207de87448355a26098b6954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatingText: {fileID: 8084587822698253834, guid: 92c7122bd53f1434899944057d796814, type: 3}
 --- !u!1 &5351628296674107217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,9 +1223,10 @@ GameObject:
   m_Component:
   - component: {fileID: 3688595192711655585}
   - component: {fileID: 68483163642298894}
+  - component: {fileID: 7503699025151552164}
   m_Layer: 3
   m_Name: GroundCheck
-  m_TagString: Untagged
+  m_TagString: GroundCheck
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1256,6 +1271,32 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
+--- !u!61 &7503699025151552164
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7868085102071661376}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.016937256, y: 0.10840058}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.19377136, y: 0.18699217}
+  m_EdgeRadius: 0
 --- !u!1 &7868151269586288854
 GameObject:
   m_ObjectHideFlags: 0
