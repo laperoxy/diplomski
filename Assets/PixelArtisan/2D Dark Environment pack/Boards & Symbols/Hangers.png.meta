@@ -1,7 +1,73 @@
 fileFormatVersion: 2
 guid: 934aa8012a9ec104fbf3584562a17a71
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3051294065858413296
+    second: Hangers_0
+  - first:
+      213: 8503115572904519979
+    second: Hangers_1
+  - first:
+      213: 1912175525717277413
+    second: Hangers_2
+  - first:
+      213: -7347168427930560254
+    second: Hangers_3
+  - first:
+      213: 6860661257117467387
+    second: Hangers_4
+  - first:
+      213: -5560939540145612582
+    second: Hangers_5
+  - first:
+      213: 8059036636468736268
+    second: Hangers_6
+  - first:
+      213: -5751246739786893977
+    second: Hangers_7
+  - first:
+      213: 1512896472782495399
+    second: Hangers_8
+  - first:
+      213: 5938567056244785617
+    second: Hangers_9
+  - first:
+      213: -8636437526358953845
+    second: Hangers_10
+  - first:
+      213: -1677701643862331759
+    second: Hangers_11
+  - first:
+      213: 6852379664249367142
+    second: Hangers_12
+  - first:
+      213: -2500919793775140109
+    second: Hangers_13
+  - first:
+      213: 3716229597469997751
+    second: Hangers_14
+  - first:
+      213: -9048195414825266380
+    second: Hangers_15
+  - first:
+      213: -6574143357806589752
+    second: Hangers_16
+  - first:
+      213: 4226420028179191185
+    second: Hangers_17
+  - first:
+      213: -7050483528915486683
+    second: Hangers_18
+  - first:
+      213: -1966768954360677611
+    second: Hangers_19
+  - first:
+      213: -313203076696269612
+    second: Hangers_20
+  - first:
+      213: 8829691750700069747
+    second: Hangers_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,12 +107,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,9 +141,483 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Hangers_0
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 6160
+        width: 706
+        height: 978
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01d704ba630a7a5d0800000000000000
+      internalID: -3051294065858413296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_1
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 6218
+        width: 772
+        height: 952
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29e017ef82210670800000000000000
+      internalID: 8503115572904519979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_2
+      rect:
+        serializedVersion: 2
+        x: 1862
+        y: 6323
+        width: 1067
+        height: 797
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eaf29e6289698a10800000000000000
+      internalID: 1912175525717277413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_3
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 6218
+        width: 942
+        height: 989
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209db34ed3d990a90800000000000000
+      internalID: -7347168427930560254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_4
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 5065
+        width: 782
+        height: 1078
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf285c26017f53f50800000000000000
+      internalID: 6860661257117467387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_5
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 5065
+        width: 852
+        height: 962
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad8523c83f293d2b0800000000000000
+      internalID: -5560939540145612582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_6
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 4878
+        width: 888
+        height: 1286
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01f39c4f1377df60800000000000000
+      internalID: 8059036636468736268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_7
+      rect:
+        serializedVersion: 2
+        x: 3203
+        y: 5036
+        width: 762
+        height: 1022
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765f063cf877f20b0800000000000000
+      internalID: -5751246739786893977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_8
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 3748
+        width: 866
+        height: 1093
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ae542a8353eef410800000000000000
+      internalID: 1512896472782495399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_9
+      rect:
+        serializedVersion: 2
+        x: 1181
+        y: 3793
+        width: 845
+        height: 1001
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d1ce4616470a6250800000000000000
+      internalID: 5938567056244785617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_10
+      rect:
+        serializedVersion: 2
+        x: 2289
+        y: 3708
+        width: 819
+        height: 1132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b80758cd3d5352880800000000000000
+      internalID: -8636437526358953845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_11
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 2521
+        width: 726
+        height: 999
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e2f766e3b97b8e0800000000000000
+      internalID: -1677701643862331759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_12
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 2577
+        width: 792
+        height: 973
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66aa1b9cffa881f50800000000000000
+      internalID: 6852379664249367142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_13
+      rect:
+        serializedVersion: 2
+        x: 1854
+        y: 2683
+        width: 1084
+        height: 816
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f22a40b2b2fa4dd0800000000000000
+      internalID: -2500919793775140109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_14
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 2577
+        width: 960
+        height: 1009
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bafdf42123b29330800000000000000
+      internalID: 3716229597469997751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_15
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1426
+        width: 802
+        height: 1096
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4339509a53a5e6280800000000000000
+      internalID: -9048195414825266380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_16
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 1426
+        width: 870
+        height: 979
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8c1778273f3c4a0800000000000000
+      internalID: -6574143357806589752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_17
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 1241
+        width: 906
+        height: 1304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19597338f9247aa30800000000000000
+      internalID: 4226420028179191185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_18
+      rect:
+        serializedVersion: 2
+        x: 3194
+        y: 1395
+        width: 779
+        height: 1042
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528ff34e596a72e90800000000000000
+      internalID: -7050483528915486683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_19
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 109
+        width: 885
+        height: 1112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bb0107e02a4b4e0800000000000000
+      internalID: -1966768954360677611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_20
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 152
+        width: 865
+        height: 1021
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc95fe067747abf0800000000000000
+      internalID: -313203076696269612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hangers_21
+      rect:
+        serializedVersion: 2
+        x: 2279
+        y: 66
+        width: 837
+        height: 1155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 373bca49ddd598a70800000000000000
+      internalID: 8829691750700069747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

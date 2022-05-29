@@ -12,7 +12,7 @@ public class ItemCollectionScript : MonoBehaviour
     
     private void Start()
     {
-        gotKey = true;
+        gotKey = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -21,15 +21,28 @@ public class ItemCollectionScript : MonoBehaviour
         {
             gotKey = true;
             Destroy(GameObject.FindGameObjectWithTag("key"));
+            floatingText.GetComponentInChildren<TextMesh>().text = "Acquired city gate key";
+            Instantiate(floatingText, transform.position, Quaternion.identity);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("CityEnterance") && gotKey)
+        if (col.gameObject.CompareTag("CityEnterance"))
         {
-            Instantiate(floatingText, transform.position, Quaternion.identity);
-            Invoke("openCityGate",2f);
+            if (gotKey)
+            {
+                floatingText.GetComponentInChildren<TextMesh>().text = "Used key to open the gate";
+                Instantiate(floatingText, transform.position, Quaternion.identity);
+                Invoke("openCityGate",2f);
+            }
+            else
+            {
+                floatingText.GetComponentInChildren<TextMesh>().text = "City gate closed, first find the key";
+                Instantiate(floatingText, transform.position, Quaternion.identity);
+                //Invoke("openCityGate",2f);
+            }
+
         }
     }
 

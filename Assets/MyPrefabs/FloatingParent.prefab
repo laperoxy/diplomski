@@ -82,7 +82,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3099312422651949376}
-  m_Text: Used key to open the gate
+  m_Text: Acquired city gate key
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
@@ -95,7 +95,7 @@ TextMesh:
   m_Font: {fileID: 12800000, guid: 49c80b74356668244a406569f48aa77c, type: 3}
   m_Color:
     serializedVersion: 2
-    rgba: 4278461695
+    rgba: 4288651167
 --- !u!95 &8882762878862990040
 Animator:
   serializedVersion: 3
