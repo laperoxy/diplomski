@@ -23,6 +23,14 @@ public class ItemCollectionScript : MonoBehaviour
             Destroy(GameObject.FindGameObjectWithTag("key"));
             floatingText.GetComponentInChildren<TextMesh>().text = "Acquired city gate key";
             Instantiate(floatingText, transform.position, Quaternion.identity);
+            Destroy(GameObject.FindGameObjectWithTag("ClockTower"));
+        }
+        
+        if (collision.gameObject.CompareTag("ClockTower"))
+        {
+            floatingText.GetComponentInChildren<TextMesh>().text = "Looks like the door is locked \n" +
+                                                                   "I will have to find another way to the top";
+            Instantiate(floatingText, transform.position, Quaternion.identity);
         }
     }
 
