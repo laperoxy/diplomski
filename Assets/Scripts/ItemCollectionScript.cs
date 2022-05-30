@@ -6,10 +6,9 @@ using UnityEngine.UI;
 
 public class ItemCollectionScript : MonoBehaviour
 {
-
     private bool gotKey;
     public GameObject floatingText;
-    
+
     private void Start()
     {
         gotKey = false;
@@ -25,11 +24,18 @@ public class ItemCollectionScript : MonoBehaviour
             Instantiate(floatingText, transform.position, Quaternion.identity);
             Destroy(GameObject.FindGameObjectWithTag("ClockTower"));
         }
-        
+
         if (collision.gameObject.CompareTag("ClockTower"))
         {
             floatingText.GetComponentInChildren<TextMesh>().text = "Looks like the door is locked \n" +
                                                                    "I will have to find another way to the top";
+            Instantiate(floatingText, transform.position, Quaternion.identity);
+        }
+
+        if (!gotKey && collision.gameObject.CompareTag("ClockTowerSign"))
+        {
+            floatingText.GetComponentInChildren<TextMesh>().text = "There is the abandoned Clock tower \n" +
+                                                                   "Looks like there is something shiny on top";
             Instantiate(floatingText, transform.position, Quaternion.identity);
         }
     }
@@ -42,7 +48,7 @@ public class ItemCollectionScript : MonoBehaviour
             {
                 floatingText.GetComponentInChildren<TextMesh>().text = "Used key to open the gate";
                 Instantiate(floatingText, transform.position, Quaternion.identity);
-                Invoke("openCityGate",2f);
+                Invoke("openCityGate", 2f);
             }
             else
             {
@@ -50,7 +56,6 @@ public class ItemCollectionScript : MonoBehaviour
                 Instantiate(floatingText, transform.position, Quaternion.identity);
                 //Invoke("openCityGate",2f);
             }
-
         }
     }
 
@@ -59,5 +64,4 @@ public class ItemCollectionScript : MonoBehaviour
         gotKey = false;
         Destroy(GameObject.FindGameObjectWithTag("CityEnterance"));
     }
-    
 }
