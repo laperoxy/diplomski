@@ -15,6 +15,7 @@ TagManager:
   - GroundCheck
   - ClockTower
   - ClockTowerSign
+  - Void
   layers:
   - Default
   - TransparentFX
