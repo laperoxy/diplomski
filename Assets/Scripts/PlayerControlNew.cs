@@ -33,8 +33,10 @@ public class PlayerControlNew : NetworkBehaviour
     
     private void focusCameraOnPlayer()
     {
-        Camera.main.GetComponent<FollowPlayerScript>().target = transform;
-        Camera.main.orthographicSize = 6.0f;
+        Camera mainCamera = Camera.main;
+        mainCamera.GetComponent<FollowPlayerScript>().target = transform;
+        mainCamera.GetComponent<FollowPlayerScript>().followedGameObject = gameObject;
+        mainCamera.orthographicSize = 6.0f;
 
     }
 

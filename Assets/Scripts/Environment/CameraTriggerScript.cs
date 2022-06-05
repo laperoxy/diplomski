@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Threading;
+using Unity.Netcode;
 using UnityEngine;
 
 public class CameraTriggerScript : MonoBehaviour
@@ -11,12 +12,19 @@ public class CameraTriggerScript : MonoBehaviour
     [SerializeField] private float zoomSmoothness = 1.1f;
     [SerializeField] private float ortographicSizeBeforeZoom = 6.11f;
     [SerializeField] private bool shouldFlipCameraZoom = false;
+    private Camera mainCamera;
     
     private bool shouldUpdate;
     private int zoomIterations = RECOMMENDED_ZOOM_ITERATIONS;
+    private void Start()
+    {
+        mainCamera = Camera.main;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!isActive())
+        GameObject followedGameObject = mainCamera.GetComponent<FollowPlayerScript>().followedGameObject;
+        if (collision.gameObject == followedGameObject && !isActive())
         {
             --zoomIterations; // to make isActive() function return true
             shouldUpdate = true;
@@ -52,10 +60,10 @@ public class CameraTriggerScript : MonoBehaviour
                 smoothPosition = Mathf.Lerp(Camera.main.orthographicSize, wantedOrthographicSize,
                     Time.deltaTime * zoomSmoothness);
             }
-            Camera.main.orthographicSize = smoothPosition;
+            mainCamera.orthographicSize = smoothPosition;
             if (--zoomIterations <= 0)
             {
-                Camera.main.orthographicSize = wantedOrthographicSize;
+                mainCamera.orthographicSize = wantedOrthographicSize;
                 if (!shouldFlipCameraZoom)
                 {
                     Destroy(this);
@@ -72,7 +80,7 @@ public class CameraTriggerScript : MonoBehaviour
 
     private float calculateSmoothPositionInLastIterations(int iterations)
     {
-        var mainOrthographicSize = Camera.main.orthographicSize;
+        var mainOrthographicSize = mainCamera.orthographicSize;
         float iteration = Math.Abs(wantedOrthographicSize - mainOrthographicSize)/iterations;
         if (wantedOrthographicSize < mainOrthographicSize)
         {

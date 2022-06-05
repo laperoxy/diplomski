@@ -5,6 +5,7 @@ using UnityEngine;
 public class FollowPlayerScript : MonoBehaviour
 {
 
+    public GameObject followedGameObject;
     public Transform target;
     public Vector3 offset;
     [Range(1, 10)]
