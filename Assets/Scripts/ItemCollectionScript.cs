@@ -6,13 +6,8 @@ using UnityEngine.UI;
 
 public class ItemCollectionScript : MonoBehaviour
 {
-    private bool gotKey;
+    [SerializeField] private bool gotKey;
     public GameObject floatingText;
-
-    private void Start()
-    {
-        gotKey = false;
-    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
