@@ -16,6 +16,7 @@ TagManager:
   - ClockTower
   - ClockTowerSign
   - Void
+  - PillarToDestroy
   layers:
   - Default
   - TransparentFX

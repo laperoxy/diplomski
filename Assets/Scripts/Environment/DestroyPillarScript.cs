@@ -5,24 +5,20 @@ using UnityEngine;
 
 public class DestroyPillarScript : MonoBehaviour
 {
-    private Camera mainCamera;
-    private void Start()
-    {
-        mainCamera = Camera.main;
-    }
+    private GameObject pillar;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        GameObject followedGameObject = mainCamera.GetComponent<FollowPlayerScript>().followedGameObject;
-        if (collision.gameObject.Equals(followedGameObject))
+        if (pillar==null)
         {
-            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            pillar = GameObject.FindWithTag("PillarToDestroy");
+            pillar.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             Invoke(nameof(DestroyPillarObject),2f);
         }
     }
 
     private void DestroyPillarObject()
     {
-        Destroy(gameObject);
+        Destroy(pillar);
     }
 }
