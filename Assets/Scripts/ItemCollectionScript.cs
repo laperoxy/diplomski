@@ -43,7 +43,7 @@ public class ItemCollectionScript : MonoBehaviour
             {
                 floatingText.GetComponentInChildren<TextMesh>().text = "Used key to open the gate";
                 Instantiate(floatingText, transform.position, Quaternion.identity);
-                Invoke("openCityGate", 2f);
+                OpenCityGate();
             }
             else
             {
@@ -54,7 +54,7 @@ public class ItemCollectionScript : MonoBehaviour
         }
     }
 
-    private void openCityGate()
+    private void OpenCityGate()
     {
         gotKey = false;
         Destroy(GameObject.FindGameObjectWithTag("CityEnterance"));
