@@ -5,10 +5,7 @@ using UnityEngine;
 
 public class DestroyPillarScript : MonoBehaviour
 {
-
-    public Rigidbody2D rb;
     private Camera mainCamera;
-
     private void Start()
     {
         mainCamera = Camera.main;
@@ -19,7 +16,7 @@ public class DestroyPillarScript : MonoBehaviour
         GameObject followedGameObject = mainCamera.GetComponent<FollowPlayerScript>().followedGameObject;
         if (collision.gameObject.Equals(followedGameObject))
         {
-            rb.bodyType = RigidbodyType2D.Dynamic;
+            GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             Invoke(nameof(DestroyObject),2f);
         }
     }

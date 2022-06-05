@@ -786,7 +786,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd2d511aaa151e1419955c5dabb9f986, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb: {fileID: 28131639}
 --- !u!61 &28131638
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -813,11 +812,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.7204895, y: 0.8002105}
   m_EdgeRadius: 0
---- !u!50 &28131639 stripped
-Rigidbody2D:
-  m_CorrespondingSourceObject: {fileID: 4916348149416968560, guid: befe497adee06a841af5d54b08b785f5, type: 3}
-  m_PrefabInstance: {fileID: 6770082786384554274}
-  m_PrefabAsset: {fileID: 0}
 --- !u!82 &28131641
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11757,8 +11751,6 @@ GameObject:
   m_Component:
   - component: {fileID: 568888307}
   - component: {fileID: 568888308}
-  - component: {fileID: 568888309}
-  - component: {fileID: 568888310}
   m_Layer: 0
   m_Name: ClockTower
   m_TagString: Untagged
@@ -11829,53 +11821,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.974365, y: 0.4603119}
   m_EdgeRadius: 0
---- !u!68 &568888309
-EdgeCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568888306}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_EdgeRadius: 0
-  m_Points:
-  - {x: -217.94849, y: 51.089954}
-  - {x: -221.28601, y: 51.11116}
-  - {x: -221.84995, y: 51.557774}
-  - {x: -222.70288, y: 52.1632}
-  - {x: -223.67348, y: 52.67738}
-  - {x: -225.9094, y: 53.40406}
-  - {x: -226.58086, y: 53.109097}
-  - {x: -227.76343, y: 53.264805}
-  - {x: -228.01906, y: 53.512547}
-  - {x: -228.81699, y: 53.08093}
-  - {x: -229.18228, y: 53.160454}
-  - {x: -230.01048, y: 52.438046}
-  - {x: -231.20139, y: 51.976234}
-  - {x: -232.81116, y: 51.18118}
-  - {x: -235.9646, y: 51.139294}
-  m_AdjacentStartPoint: {x: 0, y: 0}
-  m_AdjacentEndPoint: {x: 0, y: 0}
-  m_UseAdjacentStartPoint: 0
-  m_UseAdjacentEndPoint: 0
---- !u!114 &568888310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568888306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 017012e1dfe870d4bbf3f46f8ed428a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &573677525
 GameObject:
   m_ObjectHideFlags: 0
