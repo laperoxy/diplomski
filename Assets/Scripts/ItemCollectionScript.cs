@@ -1,8 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class ItemCollectionScript : MonoBehaviour
 {
@@ -15,7 +12,7 @@ public class ItemCollectionScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("key"))
         {
-            gotKey = true;
+            transitionKeyOwnershipToGrabber();
             Destroy(GameObject.FindGameObjectWithTag("key"));
             SetAndShowText("Acquired city gate key");
             Destroy(GameObject.FindGameObjectWithTag("ClockTower"));
@@ -33,6 +30,16 @@ public class ItemCollectionScript : MonoBehaviour
                            "Looks like there is something shiny on top");
         }
     }
+
+    private void transitionKeyOwnershipToGrabber()
+    {
+        GameObject followedGameObject = Camera.main.GetComponent<FollowPlayerScript>().followedGameObject;
+        if (gameObject.Equals(followedGameObject))
+        { 
+            gotKey = true;
+        }
+    }
+
     private void OnCollisionEnter2D(Collision2D col)
     {
         if (col.gameObject.CompareTag("CityEnterance"))
