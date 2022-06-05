@@ -1,22 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class DestroyPillarScript : MonoBehaviour
 {
+    private GameObject pillar;
 
-    public Rigidbody2D rb;
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (pillar==null)
         {
-            rb.bodyType = RigidbodyType2D.Dynamic;
-            Invoke(nameof(DestroyObject),2f);
+            pillar = GameObject.FindWithTag("PillarToDestroy");
+            pillar.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            Invoke(nameof(DestroyPillarObject),2f);
         }
     }
 
-    private void DestroyObject()
+    private void DestroyPillarObject()
     {
-        Destroy(GameObject.FindWithTag("Destroy"));
+        Destroy(pillar);
     }
 }

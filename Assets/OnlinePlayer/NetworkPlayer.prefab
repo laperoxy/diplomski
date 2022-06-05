@@ -1206,7 +1206,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfab7010a7563e040b15578bbad27607, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 900
+  m_JumpForce: 815
   m_MovementSmoothing: 0.03
   m_AirControl: 1
   m_WhatIsGround:
@@ -1353,6 +1353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a819ec207de87448355a26098b6954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gotKey: 1
   floatingText: {fileID: 8084587822698253834, guid: 92c7122bd53f1434899944057d796814, type: 3}
 --- !u!114 &3798150478370565037
 MonoBehaviour:
