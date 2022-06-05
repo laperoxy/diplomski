@@ -9,7 +9,7 @@ public class ItemCollectionScript : MonoBehaviour
     [SerializeField] private bool gotKey;
     public GameObject floatingText;
     private float lastPopupTime; //time in seconds
-    private const float POPUP_COOLDOWN = 2; 
+    private const float POPUP_COOLDOWN = 3; 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
