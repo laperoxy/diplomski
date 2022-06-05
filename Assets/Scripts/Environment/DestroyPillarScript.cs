@@ -17,11 +17,11 @@ public class DestroyPillarScript : MonoBehaviour
         if (collision.gameObject.Equals(followedGameObject))
         {
             GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-            Invoke(nameof(DestroyObject),2f);
+            Invoke(nameof(DestroyPillarObject),2f);
         }
     }
 
-    private void DestroyObject()
+    private void DestroyPillarObject()
     {
         Destroy(gameObject);
     }
