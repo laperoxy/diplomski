@@ -35,6 +35,7 @@ public class PlayerControlNew : NetworkBehaviour
     {
         Camera.main.GetComponent<FollowPlayerScript>().target = transform;
         Camera.main.orthographicSize = 6.0f;
+
     }
 
     // Update is called once per frame

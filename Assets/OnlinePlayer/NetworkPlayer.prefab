@@ -1100,7 +1100,6 @@ GameObject:
   - component: {fileID: 5658177992477792161}
   - component: {fileID: 5658177992477792160}
   - component: {fileID: 5658177992477792163}
-  - component: {fileID: 826490966525387885}
   m_Layer: 3
   m_Name: NetworkPlayer
   m_TagString: Player
@@ -1254,7 +1253,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c5ac40c3d9543a14194005900bbdd580, type: 2}
+  - {fileID: 2100000, guid: dce4faabfa7d00147bb7d853e5c1fbf3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1354,19 +1353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floatingText: {fileID: 8084587822698253834, guid: 92c7122bd53f1434899944057d796814, type: 3}
---- !u!114 &826490966525387885
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5658177992477792162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fff559ce24a5f344db4c81c7d02f4734, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hb: {fileID: 5658177991908827861}
 --- !u!1 &5658177992648984606
 GameObject:
   m_ObjectHideFlags: 0

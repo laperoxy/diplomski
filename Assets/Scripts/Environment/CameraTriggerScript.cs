@@ -1,10 +1,9 @@
 ﻿
 using System;
 using System.Threading;
-using Unity.Netcode;
 using UnityEngine;
 
-public class CameraTriggerScript : NetworkBehaviour
+public class CameraTriggerScript : MonoBehaviour
 {
 
     private const int RECOMMENDED_ZOOM_ITERATIONS = 120;
@@ -12,19 +11,12 @@ public class CameraTriggerScript : NetworkBehaviour
     [SerializeField] private float zoomSmoothness = 1.1f;
     [SerializeField] private float ortographicSizeBeforeZoom = 6.11f;
     [SerializeField] private bool shouldFlipCameraZoom = false;
-    [SerializeField] private Camera mainCamera;
     
     private bool shouldUpdate;
     private int zoomIterations = RECOMMENDED_ZOOM_ITERATIONS;
-
-    private void Start()
-    {
-        mainCamera = Camera.main;
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (IsClient && !isActive())
+        if (!isActive())
         {
             --zoomIterations; // to make isActive() function return true
             shouldUpdate = true;
@@ -48,7 +40,7 @@ public class CameraTriggerScript : NetworkBehaviour
 
     private void FixedUpdate()
     {
-        if (IsClient && shouldUpdate)
+        if (shouldUpdate)
         {
             float smoothPosition;
             if (zoomIterations < (RECOMMENDED_ZOOM_ITERATIONS/4))
@@ -57,13 +49,13 @@ public class CameraTriggerScript : NetworkBehaviour
             }
             else
             {
-                smoothPosition = Mathf.Lerp(mainCamera.orthographicSize, wantedOrthographicSize,
+                smoothPosition = Mathf.Lerp(Camera.main.orthographicSize, wantedOrthographicSize,
                     Time.deltaTime * zoomSmoothness);
             }
-            mainCamera.orthographicSize = smoothPosition;
+            Camera.main.orthographicSize = smoothPosition;
             if (--zoomIterations <= 0)
             {
-                mainCamera.orthographicSize = wantedOrthographicSize;
+                Camera.main.orthographicSize = wantedOrthographicSize;
                 if (!shouldFlipCameraZoom)
                 {
                     Destroy(this);
@@ -80,7 +72,7 @@ public class CameraTriggerScript : NetworkBehaviour
 
     private float calculateSmoothPositionInLastIterations(int iterations)
     {
-        var mainOrthographicSize = mainCamera.orthographicSize;
+        var mainOrthographicSize = Camera.main.orthographicSize;
         float iteration = Math.Abs(wantedOrthographicSize - mainOrthographicSize)/iterations;
         if (wantedOrthographicSize < mainOrthographicSize)
         {
