@@ -3,29 +3,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestroyPillarScript : MonoBehaviour
+public class BecomeSolidOnTrigger : MonoBehaviour
 {
-
-    public Rigidbody2D rb;
     private Camera mainCamera;
-
     private void Start()
     {
         mainCamera = Camera.main;
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject followedGameObject = mainCamera.GetComponent<FollowPlayerScript>().followedGameObject;
         if (collision.gameObject.Equals(followedGameObject))
         {
-            rb.bodyType = RigidbodyType2D.Dynamic;
-            Invoke(nameof(DestroyObject),2f);
+            Invoke(nameof(BecomeSolid),0.5f);
         }
     }
 
-    private void DestroyObject()
+    private void BecomeSolid()
     {
-        Destroy(gameObject);
+        gameObject.GetComponent<EdgeCollider2D>().isTrigger = false;
     }
 }
