@@ -1137,7 +1137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -32}
+  m_AnchoredPosition: {x: 0, y: -78}
   m_SizeDelta: {x: 415.2899, y: 400.5005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &638438057
@@ -2090,7 +2090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5, y: 236}
+  m_AnchoredPosition: {x: 5, y: 223}
   m_SizeDelta: {x: -626.2085, y: -518.364}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539208003
@@ -2113,7 +2113,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2D GAME
+  m_text: 'KLEGIMEN SIM2D '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 680225f45d0811a42821b81de71cca9f, type: 2}
   m_sharedMaterial: {fileID: 2088446492444182338, guid: 680225f45d0811a42821b81de71cca9f, type: 2}
