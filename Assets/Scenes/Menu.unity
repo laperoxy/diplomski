@@ -394,8 +394,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 8}
-  m_SizeDelta: {x: 376.0132, y: 108.0279}
+  m_AnchoredPosition: {x: 0, y: -1}
+  m_SizeDelta: {x: 316.1103, y: 72.7697}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &218718601
 MonoBehaviour:
@@ -589,8 +589,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1051,8 +1051,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1137,7 +1137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -78}
+  m_AnchoredPosition: {x: 0, y: -67}
   m_SizeDelta: {x: 415.2899, y: 400.5005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &638438057
@@ -1188,8 +1188,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -110}
-  m_SizeDelta: {x: 236.116, y: 108.0279}
+  m_AnchoredPosition: {x: 0, y: -116}
+  m_SizeDelta: {x: 183.3092, y: 69.8897}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &679849476
 MonoBehaviour:
@@ -1360,8 +1360,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 126}
-  m_SizeDelta: {x: 242.7253, y: 108.0279}
+  m_AnchoredPosition: {x: 0, y: 111}
+  m_SizeDelta: {x: 190.5023, y: 72.7006}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &881396603
 MonoBehaviour:
@@ -1543,8 +1543,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2090,7 +2090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5, y: 223}
+  m_AnchoredPosition: {x: 5, y: 221}
   m_SizeDelta: {x: -626.2085, y: -518.364}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1539208003
@@ -2113,7 +2113,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'KLEGIMEN SIM2D '
+  m_text: 'KLEGIMEN 2D '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 680225f45d0811a42821b81de71cca9f, type: 2}
   m_sharedMaterial: {fileID: 2088446492444182338, guid: 680225f45d0811a42821b81de71cca9f, type: 2}
@@ -2140,8 +2140,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60
-  m_fontSizeBase: 60
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
