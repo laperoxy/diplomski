@@ -6,6 +6,8 @@ using UnityEngine.UIElements;
 
 public class WeaponScript : MonoBehaviour
 {
+
+    private const int SHOOTING_STAMINA_COST = 2;
     private const float MaxStamina = 20f;
     private const float StaminaRefillValue = 0.05f;
 
@@ -54,7 +56,7 @@ public class WeaponScript : MonoBehaviour
                 if ((GetComponentInParent<CharacterController2D>().transform.localScale.x > 0 && difference.x > 0)
                     || (GetComponentInParent<CharacterController2D>().transform.localScale.x < 0 && difference.x < 0))
                 {
-                    if (StaminaDamage(5))
+                    if (StaminaDamage(SHOOTING_STAMINA_COST))
                     {
                         animator.SetTrigger("Shooting");
                         Instantiate(projectile, shotPoint.position, transform.rotation);
