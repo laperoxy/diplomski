@@ -1210,9 +1210,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_LightType: 3
   m_BlendStyleIndex: 0
-  m_FalloffIntensity: 0.63
+  m_FalloffIntensity: 0.509
   m_Color: {r: 0.990566, g: 0.041628744, b: 0.032707386, a: 1}
-  m_Intensity: 0.92
+  m_Intensity: 0.68
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 00000000
   m_LightCookieSprite: {fileID: 0}
@@ -1287,7 +1287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.6901961, b: 0.2627451, a: 1}
+  m_Color: {r: 0.6603774, g: 0, b: 0.022412786, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
