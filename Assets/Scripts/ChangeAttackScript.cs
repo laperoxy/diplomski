@@ -5,7 +5,7 @@ public class ChangeAttackScript : MonoBehaviour
 {
     [SerializeField] private Text attackSwitch;
     [SerializeField] private Image attack;
-    
+
     [SerializeField] private Sprite soulPushSprite;
     [SerializeField] private Sprite soulFragmentSprite;
 
@@ -13,8 +13,7 @@ public class ChangeAttackScript : MonoBehaviour
 
     public GameObject soulPush;
     public GameObject soulFragment;
-    
-    
+
 
     private void Start()
     {
@@ -24,20 +23,21 @@ public class ChangeAttackScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire3"))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
-            if (ws.getProjectile().Equals(soulPush))
-            {
-                ws.setProjectile(soulFragment);
-                attackSwitch.text = "Soul fragment";
-                attack.sprite = soulFragmentSprite;
-            }
-            else
-            {
-                ws.setProjectile(soulPush);
-                attackSwitch.text = "Soul Push";
-                attack.sprite = soulPushSprite;
-            }
+            //if (ws.getProjectile().Equals(soulPush))
+            //{
+            ws.setProjectile(soulFragment);
+            attackSwitch.text = "Soul fragment";
+            attack.sprite = soulFragmentSprite;
+            //}
+        }
+        else if (Input.GetKeyDown(KeyCode.E))
+        {
+            ws.setProjectile(soulPush);
+
+            attackSwitch.text = "Soul Push";
+            attack.sprite = soulPushSprite;
         }
     }
 }
