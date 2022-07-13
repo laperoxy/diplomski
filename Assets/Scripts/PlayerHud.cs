@@ -1,4 +1,5 @@
 ﻿using System;
+using TMPro;
 using Unity.Collections;
 using Unity.Netcode;
 
@@ -8,11 +9,26 @@ public class PlayerHud: NetworkBehaviour
 
     private bool overlaySet = false;
 
-    public void OnConnectedToServer()
+    public override void OnNetworkSpawn()
     {
         if (IsServer)
         {
             playersName.Value = $"Player {OwnerClientId}";
+        }
+    }
+
+    public void SetOverlay()
+    {
+        var localPlayerName = gameObject.GetComponentInChildren<TextMeshProUGUI>();
+        localPlayerName.text = playersName.Value.ToString();
+        overlaySet = true;
+    }
+
+    public void Update()
+    {
+        if(!overlaySet && !string.IsNullOrEmpty(playersName.Value))
+        {
+            SetOverlay();
         }
     }
 }
@@ -28,7 +44,7 @@ public struct NetworkString : INetworkSerializable
 
     public override string ToString()
     {
-        return info.ToString();
+        return info.Value.ToString();
     }
 
     public static implicit operator string(NetworkString s) => s.ToString();

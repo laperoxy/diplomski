@@ -1,1 +1,1 @@
-{"volume":0.0,"isFullscreen":false,"resolutionIndex":18,"qualityIndex":0}
+{"volume":1.0,"isFullscreen":false,"resolutionIndex":18,"qualityIndex":0}
