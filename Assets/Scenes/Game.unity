@@ -6093,13 +6093,13 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -8.635, y: 0.8163061}
-  - {x: -7.0506706, y: 0.84494877}
-  - {x: -7.0224266, y: 0.65518713}
+  - {x: -7.1520653, y: 0.79425097}
+  - {x: -6.7942886, y: 0.75658274}
   - {x: -1.5840912, y: 1.2686706}
   - {x: -1.5746422, y: 1.5280628}
   - {x: 0.0591774, y: 2.0116124}
-  - {x: 1.500351, y: 1.6346426}
-  - {x: 1.5077934, y: 1.3460836}
+  - {x: 1.4332504, y: 1.5675411}
+  - {x: 1.709095, y: 1.2789826}
   - {x: 3.3366241, y: 1.1529651}
   - {x: 5.831768, y: 0.88209057}
   - {x: 8.460077, y: 0.78715277}
@@ -23081,7 +23081,7 @@ SpriteRenderer:
   m_SortingLayer: -3
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 14b62b10a3404a5489805dcd8641070e, type: 3}
-  m_Color: {r: 0.9811321, g: 0.50445, b: 0.50445, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -31140,14 +31140,14 @@ EdgeCollider2D:
   - {x: -134.67603, y: 5.0698695}
   - {x: -135.42903, y: 7.0488787}
   - {x: -135.77333, y: 7.4889517}
-  - {x: -136.25854, y: 7.5305953}
+  - {x: -136.24052, y: 7.4945803}
   - {x: -136.51625, y: 8.321047}
-  - {x: -137.0058, y: 8.476098}
-  - {x: -137.56805, y: 9.204079}
+  - {x: -137.0058, y: 8.332038}
+  - {x: -137.47801, y: 9.150056}
   - {x: -138.5077, y: 9.148968}
   - {x: -139.05058, y: 9.629933}
-  - {x: -139.42276, y: 9.862556}
-  - {x: -140.49037, y: 9.817625}
+  - {x: -139.42276, y: 9.669958}
+  - {x: -140.01958, y: 9.689226}
   m_AdjacentStartPoint: {x: 0, y: 0}
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
@@ -43264,6 +43264,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1777188050}
+  - component: {fileID: 1777188051}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -43288,6 +43289,39 @@ Transform:
   m_Father: {fileID: 1734908930}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1777188051
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777188049}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -190.96141, y: 12.5297}
+  - {x: -190.32379, y: 12.104588}
+  - {x: -189.39, y: 12.072528}
+  - {x: -189.39, y: 12.072528}
+  - {x: -189.09045, y: 11.707977}
+  - {x: -188.8798, y: 11.67275}
+  - {x: -188.77689, y: 11.209902}
+  - {x: -188.21043, y: 11.146402}
+  - {x: -188.03122, y: 10.3856325}
+  - {x: -187.51282, y: 10.363601}
+  - {x: -187.1739, y: 9.78777}
+  - {x: -186.86818, y: 9.79714}
+  - {x: -186.80464, y: 9.284543}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
 --- !u!1 &1780822028
 GameObject:
   m_ObjectHideFlags: 0
