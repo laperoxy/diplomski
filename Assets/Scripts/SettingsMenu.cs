@@ -1,6 +1,8 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Net;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -13,6 +15,13 @@ public class SettingsMenu : MonoBehaviour
     [SerializeField] private Slider volumeSlider = null;
     public TMP_Dropdown resolutionDropwdown;
     private Resolution[] resolutions;
+
+    private float my_volume;
+    private bool my_isFullscreen;
+    private int my_resolutionIndex;
+    private int my_qualityIndex;
+
+    private string json;
 
     private void Start()
     {
@@ -37,12 +46,23 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropwdown.AddOptions(options);
         resolutionDropwdown.value = resolutions.Length - 1;
         resolutionDropwdown.RefreshShownValue();
+
+        SaveObject loadedSavedSettings = JsonUtility.FromJson<SaveObject>(json);
+
+        if (loadedSavedSettings != null)
+        {
+            SetVolume(loadedSavedSettings.volume);
+            SetResolution(loadedSavedSettings.resolutionIndex);
+            SetFullScreen(loadedSavedSettings.isFullscreen);
+            SetQuality(loadedSavedSettings.qualityIndex);
+        }
     }
 
-    public void SetResolution(int resultionIndex)
+    public void SetResolution(int resulutionIndex)
     {
-        Resolution resolution = resolutions[resultionIndex];
+        Resolution resolution = resolutions[resulutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        my_resolutionIndex = resulutionIndex;
     }
 
     public void SetVolume(float volume)
@@ -56,6 +76,8 @@ public class SettingsMenu : MonoBehaviour
         {
             muteIcon.SetActive(false);
         }
+
+        my_volume = volume;
     }
 
     public void VolumeButton()
@@ -75,10 +97,36 @@ public class SettingsMenu : MonoBehaviour
     public void SetFullScreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
+        my_isFullscreen = isFullscreen;
     }
 
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+        my_qualityIndex = qualityIndex;
+    }
+
+    public void SaveBeforeReturn()
+    {
+        SaveObject saveObject = new SaveObject
+        {
+            volume = my_volume,
+            isFullscreen = my_isFullscreen,
+            resolutionIndex = my_resolutionIndex,
+            qualityIndex = my_qualityIndex
+        };
+
+        json = JsonUtility.ToJson(saveObject);
+        
+        File.WriteAllText(Application.dataPath + "/save.txt", json);
+        Debug.Log(Application.dataPath);
+    }
+
+    private class SaveObject
+    {
+        public float volume;
+        public bool isFullscreen;
+        public int resolutionIndex;
+        public int qualityIndex;
     }
 }
