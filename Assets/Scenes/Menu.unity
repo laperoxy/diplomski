@@ -1456,7 +1456,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 832047518}
+      - m_Target: {fileID: 638438058}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: VolumeButton
         m_Mode: 1
@@ -2269,7 +2269,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 832047518}
+      - m_Target: {fileID: 638438058}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetQuality
         m_Mode: 0
@@ -2405,6 +2405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 638438056}
   - component: {fileID: 638438057}
+  - component: {fileID: 638438058}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -2447,6 +2448,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0538ee2badc9b3a4cafba19271a12805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &638438058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638438055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83316951afcd68b4aa8bcec87b2a9c76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  muteIcon: {fileID: 230559415}
+  volumeSlider: {fileID: 2006989204}
+  toggle: {fileID: 1158924108}
+  resolutionDropwdown: {fileID: 693748061}
+  graphicsDropdown: {fileID: 546630070}
 --- !u!1 &693748059
 GameObject:
   m_ObjectHideFlags: 0
@@ -2547,7 +2565,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832047518}
+      - m_Target: {fileID: 638438058}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetResolution
         m_Mode: 0
@@ -3138,7 +3156,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 832047517}
-  - component: {fileID: 832047518}
   m_Layer: 5
   m_Name: OptionsMenu
   m_TagString: Untagged
@@ -3175,21 +3192,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 494.9066, y: 477.2818}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &832047518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 832047516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83316951afcd68b4aa8bcec87b2a9c76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  muteIcon: {fileID: 230559415}
-  volumeSlider: {fileID: 2006989204}
-  resolutionDropwdown: {fileID: 693748061}
 --- !u!1 &879797126
 GameObject:
   m_ObjectHideFlags: 0
@@ -4278,10 +4280,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 832047518}
+      - m_Target: {fileID: 638438058}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetFullScreen
-        m_Mode: 0
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -7086,7 +7088,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 832047518}
+      - m_Target: {fileID: 638438058}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -7356,7 +7358,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 832047518}
+      - m_Target: {fileID: 638438058}
         m_TargetAssemblyTypeName: SettingsMenu, Assembly-CSharp
         m_MethodName: SaveBeforeReturn
         m_Mode: 1

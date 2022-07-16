@@ -4,16 +4,20 @@ using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using TMPro;
+using TMPro.EditorUtilities;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using Slider = UnityEngine.UI.Slider;
+using Toggle = UnityEngine.UI.Toggle;
 
 public class SettingsMenu : MonoBehaviour
 {
     [SerializeField] private GameObject muteIcon;
     [SerializeField] private Slider volumeSlider = null;
-    public TMP_Dropdown resolutionDropwdown;
+    [SerializeField] private Toggle toggle = null;
+    [SerializeField] private TMP_Dropdown resolutionDropwdown = null;
+    [SerializeField] private TMP_Dropdown graphicsDropdown = null;
     private Resolution[] resolutions;
 
     private float my_volume;
@@ -47,14 +51,28 @@ public class SettingsMenu : MonoBehaviour
         resolutionDropwdown.value = resolutions.Length - 1;
         resolutionDropwdown.RefreshShownValue();
 
-        SaveObject loadedSavedSettings = JsonUtility.FromJson<SaveObject>(json);
+        LoadSettings();
+    }
 
-        if (loadedSavedSettings != null)
+    private void LoadSettings()
+    {
+        if (File.Exists(Application.dataPath + "/save.txt"))
         {
+            string saveString = File.ReadAllText(Application.dataPath + "/save.txt");
+            SaveObject loadedSavedSettings = JsonUtility.FromJson<SaveObject>(saveString);
             SetVolume(loadedSavedSettings.volume);
+
+            resolutionDropwdown.value = loadedSavedSettings.resolutionIndex;
+            resolutionDropwdown.RefreshShownValue();
             SetResolution(loadedSavedSettings.resolutionIndex);
+
             SetFullScreen(loadedSavedSettings.isFullscreen);
+
+            graphicsDropdown.value = loadedSavedSettings.qualityIndex;
+            graphicsDropdown.RefreshShownValue();
             SetQuality(loadedSavedSettings.qualityIndex);
+
+            Debug.Log(saveString);
         }
     }
 
@@ -68,6 +86,7 @@ public class SettingsMenu : MonoBehaviour
     public void SetVolume(float volume)
     {
         AudioListener.volume = volume;
+        volumeSlider.value = volume;
         if (volume == 0)
         {
             muteIcon.SetActive(true);
@@ -98,6 +117,7 @@ public class SettingsMenu : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
         my_isFullscreen = isFullscreen;
+        toggle.isOn = isFullscreen;
     }
 
     public void SetQuality(int qualityIndex)
@@ -117,9 +137,8 @@ public class SettingsMenu : MonoBehaviour
         };
 
         json = JsonUtility.ToJson(saveObject);
-        
+
         File.WriteAllText(Application.dataPath + "/save.txt", json);
-        Debug.Log(Application.dataPath);
     }
 
     private class SaveObject
