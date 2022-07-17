@@ -62,15 +62,18 @@ public class WebPost: MonoBehaviour
 
         yield return www.SendWebRequest();
 
+        // klasican registration flow, ako je fail uzet je username, u suprotnom sve okej
         if (www.result != UnityWebRequest.Result.Success)
         {
             Debug.Log(www.error);
         }
         else
         {
-            string results = www.downloadHandler.text;
+            string result = www.downloadHandler.text;
+            LoginData loginData = ExtractLoginDataFromResult(username, result);
+            SaveLoginData(loginData);
             
-            Debug.Log(results);
+            Debug.Log(result);
         }
         
         www.Dispose();
@@ -85,17 +88,6 @@ public class WebPost: MonoBehaviour
 
         yield return www.SendWebRequest();
 
-        if (www.result != UnityWebRequest.Result.Success)
-        {
-            Debug.Log(www.error);
-        }
-        else
-        {
-            string results = www.downloadHandler.text;
-            
-            Debug.Log(results);
-        }
-        
         www.Dispose();
     }
     IEnumerator TokenLogIn(string username, string token)
@@ -108,15 +100,19 @@ public class WebPost: MonoBehaviour
 
         yield return www.SendWebRequest();
 
+        // ako rezultat nije 200 (uspesan) ovde je potrebno da se korisnik uloguje (ili registruje), u suprotnom 
+        // mu se vec zna username i moze da pocne novu igru
         if (www.result != UnityWebRequest.Result.Success)
         {
             Debug.Log(www.error);
         }
         else
         {
-            string results = www.downloadHandler.text;
-            
-            Debug.Log(results);
+            string result = www.downloadHandler.text;
+            TimePlayedInstance timePlayed = JsonUtility.FromJson<TimePlayedInstance>(result);
+            LoginData loginData = new LoginData(username, token, timePlayed.TimePlayed);
+            SaveLoginData(loginData);
+            Debug.Log(result);
         }
         
         www.Dispose();
