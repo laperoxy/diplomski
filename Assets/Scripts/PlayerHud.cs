@@ -1,19 +1,30 @@
-﻿using System;
+﻿using System.IO;
 using TMPro;
 using Unity.Collections;
 using Unity.Netcode;
+using UnityEngine;
 
 public class PlayerHud: NetworkBehaviour
 {
     private NetworkVariable<NetworkString> playersName = new NetworkVariable<NetworkString>();
 
     private bool overlaySet = false;
+    private readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
 
     public override void OnNetworkSpawn()
     {
         if (IsServer)
         {
-            playersName.Value = $"Player {OwnerClientId}";
+            if (File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
+            {
+                string savedCredentials = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
+                LoginData loadedLoginData = JsonUtility.FromJson<LoginData>(savedCredentials);
+                playersName.Value = $"{loadedLoginData.Username}";
+            }
+            else
+            {
+                playersName.Value = $"Player {OwnerClientId}";
+            }
         }
     }
 
