@@ -1,16 +1,24 @@
-﻿namespace JSONClasses
-{ 
-    [System.Serializable]
-    public class LoginData
-    {
-        public string Username { get; set;}
-        
-        public TokenTimeResponse TokenTimeResponse { get; set;}
+﻿
+public class LoginData
+{
+    public string Username;
+    
+    public string Token;
 
-        public LoginData(string username, TokenTimeResponse tokenTimeResponse)
-        {
-            Username = username;
-            TokenTimeResponse = tokenTimeResponse;
-        }
+    public long TimePlayed;
+
+    public LoginData(string username, string token, long timePlayed)
+    {
+        Username = username;
+        Token = token;
+        TimePlayed = timePlayed;
     }
+
+    public LoginData(string username, TokenTimeResponse tokenTimeResponse)
+    {
+        Username = username;
+        Token = tokenTimeResponse.Token;
+        TimePlayed = tokenTimeResponse.TimePlayed;
+    }
+    
 }

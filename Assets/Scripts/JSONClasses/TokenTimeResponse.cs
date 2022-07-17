@@ -1,16 +1,13 @@
-﻿namespace JSONClasses
+﻿
+public class TokenTimeResponse
 {
-    [System.Serializable]
-    public class TokenTimeResponse
-    {
-        public string Token { get; set; }
-        
-        public long TimePlayed { get; set;}
+    public string Token;
 
-        public TokenTimeResponse(string token = "", long timePlayed = 0)
-        {
-            Token = token;
-            TimePlayed = timePlayed;
-        }
+    public long TimePlayed;
+
+    public TokenTimeResponse(string token, long timePlayed)
+    {
+        Token = token;
+        TimePlayed = timePlayed;
     }
 }
