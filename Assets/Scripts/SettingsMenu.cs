@@ -24,6 +24,7 @@ public class SettingsMenu : MonoBehaviour
     private bool my_isFullscreen;
     private int my_resolutionIndex;
     private int my_qualityIndex;
+    private readonly string SAVE_FILE_EXTENSION = "/save.txt";
 
     private string json;
 
@@ -56,9 +57,9 @@ public class SettingsMenu : MonoBehaviour
 
     private void LoadSettings()
     {
-        if (File.Exists(Application.dataPath + "/save.txt"))
+        if (File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
         {
-            string saveString = File.ReadAllText(Application.dataPath + "/save.txt");
+            string saveString = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
             SaveObject loadedSavedSettings = JsonUtility.FromJson<SaveObject>(saveString);
             SetVolume(loadedSavedSettings.volume);
 
@@ -138,7 +139,7 @@ public class SettingsMenu : MonoBehaviour
 
         json = JsonUtility.ToJson(saveObject);
 
-        File.WriteAllText(Application.dataPath + "/save.txt", json);
+        File.WriteAllText(Application.dataPath + SAVE_FILE_EXTENSION, json);
     }
 
     private class SaveObject
