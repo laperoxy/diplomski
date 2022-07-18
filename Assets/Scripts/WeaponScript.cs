@@ -51,7 +51,7 @@ public class WeaponScript : MonoBehaviour
 
         if (timeBtwShots <= 0)
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !PauseMenu.gameIsPaused)
             {
                 if ((GetComponentInParent<CharacterController2D>().transform.localScale.x > 0 && difference.x > 0)
                     || (GetComponentInParent<CharacterController2D>().transform.localScale.x < 0 && difference.x < 0))
