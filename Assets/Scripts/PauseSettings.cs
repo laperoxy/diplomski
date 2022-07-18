@@ -1,51 +1,28 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using TMPro;
 using UnityEngine;
 using Slider = UnityEngine.UI.Slider;
 using Toggle = UnityEngine.UI.Toggle;
 
-public class SettingsMenu : MonoBehaviour
+public class PauseSettings : MonoBehaviour
 {
+    
     [SerializeField] private GameObject muteIcon;
     [SerializeField] private Slider volumeSlider = null;
     [SerializeField] private Toggle toggle = null;
-    [SerializeField] private TMP_Dropdown resolutionDropwdown = null;
-    [SerializeField] private TMP_Dropdown graphicsDropdown = null;
-    private Resolution[] resolutions;
-
+    
     private float my_volume;
     private bool my_isFullscreen;
     private int my_resolutionIndex;
     private int my_qualityIndex;
     private readonly string SAVE_FILE_EXTENSION = "/save.txt";
-
+    
     private string json;
-
-    private void Start()
+    
+    // Start is called before the first frame update
+    void Start()
     {
-        resolutions = Screen.resolutions;
-        resolutionDropwdown.ClearOptions();
-
-        List<string> options = new List<string>();
-
-        int currentResIndex = 0;
-
-        for (int i = 0; i < resolutions.Length; ++i)
-        {
-            string option = resolutions[i].width + " x " + resolutions[i].height;
-            options.Add(option);
-
-            if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)
-            {
-                currentResIndex = i;
-            }
-        }
-
-        resolutionDropwdown.AddOptions(options);
-        resolutionDropwdown.value = resolutions.Length - 1;
-        resolutionDropwdown.RefreshShownValue();
-
         LoadSettings();
     }
 
@@ -55,27 +32,17 @@ public class SettingsMenu : MonoBehaviour
         {
             string saveString = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
             SaveObject loadedSavedSettings = JsonUtility.FromJson<SaveObject>(saveString);
+            
             SetVolume(loadedSavedSettings.volume);
-
-            resolutionDropwdown.value = loadedSavedSettings.resolutionIndex;
-            resolutionDropwdown.RefreshShownValue();
-            SetResolution(loadedSavedSettings.resolutionIndex);
 
             SetFullScreen(loadedSavedSettings.isFullscreen);
 
-            graphicsDropdown.value = loadedSavedSettings.qualityIndex;
-            graphicsDropdown.RefreshShownValue();
-            SetQuality(loadedSavedSettings.qualityIndex);
+            my_resolutionIndex = loadedSavedSettings.resolutionIndex;
+            my_qualityIndex = loadedSavedSettings.qualityIndex;
 
-            //Debug.Log(saveString);
+
+            Debug.Log(saveString);
         }
-    }
-
-    public void SetResolution(int resulutionIndex)
-    {
-        Resolution resolution = resolutions[resulutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-        my_resolutionIndex = resulutionIndex;
     }
 
     public void SetVolume(float volume)
@@ -114,13 +81,7 @@ public class SettingsMenu : MonoBehaviour
         my_isFullscreen = isFullscreen;
         toggle.isOn = isFullscreen;
     }
-
-    public void SetQuality(int qualityIndex)
-    {
-        QualitySettings.SetQualityLevel(qualityIndex);
-        my_qualityIndex = qualityIndex;
-    }
-
+    
     public void SaveBeforeReturn()
     {
         SaveObject saveObject = new SaveObject
@@ -135,7 +96,7 @@ public class SettingsMenu : MonoBehaviour
 
         File.WriteAllText(Application.dataPath + SAVE_FILE_EXTENSION, json);
     }
-
+    
     private class SaveObject
     {
         public float volume;
