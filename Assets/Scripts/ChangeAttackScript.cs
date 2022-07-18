@@ -24,7 +24,7 @@ public class ChangeAttackScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Fire3"))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             if (ws.getProjectile().Equals(soulPush))
             {
