@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ProjectileScript : MonoBehaviour
 {
-    public float Speed = 4.5f;
+    public readonly float SPEED = 4.5f;
     public float lifeTime;
 
     private void Start()
@@ -13,7 +13,7 @@ public class ProjectileScript : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        transform.Translate(Vector2.up * (Time.deltaTime * Speed));
+        transform.Translate(Vector2.up * (Time.deltaTime * SPEED));
     }
 
     private void DestroyProjectiles()
