@@ -51,7 +51,7 @@ public class WeaponScript : MonoBehaviour
 
         if (ProperTime())
         {
-            if (Input.GetMouseButtonDown(0) && IsPlayerShootingInRightDirection(difference) && PlayerHasEnoguhStamina(SHOOTING_STAMINA_COST))
+            if (Input.GetMouseButtonDown(0) && PlayerHasEnoguhStamina(SHOOTING_STAMINA_COST) && IsPlayerShootingInRightDirection(difference))
             {
                 animator.SetTrigger("Shooting");
                 Instantiate(projectile, shotPoint.position, transform.rotation);
