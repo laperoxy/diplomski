@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ProjectileScript : MonoBehaviour
@@ -13,14 +11,12 @@ public class ProjectileScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
-        transform.Translate(Vector2.up*Speed*Time.deltaTime);
-
+        transform.Translate(Vector2.up * (Time.deltaTime * Speed));
     }
 
-    void DestroyProjectiles()
+    private void DestroyProjectiles()
     {
         Destroy(gameObject);
     }
