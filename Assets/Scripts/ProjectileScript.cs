@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ProjectileScript : MonoBehaviour
 {
-    public readonly float SPEED = 4.5f;
+    public readonly float SPEED = 11.0f;
     public float lifeTime;
 
     private void Start()

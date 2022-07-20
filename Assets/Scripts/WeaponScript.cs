@@ -51,8 +51,9 @@ public class WeaponScript : MonoBehaviour
 
         if (ProperTime())
         {
-            if (Input.GetMouseButtonDown(0) && PlayerHasEnoguhStamina(SHOOTING_STAMINA_COST) && IsPlayerShootingInRightDirection(difference))
+            if (Input.GetMouseButtonDown(0) && PlayerHasEnoughStamina() && IsPlayerShootingInRightDirection(difference))
             {
+                ReducePlayerStamina(SHOOTING_STAMINA_COST);
                 animator.SetTrigger("Shooting");
                 Instantiate(projectile, shotPoint.position, transform.rotation);
                 timeBtwShots = startTimeBtwShots;
@@ -89,15 +90,14 @@ public class WeaponScript : MonoBehaviour
         return currentStamina < MaxStamina;
     }
 
-    private bool PlayerHasEnoguhStamina(int attack)
+    private bool PlayerHasEnoughStamina()
     {
-        if (currentStamina >= 0)
-        {
-            currentStamina -= attack;
-            staminaBar.setStamina(currentStamina);
-            return true;
-        }
+        return currentStamina >= 0;
+    }
 
-        return false;
+    private void ReducePlayerStamina(int attack)
+    {
+        currentStamina -= attack;
+        staminaBar.setStamina(currentStamina);
     }
 }

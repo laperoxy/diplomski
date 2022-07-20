@@ -8,24 +8,24 @@ public class PlayerHud: NetworkBehaviour
 {
     private NetworkVariable<NetworkString> playersName = new NetworkVariable<NetworkString>();
 
-    private bool overlaySet = false;
+    private bool overlaySet;
     private readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
 
     public override void OnNetworkSpawn()
     {
-        if (IsServer)
+        if (!IsServer) return;
+        
+        if (File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
         {
-            if (File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
-            {
-                string savedCredentials = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
-                LoginData loadedLoginData = JsonUtility.FromJson<LoginData>(savedCredentials);
-                playersName.Value = $"{loadedLoginData.Username}";
-            }
-            else
-            {
-                playersName.Value = $"Player {OwnerClientId}";
-            }
+            string savedCredentials = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
+            LoginData loadedLoginData = JsonUtility.FromJson<LoginData>(savedCredentials);
+            playersName.Value = $"{loadedLoginData.Username}";
         }
+        else
+        {
+            playersName.Value = $"Player {OwnerClientId}";
+        }
+        
     }
 
     public void SetOverlay()
