@@ -49,26 +49,30 @@ public class WeaponScript : MonoBehaviour
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
 
-        if (timeBtwShots <= 0)
+        if (ProperTime())
         {
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && IsPlayerShootingInRightDirection(difference) && PlayerHasEnoguhStamina(SHOOTING_STAMINA_COST))
             {
-                if ((GetComponentInParent<CharacterController2D>().transform.localScale.x > 0 && difference.x > 0)
-                    || (GetComponentInParent<CharacterController2D>().transform.localScale.x < 0 && difference.x < 0))
-                {
-                    if (StaminaDamage(SHOOTING_STAMINA_COST))
-                    {
-                        animator.SetTrigger("Shooting");
-                        Instantiate(projectile, shotPoint.position, transform.rotation);
-                        timeBtwShots = startTimeBtwShots;
-                    }
-                }
+                animator.SetTrigger("Shooting");
+                Instantiate(projectile, shotPoint.position, transform.rotation);
+                timeBtwShots = startTimeBtwShots;
             }
         }
         else
         {
             timeBtwShots -= Time.deltaTime;
         }
+    }
+
+    private bool IsPlayerShootingInRightDirection(Vector3 difference)
+    {
+        return (GetComponentInParent<CharacterController2D>().transform.localScale.x > 0 && difference.x > 0)
+               || (GetComponentInParent<CharacterController2D>().transform.localScale.x < 0 && difference.x < 0);
+    }
+
+    private bool ProperTime()
+    {
+        return timeBtwShots <= 0;
     }
 
     private void FixedUpdate()
@@ -85,7 +89,7 @@ public class WeaponScript : MonoBehaviour
         return currentStamina < MaxStamina;
     }
 
-    private bool StaminaDamage(int attack)
+    private bool PlayerHasEnoguhStamina(int attack)
     {
         if (currentStamina >= 0)
         {
