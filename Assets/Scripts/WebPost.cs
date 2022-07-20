@@ -48,8 +48,8 @@ public class WebPost: MonoBehaviour
 
     private LoginData ExtractLoginDataFromResult(string username, string result)
     {
-        TokenTimeResponse tokenTimeResponse = JsonUtility.FromJson<TokenTimeResponse>(result);
-        return new LoginData(username,tokenTimeResponse);
+        TokenTimeAchievementResponse tokenTimeAchievementResponse = JsonUtility.FromJson<TokenTimeAchievementResponse>(result);
+        return new LoginData(username,tokenTimeAchievementResponse);
     }
 
     IEnumerator Register(string username, string password)
@@ -109,8 +109,8 @@ public class WebPost: MonoBehaviour
         else
         {
             string result = www.downloadHandler.text;
-            TimePlayedInstance timePlayed = JsonUtility.FromJson<TimePlayedInstance>(result);
-            LoginData loginData = new LoginData(username, token, timePlayed.TimePlayed);
+            TimePlayedAchievementInstance timePlayedAchievements = JsonUtility.FromJson<TimePlayedAchievementInstance>(result);
+            LoginData loginData = new LoginData(username, token, timePlayedAchievements.TimePlayed, timePlayedAchievements.Achievements);
             SaveLoginData(loginData);
             Debug.Log(result);
         }
