@@ -8,12 +8,13 @@ public class WeaponScript : NetworkBehaviour
 
     private const float SHOOTING_OFFSET = -90;
 
+    private const float COOLDOWN_BETWEEN_SHOTS = 0.43f;
+
 
     public GameObject projectile;
     public Transform shotPoint;
 
     private float timeBtwShots;
-    public float startTimeBtwShots;
 
     public StaminaBar staminaBar;
 
@@ -50,7 +51,7 @@ public class WeaponScript : NetworkBehaviour
                 staminaBar.ShootBullet(SHOOTING_STAMINA_COST);
                 animator.SetTrigger("Shooting");
                 Instantiate(projectile, shotPoint.position, transform.rotation);
-                timeBtwShots = startTimeBtwShots;
+                timeBtwShots = COOLDOWN_BETWEEN_SHOTS;
             }
         }
         else
