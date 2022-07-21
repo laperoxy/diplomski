@@ -11,7 +11,7 @@ public class PlayerDeathScript : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Void"))
         {
-            healthBar.setHealth(0);
+            healthBar.Die();
         }
     }
 }

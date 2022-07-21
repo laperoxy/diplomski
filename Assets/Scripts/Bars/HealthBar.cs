@@ -1,39 +1,56 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class HealthBar : MonoBehaviour
+public class HealthBar : NetworkBehaviour
 {
+    private const float MAX_HEALTH = 20f;
+
     public Slider slider;
     public Gradient gradient;
     public Image fill;
-    private Rigidbody2D rb;
+    
+    [SerializeField] private NetworkVariable<float> networkHealthBar = new NetworkVariable<float>();
 
-    private void Start()
+
+    private void Awake()
     {
-        rb = GetComponentInParent<Rigidbody2D>();
+        SetMaxHealth();
     }
 
-    public void setMaxHealth(int health)
+    private void Update()
     {
-        slider.maxValue = health;
-        slider.value = health;
-
-        fill.color = gradient.Evaluate(1f);
+        UpdateHealthStatus();
     }
 
-    public void setHealth(int health)
+    private void UpdateHealthStatus()
     {
-        slider.value = health;
-        fill.color = gradient.Evaluate(slider.normalizedValue);
-        if (health <= 0)
-            Die();
+        if (IsClient && !IsOwner)
+        {
+            slider.value = networkHealthBar.Value;
+        }
+    }
+
+    private void SetMaxHealth()
+    {
+        slider.maxValue = MAX_HEALTH;
+        slider.value = MAX_HEALTH;
+        networkHealthBar.Value = MAX_HEALTH;
     }
 
     public void Die()
     {
-        rb.bodyType = RigidbodyType2D.Static;
+        if (IsClient && IsOwner)
+        {
+            slider.value = 0;
+            updateHealthServerRpc(0);
+        }
+    }
+    
+    [ServerRpc]
+    void updateHealthServerRpc(float stamina)
+    {
+        networkHealthBar.Value = stamina;
     }
 }
