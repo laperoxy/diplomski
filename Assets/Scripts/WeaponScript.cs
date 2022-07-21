@@ -22,15 +22,15 @@ public class WeaponScript : NetworkBehaviour
 
     [SerializeField] private GameObject player;
 
-
-    public void setProjectile(GameObject newProjectile)
+    public bool getAndSetProjectile(GameObject currentType, GameObject wantedType)
     {
-        projectile = newProjectile;
-    }
+        if (projectile.Equals(currentType))
+        {
+            projectile = wantedType;
+            return true;
+        }
 
-    public GameObject getProjectile()
-    {
-        return projectile;
+        return false;
     }
 
     private void Start()

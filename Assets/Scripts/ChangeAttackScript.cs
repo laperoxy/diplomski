@@ -20,15 +20,13 @@ public class ChangeAttackScript : MonoBehaviour
     {
         if (Input.GetButtonDown("Fire3"))
         {
-            if (weaponScript.getProjectile().Equals(soulPush))
+            if (weaponScript.getAndSetProjectile(soulPush,soulFragment))
             {
-                weaponScript.setProjectile(soulFragment);
                 attackSwitch.text = "Soul fragment";
                 attack.sprite = soulFragmentSprite;
             }
-            else
+            else if(weaponScript.getAndSetProjectile(soulFragment,soulPush))
             {
-                weaponScript.setProjectile(soulPush);
                 attackSwitch.text = "Soul Push";
                 attack.sprite = soulPushSprite;
             }
