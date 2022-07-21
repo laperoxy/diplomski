@@ -1695,6 +1695,7 @@ MonoBehaviour:
   shotPoint: {fileID: 5658177991053107479}
   startTimeBtwShots: 0.25
   staminaBar: {fileID: 5658177991270160684}
+  player: {fileID: 5658177992477792162}
 --- !u!114 &5658177992814803520
 MonoBehaviour:
   m_ObjectHideFlags: 0

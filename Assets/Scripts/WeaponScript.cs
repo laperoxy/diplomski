@@ -25,6 +25,8 @@ public class WeaponScript : MonoBehaviour
 
     private Animator animator;
 
+    [SerializeField] private GameObject player;
+
 
     public void setProjectile(GameObject newProjectile)
     {
@@ -67,7 +69,7 @@ public class WeaponScript : MonoBehaviour
 
     private bool IsPlayerShootingInRightDirection(Vector3 difference)
     {
-        var localScaleX = GetComponentInParent<PlayerControlNew>().transform.localScale.x;
+        var localScaleX = player.transform.localScale.x;
         return (localScaleX > 0 && difference.x > 0) || (localScaleX < 0 && difference.x < 0);
     }
 
