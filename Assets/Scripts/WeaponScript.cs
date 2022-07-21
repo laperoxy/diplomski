@@ -24,10 +24,13 @@ public class WeaponScript : NetworkBehaviour
 
     public bool getAndSetProjectile(GameObject currentType, GameObject wantedType)
     {
-        if (projectile.Equals(currentType))
+        if (IsClient && IsOwner)
         {
-            projectile = wantedType;
-            return true;
+            if (projectile.Equals(currentType))
+            {
+                projectile = wantedType;
+                return true;
+            }
         }
 
         return false;
@@ -40,23 +43,27 @@ public class WeaponScript : NetworkBehaviour
 
     void Update()
     {
-        Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, rotZ + SHOOTING_OFFSET);
+        if (IsClient && IsOwner)
+        {
+            Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, 0f, rotZ + SHOOTING_OFFSET);
 
-        if (ProperTime())
-        {
-            if ((Input.GetMouseButtonDown(0) || Input.GetMouseButton(0)) && staminaBar.CanShootBullet(SHOOTING_STAMINA_COST) && IsPlayerShootingInRightDirection(difference))
+            if (ProperTime())
             {
-                staminaBar.ShootBullet(SHOOTING_STAMINA_COST);
-                animator.SetTrigger("Shooting");
-                Instantiate(projectile, shotPoint.position, transform.rotation);
-                timeBtwShots = COOLDOWN_BETWEEN_SHOTS;
+                if ((Input.GetMouseButtonDown(0) || Input.GetMouseButton(0)) &&
+                    staminaBar.CanShootBullet(SHOOTING_STAMINA_COST) && IsPlayerShootingInRightDirection(difference))
+                {
+                    staminaBar.ShootBullet(SHOOTING_STAMINA_COST);
+                    animator.SetTrigger("Shooting");
+                    Instantiate(projectile, shotPoint.position, transform.rotation);
+                    timeBtwShots = COOLDOWN_BETWEEN_SHOTS;
+                }
             }
-        }
-        else
-        {
-            timeBtwShots -= Time.deltaTime;
+            else
+            {
+                timeBtwShots -= Time.deltaTime;
+            }
         }
     }
 

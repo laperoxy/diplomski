@@ -1,7 +1,8 @@
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ChangeAttackScript : MonoBehaviour
+public class ChangeAttackScript : NetworkBehaviour
 {
     [SerializeField] private Text attackSwitch;
     [SerializeField] private Image attack;
@@ -18,7 +19,7 @@ public class ChangeAttackScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (IsClient && IsOwner && Input.GetKeyDown(KeyCode.E))
         {
             if (weaponScript.getAndSetProjectile(soulPush,soulFragment))
             {
