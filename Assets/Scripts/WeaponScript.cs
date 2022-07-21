@@ -1,15 +1,12 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
-using UnityEngine.UIElements;
 
-public class WeaponScript : MonoBehaviour
+public class WeaponScript : NetworkBehaviour
 {
 
     private const int SHOOTING_STAMINA_COST = 2;
 
-    public float offset;
+    private const float SHOOTING_OFFSET = -90;
 
 
     public GameObject projectile;
@@ -44,7 +41,7 @@ public class WeaponScript : MonoBehaviour
     {
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
+        transform.rotation = Quaternion.Euler(0f, 0f, rotZ + SHOOTING_OFFSET);
 
         if (ProperTime())
         {
