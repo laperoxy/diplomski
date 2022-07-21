@@ -1384,7 +1384,7 @@ MonoBehaviour:
   runSpeed: 40
   networkXAxisOffset:
     m_InternalValue: 0
-  networkJump:
+  networkShooting:
     m_InternalValue: 0
 --- !u!212 &5658177992477792191
 SpriteRenderer:
@@ -1696,6 +1696,7 @@ MonoBehaviour:
   projectile: {fileID: 1056437412288882, guid: cf092d2417ee54748bbf2a2d20ed29b3, type: 3}
   shotPoint: {fileID: 5658177991053107479}
   staminaBar: {fileID: 5658177991270160684}
+  playerControlNew: {fileID: 5658177992477792188}
   player: {fileID: 5658177992477792162}
 --- !u!114 &5658177992814803520
 MonoBehaviour:

@@ -8,7 +8,7 @@ public class WeaponScript : NetworkBehaviour
 
     private const float SHOOTING_OFFSET = -90;
 
-    private const float COOLDOWN_BETWEEN_SHOTS = 0.43f;
+    private const float COOLDOWN_BETWEEN_SHOTS = 0.5f;
 
 
     public GameObject projectile;
@@ -18,7 +18,7 @@ public class WeaponScript : NetworkBehaviour
 
     public StaminaBar staminaBar;
 
-    private Animator animator;
+    public PlayerControlNew playerControlNew;
 
     [SerializeField] private GameObject player;
 
@@ -36,11 +36,6 @@ public class WeaponScript : NetworkBehaviour
         return false;
     }
 
-    private void Start()
-    {
-        animator = GetComponentInParent<Animator>();
-    }
-
     void Update()
     {
         if (IsClient && IsOwner)
@@ -51,11 +46,11 @@ public class WeaponScript : NetworkBehaviour
 
             if (ProperTime())
             {
-                if ((Input.GetMouseButtonDown(0) || Input.GetMouseButton(0)) &&
+                if ((Input.GetMouseButtonDown(0)) &&
                     staminaBar.CanShootBullet(SHOOTING_STAMINA_COST) && IsPlayerShootingInRightDirection(difference))
                 {
                     staminaBar.ShootBullet(SHOOTING_STAMINA_COST);
-                    animator.SetTrigger("Shooting");
+                    playerControlNew.UpdateShooting();
                     Instantiate(projectile, shotPoint.position, transform.rotation);
                     timeBtwShots = COOLDOWN_BETWEEN_SHOTS;
                 }

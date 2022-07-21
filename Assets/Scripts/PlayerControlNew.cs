@@ -11,6 +11,7 @@ public class PlayerControlNew : NetworkBehaviour
 
     [SerializeField] private NetworkVariable<float> networkXAxisOffset = new NetworkVariable<float>();
     [SerializeField] private NetworkVariable<bool> networkJump = new NetworkVariable<bool>();
+    [SerializeField] private NetworkVariable<bool> networkShooting = new NetworkVariable<bool>();
 
     // client chaches positions
     private float cachedClientXAxisOffset;
@@ -55,6 +56,7 @@ public class PlayerControlNew : NetworkBehaviour
         if (IsServer)
         {
             networkJump.Value = false;
+            networkShooting.Value = false;
         }
     }
 
@@ -62,6 +64,10 @@ public class PlayerControlNew : NetworkBehaviour
     {
         animator.SetFloat("Speed", Mathf.Abs(networkXAxisOffset.Value));
         animator.SetBool("isJumping",networkJump.Value);
+        if (networkShooting.Value)
+        {
+            animator.SetTrigger("Shooting");
+        }
     }
 
     private void UpdateClientInput()
@@ -86,6 +92,17 @@ public class PlayerControlNew : NetworkBehaviour
     {
         networkXAxisOffset.Value = xAxisOffsetVar;
         networkJump.Value = jumpVar;
+    }
+    
+    public void UpdateShooting()
+    {
+        updateShootingServerRpc();
+    }
+
+    [ServerRpc]
+    public void updateShootingServerRpc()
+    {
+        networkShooting.Value = true;
     }
 
 }
