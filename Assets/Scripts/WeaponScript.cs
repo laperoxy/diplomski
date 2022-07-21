@@ -51,7 +51,7 @@ public class WeaponScript : MonoBehaviour
 
         if (ProperTime())
         {
-            if (Input.GetMouseButtonDown(0) && PlayerHasEnoughStamina() && IsPlayerShootingInRightDirection(difference))
+            if ((Input.GetMouseButtonDown(0) || Input.GetMouseButton(0)) && PlayerHasEnoughStamina() && IsPlayerShootingInRightDirection(difference))
             {
                 ReducePlayerStamina(SHOOTING_STAMINA_COST);
                 animator.SetTrigger("Shooting");
@@ -67,8 +67,8 @@ public class WeaponScript : MonoBehaviour
 
     private bool IsPlayerShootingInRightDirection(Vector3 difference)
     {
-        return (GetComponentInParent<CharacterController2D>().transform.localScale.x > 0 && difference.x > 0)
-               || (GetComponentInParent<CharacterController2D>().transform.localScale.x < 0 && difference.x < 0);
+        var localScaleX = GetComponentInParent<PlayerControlNew>().transform.localScale.x;
+        return (localScaleX > 0 && difference.x > 0) || (localScaleX < 0 && difference.x < 0);
     }
 
     private bool ProperTime()
