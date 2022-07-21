@@ -8,10 +8,7 @@ public class WeaponScript : MonoBehaviour
 {
 
     private const int SHOOTING_STAMINA_COST = 2;
-    private const float MaxStamina = 20f;
-    private const float StaminaRefillValue = 0.05f;
 
-    private float currentStamina;
     public float offset;
 
 
@@ -40,8 +37,6 @@ public class WeaponScript : MonoBehaviour
 
     private void Start()
     {
-        currentStamina = MaxStamina;
-        staminaBar.setMaxStamina(MaxStamina);
         animator = GetComponentInParent<Animator>();
     }
 
@@ -53,9 +48,9 @@ public class WeaponScript : MonoBehaviour
 
         if (ProperTime())
         {
-            if ((Input.GetMouseButtonDown(0) || Input.GetMouseButton(0)) && PlayerHasEnoughStamina() && IsPlayerShootingInRightDirection(difference))
+            if ((Input.GetMouseButtonDown(0) || Input.GetMouseButton(0)) && staminaBar.CanShootBullet(SHOOTING_STAMINA_COST) && IsPlayerShootingInRightDirection(difference))
             {
-                ReducePlayerStamina(SHOOTING_STAMINA_COST);
+                staminaBar.ShootBullet(SHOOTING_STAMINA_COST);
                 animator.SetTrigger("Shooting");
                 Instantiate(projectile, shotPoint.position, transform.rotation);
                 timeBtwShots = startTimeBtwShots;
@@ -76,30 +71,5 @@ public class WeaponScript : MonoBehaviour
     private bool ProperTime()
     {
         return timeBtwShots <= 0;
-    }
-
-    private void FixedUpdate()
-    {
-        if (CanStaminaRefill())
-        {
-            currentStamina = Math.Min(currentStamina + StaminaRefillValue, MaxStamina);
-            staminaBar.setStamina(currentStamina);
-        }
-    }
-
-    private bool CanStaminaRefill()
-    {
-        return currentStamina < MaxStamina;
-    }
-
-    private bool PlayerHasEnoughStamina()
-    {
-        return currentStamina >= 0;
-    }
-
-    private void ReducePlayerStamina(int attack)
-    {
-        currentStamina -= attack;
-        staminaBar.setStamina(currentStamina);
     }
 }

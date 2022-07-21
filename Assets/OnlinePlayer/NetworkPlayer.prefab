@@ -604,7 +604,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 5658177991270160682}
-  fill: {fileID: 5658177991069424236}
+  networkStaminaBar:
+    m_InternalValue: 0
 --- !u!1 &5658177991503817315
 GameObject:
   m_ObjectHideFlags: 0

@@ -208,7 +208,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 5210620075881980528}
-  fill: {fileID: 5210620075585784001}
+  networkStaminaBar:
+    m_InternalValue: 0
 --- !u!1 &5210620076160860472
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,10 +427,8 @@ GameObject:
   - component: {fileID: 5210620077115366205}
   - component: {fileID: 5210620077115366207}
   - component: {fileID: 5210620077115366206}
-  - component: {fileID: 5210620077115366192}
   - component: {fileID: 5210620077115366194}
   - component: {fileID: 5210620077115366193}
-  - component: {fileID: 5210620077115366195}
   - component: {fileID: 5210620077115366196}
   - component: {fileID: 5210620077115366198}
   - component: {fileID: 5210620077115366197}
@@ -505,30 +504,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.65185046, y: 3.5295525}
   m_EdgeRadius: 0
---- !u!114 &5210620077115366192
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5210620077115366204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b0250561a66c5145874aa55d06c52a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  controller: {fileID: 5210620077115366194}
-  animator: {fileID: 5210620077115366198}
-  runSpeed: 40
-  LaunchOffset: {fileID: 5210620077342737918}
-  maxHealth: 20
-  currentHealth: 0
-  maxStamina: 20
-  currentStamina: 0
-  healthBar: {fileID: 1409957660794342755}
-  staminaBar: {fileID: 5210620075881980543}
-  rb: {fileID: 5210620077115366207}
-  playerCanvas: {fileID: 5210620076609949019}
 --- !u!114 &5210620077115366194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -542,7 +517,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_JumpForce: 800
-  m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
   m_WhatIsGround:
@@ -550,11 +524,8 @@ MonoBehaviour:
     m_Bits: 55
   m_GroundCheck: {fileID: 5210620075748298374}
   m_CeilingCheck: {fileID: 5210620076160860473}
-  m_CrouchDisableCollider: {fileID: 0}
+  playerLight: {fileID: 0}
   OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &5210620077115366193
@@ -569,21 +540,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a819ec207de87448355a26098b6954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinsText: {fileID: 0}
-  ms: {fileID: 5210620077115366192}
---- !u!114 &5210620077115366195
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5210620077115366204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10260878fbf01f045ab9035300e4a097, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ms: {fileID: 5210620077115366192}
+  gotKey: 0
+  floatingText: {fileID: 0}
 --- !u!114 &5210620077115366196
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,10 +556,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackSwitch: {fileID: 0}
   attack: {fileID: 0}
-  prefabSplash: {fileID: 3155237161427951453, guid: 41aaab74ea2b67348a4242ec2dc88ac7, type: 3}
-  prefabWave: {fileID: 8077442717924145005, guid: 842abc72d60c33248877d11c7d164e96, type: 3}
-  sprite1: {fileID: 21300000, guid: fe696c78761b03d43b558e994325d0b7, type: 3}
-  sprite2: {fileID: 21300000, guid: 189f2ae88aa638d49a4d4fd030edfd03, type: 3}
+  soulPushSprite: {fileID: 0}
+  soulFragmentSprite: {fileID: 0}
+  soulPush: {fileID: 0}
+  soulFragment: {fileID: 0}
 --- !u!95 &5210620077115366198
 Animator:
   serializedVersion: 3
@@ -659,7 +617,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2083256793
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: dbea609106fbe994cafdf7fb026be39d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -884,14 +842,3 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6620003791822557405, guid: 58cd2fe8a438aad4fbd846aaa077cf08, type: 3}
   m_PrefabInstance: {fileID: 5210620077462674816}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1409957660794342755 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6620003791822557411, guid: 58cd2fe8a438aad4fbd846aaa077cf08, type: 3}
-  m_PrefabInstance: {fileID: 5210620077462674816}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4294baebf47766646886405debcf8e6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
