@@ -25,7 +25,7 @@ public class PlayerControlNew : NetworkBehaviour
     {
         if (IsClient && IsOwner)
         {
-            transform.position = new Vector3(-4, 0, 0);
+            transform.position = new Vector3(-189, 36, 0);
             focusCameraOnPlayer();
         }
     }
