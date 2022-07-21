@@ -1054,6 +1054,8 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   fill: {fileID: 5658177990877009359}
+  networkHealthBar:
+    m_InternalValue: 0
 --- !u!1 &5658177991978633242
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,10 +1693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4363a8e55679df54e85be4cb12cc534b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  offset: -90
   projectile: {fileID: 1056437412288882, guid: cf092d2417ee54748bbf2a2d20ed29b3, type: 3}
   shotPoint: {fileID: 5658177991053107479}
-  startTimeBtwShots: 0.25
   staminaBar: {fileID: 5658177991270160684}
   player: {fileID: 5658177992477792162}
 --- !u!114 &5658177992814803520
@@ -1713,5 +1713,6 @@ MonoBehaviour:
   attack: {fileID: 5658177992355523098}
   soulPushSprite: {fileID: 21300000, guid: 0fceba9940382e74cb442460274d4e12, type: 3}
   soulFragmentSprite: {fileID: 21300000, guid: 294432297ffc41b4180145b728015b18, type: 3}
+  weaponScript: {fileID: 5658177992814803521}
   soulPush: {fileID: 1056437412288882, guid: cf092d2417ee54748bbf2a2d20ed29b3, type: 3}
   soulFragment: {fileID: 1771466281706094, guid: 25f8fc93535fd3543a32225856f54b79, type: 3}

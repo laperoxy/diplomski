@@ -9,32 +9,26 @@ public class ChangeAttackScript : MonoBehaviour
     [SerializeField] private Sprite soulPushSprite;
     [SerializeField] private Sprite soulFragmentSprite;
 
-    private WeaponScript ws;
+    [SerializeField]
+    private WeaponScript weaponScript;
 
     public GameObject soulPush;
     public GameObject soulFragment;
-    
-    
-
-    private void Start()
-    {
-        ws = GetComponent<WeaponScript>();
-    }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetButtonDown("Fire3"))
         {
-            if (ws.getProjectile().Equals(soulPush))
+            if (weaponScript.getProjectile().Equals(soulPush))
             {
-                ws.setProjectile(soulFragment);
+                weaponScript.setProjectile(soulFragment);
                 attackSwitch.text = "Soul fragment";
                 attack.sprite = soulFragmentSprite;
             }
             else
             {
-                ws.setProjectile(soulPush);
+                weaponScript.setProjectile(soulPush);
                 attackSwitch.text = "Soul Push";
                 attack.sprite = soulPushSprite;
             }
