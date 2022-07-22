@@ -1,3 +1,4 @@
+using System;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,6 +16,15 @@ public class ChangeAttackScript : NetworkBehaviour
 
     public GameObject soulPush;
     public GameObject soulFragment;
+
+    private void Start()
+    {
+        if (IsClient && !IsOwner)
+        {
+            Destroy(attackSwitch);
+            Destroy(attack);
+        }
+    }
 
     // Update is called once per frame
     void Update()
