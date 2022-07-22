@@ -1267,7 +1267,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5658177992477792162}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.0843115, y: 3.054073, z: 0}
+  m_LocalPosition: {x: -37.54, y: 7.054073, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5658177992648984607}
@@ -1383,6 +1383,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runSpeed: 40
   networkXAxisOffset:
+    m_InternalValue: 0
+  networkJump:
     m_InternalValue: 0
   networkShooting:
     m_InternalValue: 0

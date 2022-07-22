@@ -51,7 +51,7 @@ public class WeaponScript : NetworkBehaviour
                 {
                     staminaBar.ShootBullet(SHOOTING_STAMINA_COST);
                     playerControlNew.UpdateShooting();
-                    Instantiate(projectile, shotPoint.position, transform.rotation);
+                    ShootBulletServerRpc(shotPoint.position, transform.rotation);
                     timeBtwShots = COOLDOWN_BETWEEN_SHOTS;
                 }
             }
@@ -71,5 +71,11 @@ public class WeaponScript : NetworkBehaviour
     private bool ProperTime()
     {
         return timeBtwShots <= 0;
+    }
+
+    [ServerRpc]
+    public void ShootBulletServerRpc(Vector3 shotPointPosition, Quaternion rotation)
+    {
+        Instantiate(projectile, shotPointPosition, rotation).GetComponent<NetworkObject>().Spawn();
     }
 }
