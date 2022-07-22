@@ -1695,6 +1695,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4363a8e55679df54e85be4cb12cc534b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soulPush: {fileID: 1056437412288882, guid: cf092d2417ee54748bbf2a2d20ed29b3, type: 3}
+  soulFragment: {fileID: 1771466281706094, guid: 25f8fc93535fd3543a32225856f54b79, type: 3}
   projectile: {fileID: 1056437412288882, guid: cf092d2417ee54748bbf2a2d20ed29b3, type: 3}
   shotPoint: {fileID: 5658177991053107479}
   staminaBar: {fileID: 5658177991270160684}

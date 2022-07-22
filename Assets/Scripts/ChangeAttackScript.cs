@@ -1,4 +1,5 @@
 using System;
+using Enums;
 using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
@@ -14,9 +15,6 @@ public class ChangeAttackScript : NetworkBehaviour
     [SerializeField]
     private WeaponScript weaponScript;
 
-    public GameObject soulPush;
-    public GameObject soulFragment;
-
     private void Start()
     {
         if (IsClient && !IsOwner)
@@ -31,15 +29,16 @@ public class ChangeAttackScript : NetworkBehaviour
     {
         if (IsClient && IsOwner && Input.GetKeyDown(KeyCode.E))
         {
-            if (weaponScript.getAndSetProjectile(soulPush,soulFragment))
+            switch (weaponScript.switchProjectile())
             {
-                attackSwitch.text = "Soul fragment";
-                attack.sprite = soulFragmentSprite;
-            }
-            else if(weaponScript.getAndSetProjectile(soulFragment,soulPush))
-            {
-                attackSwitch.text = "Soul Push";
-                attack.sprite = soulPushSprite;
+                case WeaponTypes.SOUL_PUSH:
+                    attackSwitch.text = "Soul Push";
+                    attack.sprite = soulPushSprite;
+                    break;
+                case WeaponTypes.SOUL_FRAGMENT:
+                    attackSwitch.text = "Soul fragment";
+                    attack.sprite = soulFragmentSprite;
+                    break;
             }
         }
     }

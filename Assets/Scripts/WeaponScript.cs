@@ -1,3 +1,4 @@
+using Enums;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -9,9 +10,11 @@ public class WeaponScript : NetworkBehaviour
     private const float SHOOTING_OFFSET = -90;
 
     private const float COOLDOWN_BETWEEN_SHOTS = 0.5f;
+    
+    public GameObject soulPush;
+    public GameObject soulFragment;
 
-
-    public GameObject projectile;
+    private WeaponTypes weaponType;
     public Transform shotPoint;
 
     private float timeBtwShots;
@@ -22,18 +25,22 @@ public class WeaponScript : NetworkBehaviour
 
     [SerializeField] private GameObject player;
 
-    public bool getAndSetProjectile(GameObject currentType, GameObject wantedType)
+    public WeaponTypes switchProjectile()
     {
         if (IsClient && IsOwner)
         {
-            if (projectile.Equals(currentType))
+            switch (weaponType)
             {
-                projectile = wantedType;
-                return true;
+                case WeaponTypes.SOUL_PUSH:
+                    weaponType = WeaponTypes.SOUL_FRAGMENT;
+                    return WeaponTypes.SOUL_FRAGMENT;
+                case WeaponTypes.SOUL_FRAGMENT:
+                    weaponType = WeaponTypes.SOUL_PUSH;
+                    return WeaponTypes.SOUL_PUSH;
             }
         }
 
-        return false;
+        return WeaponTypes.NO_TYPE;
     }
 
     void Update()
@@ -51,7 +58,7 @@ public class WeaponScript : NetworkBehaviour
                 {
                     staminaBar.ShootBullet(SHOOTING_STAMINA_COST);
                     playerControlNew.UpdateShooting();
-                    ShootBulletServerRpc(shotPoint.position, transform.rotation);
+                    ShootBulletServerRpc(weaponType,shotPoint.position, transform.rotation);
                     timeBtwShots = COOLDOWN_BETWEEN_SHOTS;
                 }
             }
@@ -74,8 +81,9 @@ public class WeaponScript : NetworkBehaviour
     }
 
     [ServerRpc]
-    public void ShootBulletServerRpc(Vector3 shotPointPosition, Quaternion rotation)
+    public void ShootBulletServerRpc(WeaponTypes sentWeaponType, Vector3 shotPointPosition, Quaternion rotation)
     {
+        GameObject projectile = sentWeaponType == WeaponTypes.SOUL_PUSH ? soulPush : soulFragment;
         Instantiate(projectile, shotPointPosition, rotation).GetComponent<NetworkObject>().Spawn();
     }
 }
