@@ -1252,6 +1252,7 @@ GameObject:
   - component: {fileID: 5658177992477792160}
   - component: {fileID: 5658177992477792163}
   - component: {fileID: 3798150478370565037}
+  - component: {fileID: -4420780302255350300}
   m_Layer: 3
   m_Name: NetworkPlayer
   m_TagString: Player
@@ -1506,8 +1507,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a819ec207de87448355a26098b6954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gotKey: 0
+  gotKey: 1
   floatingText: {fileID: 8084587822698253834, guid: 92c7122bd53f1434899944057d796814, type: 3}
+  SoundToPlay: {fileID: 8300000, guid: fe8631c7a6adaa049a20f7395e9cbc51, type: 3}
+  Volume: 1
 --- !u!114 &3798150478370565037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1521,6 +1524,102 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 5658177991908827861}
+--- !u!82 &-4420780302255350300
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5658177992477792162}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: fe8631c7a6adaa049a20f7395e9cbc51, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &5658177992648984606
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,7 +1796,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soulPush: {fileID: 1056437412288882, guid: cf092d2417ee54748bbf2a2d20ed29b3, type: 3}
   soulFragment: {fileID: 1771466281706094, guid: 25f8fc93535fd3543a32225856f54b79, type: 3}
-  projectile: {fileID: 1056437412288882, guid: cf092d2417ee54748bbf2a2d20ed29b3, type: 3}
   shotPoint: {fileID: 5658177991053107479}
   staminaBar: {fileID: 5658177991270160684}
   playerControlNew: {fileID: 5658177992477792188}
@@ -1719,5 +1817,3 @@ MonoBehaviour:
   soulPushSprite: {fileID: 21300000, guid: 0fceba9940382e74cb442460274d4e12, type: 3}
   soulFragmentSprite: {fileID: 21300000, guid: 294432297ffc41b4180145b728015b18, type: 3}
   weaponScript: {fileID: 5658177992814803521}
-  soulPush: {fileID: 1056437412288882, guid: cf092d2417ee54748bbf2a2d20ed29b3, type: 3}
-  soulFragment: {fileID: 1771466281706094, guid: 25f8fc93535fd3543a32225856f54b79, type: 3}

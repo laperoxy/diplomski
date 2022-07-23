@@ -7,6 +7,16 @@ public class ItemCollectionScript : MonoBehaviour
     public GameObject floatingText;
     private float lastPopupTime; //time in seconds
     private const float POPUP_COOLDOWN = 3; 
+    
+    // city gate trigger audio
+    public AudioClip SoundToPlay;
+    public float Volume;
+    private AudioSource audioToPlay;
+    
+    void Start()
+    {
+        audioToPlay = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -60,6 +70,7 @@ public class ItemCollectionScript : MonoBehaviour
     {
         gotKey = false;
         Destroy(GameObject.FindGameObjectWithTag("CityEnterance"));
+        audioToPlay.PlayOneShot(SoundToPlay,Volume);
     }
 
     private void updatePopupTime()
