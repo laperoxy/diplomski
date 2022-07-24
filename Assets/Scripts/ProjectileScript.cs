@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class ProjectileScript : MonoBehaviour
@@ -20,6 +21,10 @@ public class ProjectileScript : MonoBehaviour
     {
         Destroy(gameObject);
     }
-    
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        Debug.Log("Detektovao trigger");
+        DestroyProjectiles();
+    }
 }
 
