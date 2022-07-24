@@ -16,6 +16,10 @@ public class BossScript : NetworkBehaviour
         {
             reduceHealthServerRpc(20);
         }
+        else if (col.gameObject.CompareTag("SoulFragment"))
+        {
+            reduceHealthServerRpc(50);
+        }
     }
 
     [ServerRpc]
