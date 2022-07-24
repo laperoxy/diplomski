@@ -26,9 +26,21 @@ public class HealthBar : NetworkBehaviour
 
     private void UpdateHealthStatus()
     {
-        if (IsClient && !IsOwner)
+        if (IsClient)
         {
-            slider.value = networkHealthBar.Value;
+            if (!IsOwner)
+            {
+                slider.value = networkHealthBar.Value;
+            }
+            else
+            {
+                if (Math.Abs(slider.value - networkHealthBar.Value) > 0.1)
+                {
+                    slider.value = networkHealthBar.Value;
+                }
+            }
+
+            
         }
     }
 
@@ -49,8 +61,13 @@ public class HealthBar : NetworkBehaviour
     }
     
     [ServerRpc]
-    void updateHealthServerRpc(float stamina)
+    void updateHealthServerRpc(float health)
     {
-        networkHealthBar.Value = stamina;
+        networkHealthBar.Value = health;
+        if (networkHealthBar.Value <= 0)
+        {
+            gameObject.GetComponentsInParent<PlayerControlNew>()[0].transform.position = new Vector3(-4.53f, 2.0f, 0);
+            networkHealthBar.Value = MAX_HEALTH;
+        }
     }
 }
