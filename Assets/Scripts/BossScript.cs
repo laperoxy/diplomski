@@ -7,7 +7,7 @@ using UnityEngine;
 public class BossScript : NetworkBehaviour
 {
 
-    private readonly float MAX_BOSS_HEALTH = 100;
+    private readonly float MAX_BOSS_HEALTH = 200;
     
     public AudioClip SoundToPlay;
     public float Volume;
