@@ -43624,8 +43624,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 003bb8c0f89cb1b4b9a7068c44410f00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  followedGameObject: {fileID: 0}
-  target: {fileID: 0}
+  followedGameObject: {fileID: 1040133272}
+  target: {fileID: 1040133273}
   offset: {x: 0, y: 1.5, z: -10}
   smoothFactor: 3
 --- !u!81 &1679196736

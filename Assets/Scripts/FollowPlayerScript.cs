@@ -17,7 +17,7 @@ public class FollowPlayerScript : MonoBehaviour
     private void FixedUpdate()
     {
 
-        if (target != null)
+        if (!ReferenceEquals(target,null))
         {
             Vector3 targetPosition = target.position + offset;
             Vector3 smoothPosition = Vector3.Lerp(transform.position, targetPosition, smoothFactor * Time.fixedDeltaTime);
