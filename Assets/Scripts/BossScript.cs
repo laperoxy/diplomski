@@ -5,8 +5,19 @@ using UnityEngine;
 
 public class BossScript : MonoBehaviour
 {
+
+    private float health = 100;
+
     private void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("Usao u mene");
+        if (col.gameObject.CompareTag("SoulPush"))
+        {
+            health -= 20;
+        }
+
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

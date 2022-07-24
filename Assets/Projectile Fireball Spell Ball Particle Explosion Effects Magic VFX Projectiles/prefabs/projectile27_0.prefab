@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: -8130509474138095834}
   m_Layer: 0
   m_Name: projectile27_0
-  m_TagString: Untagged
+  m_TagString: SoulPush
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

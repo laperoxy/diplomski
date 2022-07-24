@@ -17,6 +17,7 @@ TagManager:
   - ClockTowerSign
   - Void
   - PillarToDestroy
+  - SoulPush
   layers:
   - Default
   - TransparentFX
