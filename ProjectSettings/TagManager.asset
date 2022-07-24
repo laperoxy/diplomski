@@ -19,6 +19,7 @@ TagManager:
   - PillarToDestroy
   - SoulPush
   - SoulFragment
+  - Boss
   layers:
   - Default
   - TransparentFX

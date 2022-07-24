@@ -23,8 +23,10 @@ public class ProjectileScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        Debug.Log("Detektovao trigger");
-        DestroyProjectile();
+        if (col.gameObject.CompareTag("Boss"))
+        {
+            DestroyProjectile();
+        }
     }
 }
 
