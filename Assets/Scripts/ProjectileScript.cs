@@ -8,7 +8,7 @@ public class ProjectileScript : MonoBehaviour
 
     private void Start()
     {
-        Invoke("DestroyProjectiles",lifeTime);
+        Invoke("DestroyProjectile",lifeTime);
     }
 
     // Update is called once per frame
@@ -17,14 +17,14 @@ public class ProjectileScript : MonoBehaviour
         transform.Translate(Vector2.up * (Time.deltaTime * SPEED));
     }
 
-    private void DestroyProjectiles()
+    private void DestroyProjectile()
     {
         Destroy(gameObject);
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
         Debug.Log("Detektovao trigger");
-        DestroyProjectiles();
+        DestroyProjectile();
     }
 }
 
