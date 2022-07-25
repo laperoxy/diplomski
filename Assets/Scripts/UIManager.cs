@@ -1,11 +1,10 @@
-using TMPro;
+using System.Collections.Generic;
 using Unity.Netcode;
 using UnityEngine;
-using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class UIManager : NetworkBehaviour
 {
-
+    public List<GameObject> SpawnableObjects;
     private void Awake()
     {
         Cursor.visible = true;
@@ -15,6 +14,17 @@ public class UIManager : MonoBehaviour
         if (!NetworkManager.Singleton.StartHost())
         {
             NetworkManager.Singleton.StartClient();
+        }
+        else
+        {
+            if (IsServer)
+            {
+                foreach (var spawnObject in SpawnableObjects)
+                {
+                    Instantiate(spawnObject).GetComponent<NetworkObject>().Spawn();
+                }
+                
+            }
         }
     }
 
