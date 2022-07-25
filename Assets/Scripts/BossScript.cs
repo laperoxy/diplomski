@@ -21,11 +21,11 @@ public class BossScript : NetworkBehaviour
     {
         if (col.gameObject.CompareTag("SoulPush"))
         {
-            reduceHealthServerRpc(20);
+            reduceHealthServerRpc(30);
         }
         else if (col.gameObject.CompareTag("SoulFragment"))
         {
-            reduceHealthServerRpc(50);
+            reduceHealthServerRpc(5);
         }
     }
 

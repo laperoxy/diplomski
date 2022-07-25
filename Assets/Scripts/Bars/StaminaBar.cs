@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class StaminaBar : NetworkBehaviour
 {
     
-    private const float MAX_STAMINA = 20f;
-    private const float STAMINA_REFILL_VALUE = 0.05f;
+    private const float MAX_STAMINA = 100f;
+    private const float STAMINA_REFILL_VALUE = 0.25f;
     
     // slider has functionality of cached stamina float field
     public Slider slider;

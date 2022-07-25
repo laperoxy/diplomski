@@ -5,7 +5,7 @@ using UnityEngine;
 public class WeaponScript : NetworkBehaviour
 {
 
-    private const int SHOOTING_STAMINA_COST = 2;
+    private int SHOOTING_STAMINA_COST = 30;
 
     private const float SHOOTING_OFFSET = -90;
 
@@ -33,9 +33,11 @@ public class WeaponScript : NetworkBehaviour
             {
                 case WeaponTypes.SOUL_PUSH:
                     weaponType = WeaponTypes.SOUL_FRAGMENT;
+                    SHOOTING_STAMINA_COST = 5;
                     return WeaponTypes.SOUL_FRAGMENT;
                 case WeaponTypes.SOUL_FRAGMENT:
                     weaponType = WeaponTypes.SOUL_PUSH;
+                    SHOOTING_STAMINA_COST = 30;
                     return WeaponTypes.SOUL_PUSH;
             }
         }
