@@ -17,6 +17,10 @@ public class DamageTakerScript: NetworkBehaviour
             {
                 healthBar.takeDamage(10);
             }
+            else if (col.gameObject.CompareTag("Thorns"))
+            {
+                healthBar.takeDamage(10);
+            }
         }
     }
 }
