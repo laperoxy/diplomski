@@ -20,6 +20,7 @@ TagManager:
   - SoulPush
   - SoulFragment
   - Boss
+  - Thorns
   layers:
   - Default
   - TransparentFX
