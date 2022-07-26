@@ -1,3 +1,4 @@
+using Enums;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -9,7 +10,8 @@ public class BossScript : NetworkBehaviour
     public AudioClip SoundToPlay;
     public float Volume;
     private AudioSource audioToPlay;
-    
+    private BossAttackTypes BossAttackType;
+
     [SerializeField] private NetworkVariable<float> networkHealthBar = new NetworkVariable<float>();
 
     void Start()
@@ -19,18 +21,28 @@ public class BossScript : NetworkBehaviour
     
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("SoulPush"))
+        if (IsServer)
         {
-            reduceHealthServerRpc(30);
-        }
-        else if (col.gameObject.CompareTag("SoulFragment"))
-        {
-            reduceHealthServerRpc(5);
+            if (col.gameObject.CompareTag("SoulPush"))
+            {
+                reduceHealth(30);
+            }
+            else if (col.gameObject.CompareTag("SoulFragment"))
+            {
+                reduceHealth(5);
+            }
         }
     }
 
-    [ServerRpc]
-    public void reduceHealthServerRpc(float healthToLose)
+    void Update()
+    {
+        if (IsServer)
+        {
+            
+        }
+    }
+    
+    public void reduceHealth(float healthToLose)
     {
         
         audioToPlay.PlayOneShot(SoundToPlay,Volume);
