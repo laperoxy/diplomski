@@ -53,7 +53,7 @@ public class WeaponScript : NetworkBehaviour
             float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0f, 0f, rotZ + SHOOTING_OFFSET);
 
-            if (ProperTime())
+            if (IsProperTime())
             {
                 if ((Input.GetMouseButtonDown(0)) &&
                     staminaBar.CanShootBullet(SHOOTING_STAMINA_COST) && IsPlayerShootingInRightDirection(difference))
@@ -77,7 +77,7 @@ public class WeaponScript : NetworkBehaviour
         return (localScaleX > 0 && difference.x > 0) || (localScaleX < 0 && difference.x < 0);
     }
 
-    private bool ProperTime()
+    private bool IsProperTime()
     {
         return timeBtwShots <= 0;
     }
