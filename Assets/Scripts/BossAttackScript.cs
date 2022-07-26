@@ -18,5 +18,13 @@ public class BossAttackScript : MonoBehaviour
     {
         Destroy(gameObject);
     }
+    
+    private void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Player"))
+        {
+            DestroyProjectile();
+        }
+    }
 }
 

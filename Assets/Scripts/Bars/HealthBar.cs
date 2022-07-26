@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar : NetworkBehaviour
 {
-    private const float MAX_HEALTH = 20f;
+    private const float MAX_HEALTH = 100f;
 
     public Slider slider;
     public Gradient gradient;
@@ -69,5 +69,9 @@ public class HealthBar : NetworkBehaviour
             gameObject.GetComponentsInParent<PlayerControlNew>()[0].transform.position = new Vector3(-4.53f, 2.0f, 0);
             networkHealthBar.Value = MAX_HEALTH;
         }
+    }
+    public void takeDamage(float damage)
+    {
+        networkHealthBar.Value = Math.Max(networkHealthBar.Value - damage, 0);
     }
 }
