@@ -18,7 +18,7 @@ public class SettingsMenu : MonoBehaviour
     private bool my_isFullscreen;
     private int my_resolutionIndex;
     private int my_qualityIndex;
-    private readonly string SAVE_FILE_EXTENSION = "/save.txt";
+    private readonly string SAVE_FILE_EXTENSION = "/settings.json";
 
     private string json;
 
