@@ -3446,7 +3446,7 @@ GameObject:
   - component: {fileID: 118632468}
   m_Layer: 0
   m_Name: thorns3
-  m_TagString: Untagged
+  m_TagString: Thorns
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26326,7 +26326,7 @@ GameObject:
   - component: {fileID: 880654308}
   m_Layer: 0
   m_Name: thorns3
-  m_TagString: Untagged
+  m_TagString: Thorns
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26599,7 +26599,7 @@ GameObject:
   - component: {fileID: 888671406}
   m_Layer: 0
   m_Name: thorns3
-  m_TagString: Untagged
+  m_TagString: Thorns
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37693,7 +37693,7 @@ GameObject:
   - component: {fileID: 1239387346}
   m_Layer: 0
   m_Name: thorns3
-  m_TagString: Untagged
+  m_TagString: Thorns
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -64463,7 +64463,7 @@ GameObject:
   - component: {fileID: 2115276829}
   m_Layer: 0
   m_Name: thorns3
-  m_TagString: Untagged
+  m_TagString: Thorns
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
