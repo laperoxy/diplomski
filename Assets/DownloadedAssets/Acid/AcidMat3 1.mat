@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: AcidMat3
+  m_Name: AcidMat3 1
   m_Shader: {fileID: -6465566751694194690, guid: 22a4737f8645ca64dba19d7b9724b23a, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -20,7 +20,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_939cd96f0c77448289a06aead35cde9f:
-        m_Texture: {fileID: 8400000, guid: 0b60f1bc6370bd440a4ab465ac33ad85, type: 2}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
@@ -41,9 +41,9 @@ Material:
     - Vector1_e9b618dbecf5457d8a5be31f10db60b0: 0.2
     - Vector1_f5fe411ad6a14f63b5a64b34b70a435f: 9
     m_Colors:
-    - Color_1a338555732341059cb0d6b0c46c2965: {r: 0.027450986, g: 0.4731529, b: 0.5176471, a: 0.2784314}
-    - Color_35e35b63518a47d5946533bd1e4aa757: {r: 0.031413555, g: 1.4843677, b: 2, a: 0}
-    - Color_e3baf2eb074744d5bd86755532931415: {r: 0.047058824, g: 0.55975246, b: 0.7529412, a: 0}
+    - Color_1a338555732341059cb0d6b0c46c2965: {r: 0, g: 0.08603772, b: 0.09433961, a: 0.2784314}
+    - Color_35e35b63518a47d5946533bd1e4aa757: {r: 0.031413555, g: 0.6408994, b: 2, a: 0}
+    - Color_e3baf2eb074744d5bd86755532931415: {r: 0, g: 0.079345234, b: 0.2264151, a: 0}
     - Vector2_b23f1e4aa5174028a7e41f38a0097fb0: {r: 1, g: -1, b: 0, a: 0}
     - Vector2_c6cacf90e8c34d468127823bd2aef8e7: {r: 0, g: 0.02, b: 0, a: 0}
     - Vector2_f4b90a0cdd7a45e9bb4e3b74ffb39462: {r: -0.1, g: 0.01, b: 0, a: 0}
