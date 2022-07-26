@@ -22,6 +22,7 @@ TagManager:
   - Boss
   - BloodBall
   - FireBall
+  - Thorns
   layers:
   - Default
   - TransparentFX
