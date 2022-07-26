@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 9005735846803819115}
   - component: {fileID: 9050976962877169730}
   - component: {fileID: -8525211899794896531}
+  - component: {fileID: 7998731092788201723}
   m_Layer: 0
   m_Name: projectile26_0
   m_TagString: SoulPush
@@ -296,3 +297,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7998731092788201723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181937884440918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 95294892677432450}
