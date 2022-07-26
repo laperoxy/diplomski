@@ -1254,7 +1254,6 @@ GameObject:
   - component: {fileID: 3798150478370565037}
   - component: {fileID: -4420780302255350300}
   - component: {fileID: 9019867988502300062}
-  - component: {fileID: 6429474811120817595}
   m_Layer: 3
   m_Name: NetworkPlayer
   m_TagString: Player
@@ -1332,7 +1331,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 6200000, guid: 729661b0c2c92594d86221bfa65a9c5c, type: 2}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.11685133, y: -0.46129167}
@@ -1546,7 +1545,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.035553
+  MinDistance: 1
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -1635,32 +1634,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthBar: {fileID: 5658177991908827861}
---- !u!61 &6429474811120817595
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5658177992477792162}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.09777069, y: -0.47108173}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3.09, y: 5.4}
-    newSize: {x: 2.4140625, y: 4.21875}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.33461, y: 3.8889837}
-  m_EdgeRadius: 0
 --- !u!1 &5658177992648984606
 GameObject:
   m_ObjectHideFlags: 0
