@@ -21326,9 +21326,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a37f44cbf8c2a7443a3c361efa2f233a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 197e14458e456e44999c07fb4da7e562, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.255
+  m_Volume: 0.592
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -21440,8 +21440,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85b6550011c16b5459ad183910d31381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundToPlay: {fileID: 8300000, guid: a37f44cbf8c2a7443a3c361efa2f233a, type: 3}
-  Volume: 1
+  SoundToPlay: {fileID: 8300000, guid: 197e14458e456e44999c07fb4da7e562, type: 3}
+  Volume: 0.6
   shotPoint: {fileID: 3566243151586953583}
   bloodBall: {fileID: 1148332799799646, guid: bcee65fd85a56454b9519772a1106ff4, type: 3}
   fireBall: {fileID: 1964433284427432, guid: e1df107d3f83dde41a5d8edf7bff3b95, type: 3}
