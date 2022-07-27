@@ -19,6 +19,8 @@ public class BossScript : NetworkBehaviour
     [SerializeField] private GameObject bloodBall;
     [SerializeField] private GameObject fireBall;
 
+    [SerializeField] private GameObject bossClone;
+
     [SerializeField] private NetworkVariable<float> networkHealthBar = new NetworkVariable<float>();
 
     void Start()
@@ -108,6 +110,7 @@ public class BossScript : NetworkBehaviour
         else if (networkBossPhases.Value == BossPhases.SECOND && networkHealthBar.Value < MAX_BOSS_HEALTH / 3)
         {
             networkBossPhases.Value = BossPhases.THIRD;
+            Instantiate(bossClone).GetComponent<NetworkObject>().Spawn();
         }
     }
     
