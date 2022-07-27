@@ -13,10 +13,13 @@ public class BossScript : NetworkBehaviour
     public float Volume;
     private AudioSource audioToPlay;
     private NetworkVariable<BossAttackTypes> networkBossAttackType = new NetworkVariable<BossAttackTypes>();
+    private NetworkVariable<BossPhases> networkBossPhases = new NetworkVariable<BossPhases>();
     private DateTime lastTimeAttackWasDone = new DateTime(0);
     [SerializeField] private Transform shotPoint;
     [SerializeField] private GameObject bloodBall;
     [SerializeField] private GameObject fireBall;
+
+    [SerializeField] private GameObject bossClone;
 
     [SerializeField] private NetworkVariable<float> networkHealthBar = new NetworkVariable<float>();
 
@@ -44,7 +47,7 @@ public class BossScript : NetworkBehaviour
     {
         if (IsServer)
         {
-            if ((DateTime.Now - lastTimeAttackWasDone).TotalSeconds > COOLDOWN_BETWEEN_ATTACKS)
+            if (!IsCooldownActive())
             {
                 AttackWithSkill();
                 lastTimeAttackWasDone = DateTime.Now;
@@ -52,18 +55,37 @@ public class BossScript : NetworkBehaviour
         }
     }
 
+    private bool IsCooldownActive()
+    {
+        return (DateTime.Now - lastTimeAttackWasDone).TotalSeconds <= COOLDOWN_BETWEEN_ATTACKS;
+    }
+
+
     private void AttackWithSkill()
     {
-        switch (networkBossAttackType.Value)
+        if (networkBossPhases.Value == BossPhases.FIRST)
         {
-            case BossAttackTypes.BLOOD_BALL:
-                Instantiate(bloodBall, shotPoint.position, Quaternion.Euler(0,0,90)).GetComponent<NetworkObject>().Spawn();
-                networkBossAttackType.Value = BossAttackTypes.FIRE_BALL;
-                break;
-            case BossAttackTypes.FIRE_BALL:
-                Instantiate(fireBall, shotPoint.position, Quaternion.Euler(0,0,90)).GetComponent<NetworkObject>().Spawn();
-                networkBossAttackType.Value = BossAttackTypes.BLOOD_BALL;
-                break;
+            switch (networkBossAttackType.Value)
+            {
+                case BossAttackTypes.BLOOD_BALL:
+                    Instantiate(bloodBall, shotPoint.position, Quaternion.Euler(0,0,90)).GetComponent<NetworkObject>().Spawn();
+                    networkBossAttackType.Value = BossAttackTypes.FIRE_BALL;
+                    break;
+                case BossAttackTypes.FIRE_BALL:
+                    Instantiate(fireBall, shotPoint.position, Quaternion.Euler(0,0,90)).GetComponent<NetworkObject>().Spawn();
+                    networkBossAttackType.Value = BossAttackTypes.BLOOD_BALL;
+                    break;
+            }
+        }
+        else if (networkBossPhases.Value == BossPhases.SECOND)
+        {
+            Instantiate(fireBall, shotPoint.position, Quaternion.Euler(0,0,90)).GetComponent<NetworkObject>().Spawn();
+            networkBossAttackType.Value = BossAttackTypes.BLOOD_BALL;
+        }
+        else if (networkBossPhases.Value == BossPhases.THIRD)
+        {
+            Instantiate(fireBall, shotPoint.position, Quaternion.Euler(0,0,90)).GetComponent<NetworkObject>().Spawn();
+            networkBossAttackType.Value = BossAttackTypes.BLOOD_BALL;
         }
     }
 
@@ -72,9 +94,23 @@ public class BossScript : NetworkBehaviour
         
         audioToPlay.PlayOneShot(SoundToPlay,Volume);
         networkHealthBar.Value -= healthToLose;
+        ProgressToNextPhaseIfNeeded();
         if (networkHealthBar.Value <= 0)
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void ProgressToNextPhaseIfNeeded()
+    {
+        if (networkBossPhases.Value == BossPhases.FIRST && networkHealthBar.Value < MAX_BOSS_HEALTH * 2 / 3)
+        {
+            networkBossPhases.Value = BossPhases.SECOND;
+        }
+        else if (networkBossPhases.Value == BossPhases.SECOND && networkHealthBar.Value < MAX_BOSS_HEALTH / 3)
+        {
+            networkBossPhases.Value = BossPhases.THIRD;
+            Instantiate(bossClone).GetComponent<NetworkObject>().Spawn();
         }
     }
     
