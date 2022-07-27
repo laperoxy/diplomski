@@ -42,7 +42,8 @@ public class ItemCollectionScript : MonoBehaviour
 
         if (collision.gameObject.CompareTag("House"))
         {
-            SetAndShowText("Jump before the floating house reaches the water!");
+            SetAndShowText("Wait for the floating House to come around \n"
+                + "Dont get wet!");
         }
 
         if (collision.gameObject.CompareTag("Teleporter"))
