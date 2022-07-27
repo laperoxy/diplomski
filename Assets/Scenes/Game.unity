@@ -4939,7 +4939,8 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 598184821
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95621312091594864, guid: 6aff1730488694d499f43306133c14bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6aff1730488694d499f43306133c14bb, type: 3}
 --- !u!4 &153813284 stripped
 Transform:
@@ -33097,7 +33098,8 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 598184821
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95621312091594864, guid: 6aff1730488694d499f43306133c14bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6aff1730488694d499f43306133c14bb, type: 3}
 --- !u!4 &944679375 stripped
 Transform:
@@ -43590,7 +43592,8 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 598184821
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95621312091594864, guid: 6aff1730488694d499f43306133c14bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6aff1730488694d499f43306133c14bb, type: 3}
 --- !u!4 &1221605694 stripped
 Transform:
@@ -55046,7 +55049,8 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 598184821
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95621312091594864, guid: 6aff1730488694d499f43306133c14bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6aff1730488694d499f43306133c14bb, type: 3}
 --- !u!4 &1537276329 stripped
 Transform:
@@ -77388,7 +77392,8 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 598184821
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95621312091594864, guid: 6aff1730488694d499f43306133c14bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6aff1730488694d499f43306133c14bb, type: 3}
 --- !u!4 &2110665565 stripped
 Transform:
@@ -78356,7 +78361,8 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: 598184821
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 95621312091594864, guid: 6aff1730488694d499f43306133c14bb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 6aff1730488694d499f43306133c14bb, type: 3}
 --- !u!1 &2141114825
 GameObject:
