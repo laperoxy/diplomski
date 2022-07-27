@@ -4,6 +4,9 @@ using UnityEngine;
 public class DamageTakerScript: NetworkBehaviour
 {
     
+    public AudioClip SoundToPlay;
+    public float Volume;
+    public AudioSource audioToPlay;
     public HealthBar healthBar;
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -24,6 +27,8 @@ public class DamageTakerScript: NetworkBehaviour
             {
                 healthBar.takeDamage(5);
             }
+            
+            audioToPlay.PlayOneShot(SoundToPlay,Volume);
         }
     }
 }
