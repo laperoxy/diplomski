@@ -20,6 +20,9 @@ public class DamageTakerScript: NetworkBehaviour
             else if (col.gameObject.CompareTag("Thorns"))
             {
                 healthBar.takeDamage(10);
+            }else if (col.gameObject.CompareTag("AcidWaste"))
+            {
+                healthBar.takeDamage(5);
             }
         }
     }

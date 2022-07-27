@@ -25,6 +25,7 @@ TagManager:
   - Thorns
   - Teleporter
   - House
+  - AcidWaste
   layers:
   - Default
   - TransparentFX
