@@ -39,6 +39,16 @@ public class ItemCollectionScript : MonoBehaviour
             SetAndShowText("There is the abandoned Clock tower \n" +
                            "Looks like there is something shiny on top");
         }
+
+        if (collision.gameObject.CompareTag("House"))
+        {
+            SetAndShowText("Jump before the floating house reaches the water!");
+        }
+
+        if (collision.gameObject.CompareTag("Teleporter"))
+        {
+            gameObject.GetComponent<PlayerControlNew>().transform.position = new Vector3(-4.53f, 2.0f, 0);
+        }
     }
 
     private void transitionKeyOwnershipToGrabber()

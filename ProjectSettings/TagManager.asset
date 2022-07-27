@@ -23,6 +23,8 @@ TagManager:
   - BloodBall
   - FireBall
   - Thorns
+  - Teleporter
+  - House
   layers:
   - Default
   - TransparentFX
