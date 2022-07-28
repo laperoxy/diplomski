@@ -26,6 +26,7 @@ TagManager:
   - Teleporter
   - House
   - AcidWaste
+  - BigHeart
   layers:
   - Default
   - TransparentFX

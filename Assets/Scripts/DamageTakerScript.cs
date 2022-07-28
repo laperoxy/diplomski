@@ -31,6 +31,22 @@ public class DamageTakerScript: NetworkBehaviour
             {
                 healthBar.takeDamage(5);
                 audioToPlay.PlayOneShot(SoundToPlay,Volume);
+            }else if (col.gameObject.CompareTag("Heart"))
+            {
+                if (healthBar.canTake())
+                {
+                    healthBar.takeDamage(-20);
+                    Destroy(GameObject.FindGameObjectWithTag("Heart"));
+                }
+                
+            }
+            else if (col.gameObject.CompareTag("BigHeart"))
+            {
+                if (healthBar.canTake())
+                {
+                    healthBar.takeDamage(-50);
+                    Destroy(GameObject.FindGameObjectWithTag("BigHeart"));
+                }
             }
         }
     }
