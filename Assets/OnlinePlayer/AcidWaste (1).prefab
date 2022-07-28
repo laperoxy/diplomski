@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1761573630120366609
+--- !u!1 &1807349280743005126
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,40 +8,40 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1756419526308410311}
-  - component: {fileID: 1909660344814013053}
-  - component: {fileID: 1761390027088011529}
-  - component: {fileID: 959051081277855428}
-  - component: {fileID: 7840275256960897132}
-  - component: {fileID: 4875808732657067121}
+  - component: {fileID: 1803319168189577744}
+  - component: {fileID: 2010534584083645354}
+  - component: {fileID: 1807937550765584714}
+  - component: {fileID: 1807937550765584717}
+  - component: {fileID: 1807937550765584715}
+  - component: {fileID: 1807937550765584712}
   m_Layer: 0
-  m_Name: Explosion10_0
+  m_Name: AcidWaste (1)
   m_TagString: AcidWaste
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1756419526308410311
+--- !u!4 &1803319168189577744
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761573630120366609}
+  m_GameObject: {fileID: 1807349280743005126}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -50, y: -15.15, z: 0}
+  m_LocalPosition: {x: -80.8, y: -6.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1909660344814013053
+--- !u!212 &2010534584083645354
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761573630120366609}
+  m_GameObject: {fileID: 1807349280743005126}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -72,8 +72,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 598184821
-  m_SortingLayer: 4
+  m_SortingLayerID: 1320262573
+  m_SortingLayer: 1
   m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 764a82bb3ee06d0449546e91bcea0b78, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -86,13 +86,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &1761390027088011529
+--- !u!58 &1807937550765584714
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761573630120366609}
+  m_GameObject: {fileID: 1807349280743005126}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -102,31 +102,32 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.00851953}
   serializedVersion: 2
   m_Radius: 0.68363404
---- !u!114 &959051081277855428
-MonoBehaviour:
+--- !u!95 &1807937550765584717
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761573630120366609}
+  m_GameObject: {fileID: 1807349280743005126}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0e0d0a8b08194ec9a2bbd7b26e13055c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints:
-  - {x: -55, y: 11}
-  - {x: -52, y: 5}
-  - {x: -57, y: 12}
-  - {x: -57, y: 5}
-  speed: 10
---- !u!114 &7840275256960897132
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ad691bdcfab4e484789864b23374b6b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1807937550765584715
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761573630120366609}
+  m_GameObject: {fileID: 1807349280743005126}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
@@ -136,13 +137,13 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &4875808732657067121
+--- !u!114 &1807937550765584712
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1761573630120366609}
+  m_GameObject: {fileID: 1807349280743005126}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
