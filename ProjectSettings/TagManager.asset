@@ -27,6 +27,7 @@ TagManager:
   - House
   - AcidWaste
   - BigHeart
+  - Stamina
   layers:
   - Default
   - TransparentFX

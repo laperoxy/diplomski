@@ -8,6 +8,7 @@ public class DamageTakerScript: NetworkBehaviour
     public float Volume;
     public AudioSource audioToPlay;
     public HealthBar healthBar;
+    public StaminaBar staminabar;
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (IsServer)
@@ -31,7 +32,8 @@ public class DamageTakerScript: NetworkBehaviour
             {
                 healthBar.takeDamage(5);
                 audioToPlay.PlayOneShot(SoundToPlay,Volume);
-            }else if (col.gameObject.CompareTag("Heart"))
+            }
+            if (col.gameObject.CompareTag("Heart"))
             {
                 if (healthBar.canTake())
                 {
@@ -46,6 +48,13 @@ public class DamageTakerScript: NetworkBehaviour
                 {
                     healthBar.takeDamage(-50);
                     Destroy(GameObject.FindGameObjectWithTag("BigHeart"));
+                }
+            }
+            if (col.gameObject.CompareTag("Stamina"))
+            {
+                if (staminabar.RepleanishStamina())
+                {
+                    Destroy(GameObject.FindGameObjectWithTag("Stamina"));
                 }
             }
         }

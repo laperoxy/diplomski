@@ -60,7 +60,16 @@ public class StaminaBar : NetworkBehaviour
             updateStaminaServerRpc(slider.value);
         }
     }
-
+    public bool RepleanishStamina()
+    {
+        if(IsClient && IsOwner &&  slider.value < MAX_STAMINA / 5)
+        {
+            slider.value = MAX_STAMINA;
+            updateStaminaServerRpc(slider.value);
+            return true;
+        }
+        return false;
+    }
     [ServerRpc]
     void updateStaminaServerRpc(float stamina)
     {
