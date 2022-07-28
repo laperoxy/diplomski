@@ -28,6 +28,7 @@ TagManager:
   - AcidWaste
   - BigHeart
   - Stamina
+  - Stamina1
   layers:
   - Default
   - TransparentFX

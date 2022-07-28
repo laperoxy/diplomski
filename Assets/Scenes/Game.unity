@@ -3364,7 +3364,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 101191166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -385.1, y: 33.5, z: 0}
+  m_LocalPosition: {x: -383.6, y: 33.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1375130919}
@@ -41035,7 +41035,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226006013}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -33.28, y: 0, z: 0}
+  m_LocalPosition: {x: -32.2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1816505612}
@@ -65071,7 +65071,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928287225}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -381.1, y: 49, z: 0}
+  m_LocalPosition: {x: -383.6, y: 49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1375130919}
@@ -69972,7 +69972,7 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1928287225}
   - {fileID: 101191166}
-  speed: 6
+  speed: 4
 --- !u!82 &2065281846
 AudioSource:
   m_ObjectHideFlags: 0

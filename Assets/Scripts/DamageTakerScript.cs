@@ -57,6 +57,13 @@ public class DamageTakerScript: NetworkBehaviour
                     Destroy(GameObject.FindGameObjectWithTag("Stamina"));
                 }
             }
+            if (col.gameObject.CompareTag("Stamina1"))
+            {
+                if (staminabar.RepleanishStamina())
+                {
+                    Destroy(GameObject.FindGameObjectWithTag("Stamina1"));
+                }
+            }
         }
     }
 }

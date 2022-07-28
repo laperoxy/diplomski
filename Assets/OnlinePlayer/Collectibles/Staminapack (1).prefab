@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 3549773635892770673}
   m_Layer: 0
   m_Name: Staminapack (1)
-  m_TagString: Stamina
+  m_TagString: Stamina1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
