@@ -9,11 +9,14 @@ public class PauseSettings : MonoBehaviour
 {
     
     [SerializeField] private GameObject muteIcon;
+    [SerializeField] private GameObject Fog;
     [SerializeField] private Slider volumeSlider = null;
     [SerializeField] private Toggle toggle = null;
-    
+    [SerializeField] private Toggle fogToggle = null;
+
     private float my_volume;
     private bool my_isFullscreen;
+    private bool my_isfogOn;
     private int my_resolutionIndex;
     private int my_qualityIndex;
     private readonly string SAVE_FILE_EXTENSION = "/settings.json";
@@ -32,10 +35,18 @@ public class PauseSettings : MonoBehaviour
         {
             string saveString = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
             SaveObject loadedSavedSettings = JsonUtility.FromJson<SaveObject>(saveString);
-            
-            SetVolume(loadedSavedSettings.volume);
+
+            if (loadedSavedSettings.volume > 1f || loadedSavedSettings.volume < 0f)
+            {
+                SetVolume(0.5f);
+            }
+            else
+            {
+                SetVolume(loadedSavedSettings.volume);
+            }
 
             SetFullScreen(loadedSavedSettings.isFullscreen);
+            SetFog(loadedSavedSettings.isFogOn);
 
             my_resolutionIndex = loadedSavedSettings.resolutionIndex;
             my_qualityIndex = loadedSavedSettings.qualityIndex;
@@ -81,7 +92,14 @@ public class PauseSettings : MonoBehaviour
         my_isFullscreen = isFullscreen;
         toggle.isOn = isFullscreen;
     }
-    
+
+    public void SetFog(bool isFogOn)
+    {
+        Fog.SetActive(isFogOn);
+        fogToggle.isOn = isFogOn;
+        my_isfogOn = isFogOn;
+    }
+
     public void SaveBeforeReturn()
     {
         SaveObject saveObject = new SaveObject
@@ -96,11 +114,12 @@ public class PauseSettings : MonoBehaviour
 
         File.WriteAllText(Application.dataPath + SAVE_FILE_EXTENSION, json);
     }
-    
+
     private class SaveObject
     {
         public float volume;
         public bool isFullscreen;
+        public bool isFogOn;
         public int resolutionIndex;
         public int qualityIndex;
     }

@@ -8,16 +8,20 @@ using Toggle = UnityEngine.UI.Toggle;
 public class SettingsMenu : MonoBehaviour
 {
     [SerializeField] private GameObject muteIcon;
+    [SerializeField] private GameObject Fog;
     [SerializeField] private Slider volumeSlider = null;
     [SerializeField] private Toggle toggle = null;
+    [SerializeField] private Toggle fogToggle = null;
     [SerializeField] private TMP_Dropdown resolutionDropwdown = null;
     [SerializeField] private TMP_Dropdown graphicsDropdown = null;
     private Resolution[] resolutions;
 
     private float my_volume;
     private bool my_isFullscreen;
+    private bool my_isfogOn;
     private int my_resolutionIndex;
     private int my_qualityIndex;
+
     private readonly string SAVE_FILE_EXTENSION = "/settings.json";
 
     private string json;
@@ -55,19 +59,52 @@ public class SettingsMenu : MonoBehaviour
         {
             string saveString = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
             SaveObject loadedSavedSettings = JsonUtility.FromJson<SaveObject>(saveString);
-            SetVolume(loadedSavedSettings.volume);
+            if (loadedSavedSettings.volume > 1f || loadedSavedSettings.volume < 0f)
+            {
+                SetVolume(0.5f);
+            }
+            else
+            {
+                SetVolume(loadedSavedSettings.volume);
+            }
 
-            resolutionDropwdown.value = loadedSavedSettings.resolutionIndex;
-            resolutionDropwdown.RefreshShownValue();
-            SetResolution(loadedSavedSettings.resolutionIndex);
+            if (loadedSavedSettings.resolutionIndex > 0 && loadedSavedSettings.resolutionIndex < resolutions.Length)
+            {
+                resolutionDropwdown.value = loadedSavedSettings.resolutionIndex;
+                resolutionDropwdown.RefreshShownValue();
+                SetResolution(loadedSavedSettings.resolutionIndex);
+            }            
 
             SetFullScreen(loadedSavedSettings.isFullscreen);
+            SetFog(loadedSavedSettings.isFogOn);
 
-            graphicsDropdown.value = loadedSavedSettings.qualityIndex;
-            graphicsDropdown.RefreshShownValue();
-            SetQuality(loadedSavedSettings.qualityIndex);
+            if (loadedSavedSettings.qualityIndex < 0 || loadedSavedSettings.qualityIndex > 2)
+            {
+                graphicsDropdown.value = 2;
+                graphicsDropdown.RefreshShownValue();
+                SetQuality(2);
+            }
+            else
+            {
+                graphicsDropdown.value = loadedSavedSettings.qualityIndex;
+                graphicsDropdown.RefreshShownValue();
+                SetQuality(loadedSavedSettings.qualityIndex);
+            }
+            
 
             //Debug.Log(saveString);
+        }
+        else
+        {
+            SetVolume(0.5f);
+            SetFullScreen(true);
+            SetFog(true);
+
+            graphicsDropdown.value = 2;
+            graphicsDropdown.RefreshShownValue();
+            SetQuality(2);
+
+            SaveBeforeReturn();
         }
     }
 
@@ -115,6 +152,13 @@ public class SettingsMenu : MonoBehaviour
         toggle.isOn = isFullscreen;
     }
 
+    public void SetFog(bool isFogOn)
+    {
+        Fog.SetActive(isFogOn);
+        fogToggle.isOn = isFogOn;
+        my_isfogOn=isFogOn;
+    }
+
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
@@ -127,6 +171,7 @@ public class SettingsMenu : MonoBehaviour
         {
             volume = my_volume,
             isFullscreen = my_isFullscreen,
+            isFogOn = my_isfogOn,
             resolutionIndex = my_resolutionIndex,
             qualityIndex = my_qualityIndex
         };
@@ -140,6 +185,7 @@ public class SettingsMenu : MonoBehaviour
     {
         public float volume;
         public bool isFullscreen;
+        public bool isFogOn;
         public int resolutionIndex;
         public int qualityIndex;
     }
