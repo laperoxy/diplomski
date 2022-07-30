@@ -29,6 +29,7 @@ TagManager:
   - BigHeart
   - Stamina
   - Stamina1
+  - boss_third_attack
   layers:
   - Default
   - TransparentFX

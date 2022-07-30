@@ -18,12 +18,12 @@ public class DamageTakerScript: NetworkBehaviour
         {
             if (col.gameObject.CompareTag("BloodBall"))
             {
-                healthBar.takeDamage(5);
+                //healthBar.takeDamage(5);
                 audioToPlay.PlayOneShot(bloodyPunchSound,Volume);
             }
             else if (col.gameObject.CompareTag("FireBall"))
             {
-                healthBar.takeDamage(10);
+                //healthBar.takeDamage(10);
                 audioToPlay.PlayOneShot(bloodyPunchSound,Volume);
             }
             else if (col.gameObject.CompareTag("Thorns"))
@@ -73,6 +73,10 @@ public class DamageTakerScript: NetworkBehaviour
             else if (col.gameObject.CompareTag("SoulFragment") || col.gameObject.CompareTag("SoulPush"))
             {
                 Destroy(col.gameObject);
+            }else if (col.gameObject.CompareTag("boss_third_attack"))
+            {
+                //healthBar.takeDamage(15);
+                audioToPlay.PlayOneShot(bloodyPunchSound,Volume);
             }
         }
     }
