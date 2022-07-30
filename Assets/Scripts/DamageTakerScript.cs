@@ -33,31 +33,31 @@ public class DamageTakerScript: NetworkBehaviour
                 healthBar.takeDamage(5);
                 audioToPlay.PlayOneShot(SoundToPlay,Volume);
             }
-            if (col.gameObject.CompareTag("Heart"))
+            else if (col.gameObject.CompareTag("Heart"))
             {
-                if (healthBar.canTake())
+                if (healthBar.canReplenishHealth())
                 {
-                    healthBar.takeDamage(-20);
+                    healthBar.heal(20);
                     Destroy(GameObject.FindGameObjectWithTag("Heart"));
                 }
                 
             }
             else if (col.gameObject.CompareTag("BigHeart"))
             {
-                if (healthBar.canTake())
+                if (healthBar.canReplenishHealth())
                 {
-                    healthBar.takeDamage(-50);
+                    healthBar.heal(50);
                     Destroy(GameObject.FindGameObjectWithTag("BigHeart"));
                 }
             }
-            if (col.gameObject.CompareTag("Stamina"))
+            else if (col.gameObject.CompareTag("Stamina"))
             {
                 if (staminabar.RepleanishStamina())
                 {
                     Destroy(GameObject.FindGameObjectWithTag("Stamina"));
                 }
             }
-            if (col.gameObject.CompareTag("Stamina1"))
+            else if (col.gameObject.CompareTag("Stamina1"))
             {
                 if (staminabar.RepleanishStamina())
                 {

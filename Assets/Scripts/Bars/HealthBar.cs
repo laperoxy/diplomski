@@ -74,7 +74,12 @@ public class HealthBar : NetworkBehaviour
     {
         networkHealthBar.Value = Math.Max(networkHealthBar.Value - damage, 0);
     }
-    public bool canTake()
+    
+    public void heal(float healValue)
+    {
+        networkHealthBar.Value = Math.Max(networkHealthBar.Value + healValue, MAX_HEALTH);
+    }
+    public bool canReplenishHealth()
     {
         return networkHealthBar.Value < MAX_HEALTH;
     }
