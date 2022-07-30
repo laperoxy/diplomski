@@ -6,6 +6,8 @@ public class DamageTakerScript: NetworkBehaviour
     
     public AudioClip bloodyPunchSound;
     public AudioClip refillSound;
+    public AudioClip thornsSound;
+    public AudioClip acidSound;
     public float Volume;
     public AudioSource audioToPlay;
     public HealthBar healthBar;
@@ -27,12 +29,12 @@ public class DamageTakerScript: NetworkBehaviour
             else if (col.gameObject.CompareTag("Thorns"))
             {
                 healthBar.takeDamage(10);
-                audioToPlay.PlayOneShot(bloodyPunchSound,Volume);
+                audioToPlay.PlayOneShot(thornsSound,Volume);
             }
             else if (col.gameObject.CompareTag("AcidWaste"))
             {
                 healthBar.takeDamage(5);
-                audioToPlay.PlayOneShot(bloodyPunchSound,Volume);
+                audioToPlay.PlayOneShot(acidSound,0.8f);
             }
             else if (col.gameObject.CompareTag("Heart"))
             {

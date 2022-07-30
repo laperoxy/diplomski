@@ -1639,7 +1639,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bloodyPunchSound: {fileID: 8300000, guid: a37f44cbf8c2a7443a3c361efa2f233a, type: 3}
   refillSound: {fileID: 8300000, guid: e0687a3feca937646a447f9441c33420, type: 3}
-  Volume: 0.7
+  thornsSound: {fileID: 8300000, guid: f74ea0835ced1dc448aee11062f08964, type: 3}
+  acidSound: {fileID: 8300000, guid: 1810961dde21f8342894ecb6ec677ba2, type: 3}
+  Volume: 0.35
   audioToPlay: {fileID: 8144546707438718148}
   healthBar: {fileID: 5658177991908827861}
   staminabar: {fileID: 5658177991270160684}
