@@ -82,8 +82,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3099312422651949376}
-  m_Text: "Wait for the floating House to come around \nDont get wet!"
-    top"
+  m_Text: Used key to open the gate
   m_OffsetZ: 0
   m_CharacterSize: 0.1
   m_LineSpacing: 1
