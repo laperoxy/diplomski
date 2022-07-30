@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -13,6 +14,8 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private Transform m_GroundCheck; // A position marking where to check if the player is grounded.
     [SerializeField] private Transform m_CeilingCheck; // A position marking where to check for ceilings
     [SerializeField] private Transform playerLight;
+
+    public HealthBar healthbar;
     
     [Header("Events")] [Space] public UnityEvent OnLandEvent;
 
@@ -21,10 +24,43 @@ public class CharacterController2D : MonoBehaviour
     private Rigidbody2D m_Rigidbody2D;
     private Vector3 m_Velocity = Vector3.zero;
 
+    private bool firstTime = true;
+    private bool isFalling = false;
+    private Vector3 prevPos;
+    private float highestPos;
+
     private void Awake()
     {
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         OnLandEvent ??= new UnityEvent();
+        prevPos = transform.position;
+    }
+
+    private void Update()
+    {
+        
+        if (!m_Grounded)
+        {
+            if (transform.position.y < prevPos.y && firstTime)
+            {
+                firstTime = false;
+                isFalling = true;
+                highestPos = transform.position.y;
+            }
+
+            prevPos = transform.position;
+        }
+
+        if (m_Grounded && isFalling)
+        {
+            if (highestPos - transform.position.y > 10)
+            {
+                Debug.Log("Fall damage");
+            }
+
+            isFalling = false;
+            firstTime = true;
+        }
     }
 
     private void FixedUpdate()
