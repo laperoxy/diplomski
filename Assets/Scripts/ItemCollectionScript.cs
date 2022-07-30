@@ -13,6 +13,8 @@ public class ItemCollectionScript : MonoBehaviour
     public float Volume;
     private AudioSource audioToPlay;
     
+    [SerializeField] private GameObject victoryScreen = null;
+    
     void Start()
     {
         audioToPlay = GetComponent<AudioSource>();
@@ -49,6 +51,11 @@ public class ItemCollectionScript : MonoBehaviour
         if (collision.gameObject.CompareTag("Teleporter"))
         {
             gameObject.GetComponent<PlayerControlNew>().transform.position = new Vector3(-4.53f, 2.0f, 0);
+        }
+
+        if (collision.gameObject.CompareTag("End"))
+        {
+            victoryScreen.SetActive(true);
         }
     }
 

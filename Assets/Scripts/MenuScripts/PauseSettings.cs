@@ -51,8 +51,6 @@ public class PauseSettings : MonoBehaviour
             my_resolutionIndex = loadedSavedSettings.resolutionIndex;
             my_qualityIndex = loadedSavedSettings.qualityIndex;
 
-
-            Debug.Log(saveString);
         }
     }
 

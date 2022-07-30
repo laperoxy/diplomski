@@ -1372,6 +1372,7 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 5658177991625431175}
   m_CeilingCheck: {fileID: 5658177992648984607}
   playerLight: {fileID: 5658177992119089091}
+  healthbar: {fileID: 5658177991908827861}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
