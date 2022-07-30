@@ -13,7 +13,7 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private Transform m_GroundCheck; // A position marking where to check if the player is grounded.
     [SerializeField] private Transform m_CeilingCheck; // A position marking where to check for ceilings
     [SerializeField] private Transform playerLight;
-    
+
     [Header("Events")] [Space] public UnityEvent OnLandEvent;
 
     private bool m_FacingRight = true; // For determining which way the player is currently facing.
@@ -36,7 +36,8 @@ public class CharacterController2D : MonoBehaviour
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
         var colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, GroundedRadius, m_WhatIsGround);
         foreach (var colliderElement in colliders)
-            if (colliderElement.gameObject != gameObject && !colliderElement.gameObject.CompareTag("CameraCollider"))
+            if (colliderElement.gameObject != gameObject && !colliderElement.gameObject.CompareTag("CameraCollider") &&
+                !colliderElement.gameObject.CompareTag("AudioTrigger"))
             {
                 m_Grounded = true;
                 if (!wasGrounded)
@@ -91,10 +92,10 @@ public class CharacterController2D : MonoBehaviour
         // Multiply the player's x local scale by -1.
         var theScale = transform.localScale;
         var lightdir = playerLight.rotation;
-        
+
         theScale.x *= -1;
         lightdir.z *= -1;
-        
+
         transform.localScale = theScale;
 
         playerLight.rotation = lightdir;

@@ -30,6 +30,7 @@ TagManager:
   - Stamina
   - Stamina1
   - CameraCollider
+  - AudioTrigger
   layers:
   - Default
   - TransparentFX
