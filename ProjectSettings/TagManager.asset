@@ -30,6 +30,8 @@ TagManager:
   - Stamina
   - Stamina1
   - boss_third_attack
+  - CameraCollider
+  - AudioTrigger
   layers:
   - Default
   - TransparentFX
