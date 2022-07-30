@@ -98,6 +98,11 @@ public class FinalBossPhaseScript : NetworkBehaviour
         networkHealthBar.Value -= healthToLose;
         if (networkHealthBar.Value <= 0)
         {
+            GameObject[] gameObjectsWithTag = GameObject.FindGameObjectsWithTag("boss_third_attack");
+            foreach (var projectile in gameObjectsWithTag)
+            {
+                Destroy(projectile);
+            }
             Destroy(gameObject);
         }
     }
