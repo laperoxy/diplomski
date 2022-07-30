@@ -20,6 +20,7 @@ public class BossScript : NetworkBehaviour
     [SerializeField] private GameObject fireBall;
 
     [SerializeField] private GameObject bossClone;
+    [SerializeField] private GameObject finalPhase;
 
     [SerializeField] private NetworkVariable<float> networkHealthBar = new NetworkVariable<float>();
 
@@ -97,6 +98,7 @@ public class BossScript : NetworkBehaviour
         ProgressToNextPhaseIfNeeded();
         if (networkHealthBar.Value <= 0)
         {
+            Instantiate(finalPhase).GetComponent<NetworkObject>().Spawn();
             Destroy(gameObject);
         }
     }
@@ -116,10 +118,10 @@ public class BossScript : NetworkBehaviour
     
     private void Awake()
     {
-        SetMaxStamina();
+        SetMaxHealth();
     }
 
-    public void SetMaxStamina()
+    public void SetMaxHealth()
     {
         networkHealthBar.Value = MAX_BOSS_HEALTH;
     }

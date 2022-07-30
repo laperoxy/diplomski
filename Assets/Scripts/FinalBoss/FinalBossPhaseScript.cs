@@ -3,18 +3,19 @@ using Enums;
 using Unity.Netcode;
 using UnityEngine;
 
-public class BossCloneScript : NetworkBehaviour
+public class FinalBossPhaseScript : NetworkBehaviour
 {
 
     private readonly float MAX_BOSS_HEALTH = 100;
-    private float COOLDOWN_BETWEEN_ATTACKS = 2.5f;
+    private float COOLDOWN_BETWEEN_ATTACKS = 6f;
     
     public AudioClip SoundToPlay;
     public float Volume;
     private AudioSource audioToPlay;
     private DateTime lastTimeAttackWasDone = new DateTime(0);
-    [SerializeField] private Transform shotPoint;
-    [SerializeField] private GameObject fireBall;
+    private int state = 0;
+    [SerializeField] private GameObject leftAcidBall;
+    [SerializeField] private GameObject rightAcidBall;
 
     [SerializeField] private NetworkVariable<float> networkHealthBar = new NetworkVariable<float>();
 
@@ -58,7 +59,22 @@ public class BossCloneScript : NetworkBehaviour
 
     private void AttackWithSkill()
     {
-        Instantiate(fireBall, shotPoint.position, Quaternion.Euler(0,0,-90)).GetComponent<NetworkObject>().Spawn();
+        SpawnAcidBall();
+    }
+
+    private void SpawnAcidBall()
+    {
+        if (state == 0)
+        {
+            Instantiate(rightAcidBall).GetComponent<NetworkObject>().Spawn();
+        }
+        else
+        {
+            Instantiate(leftAcidBall).GetComponent<NetworkObject>().Spawn();
+        }
+
+        state = (state + 1) % 2;
+
     }
 
     public void reduceHealth(float healthToLose)
@@ -75,10 +91,10 @@ public class BossCloneScript : NetworkBehaviour
     
     private void Awake()
     {
-        SetMaxStamina();
+        SetMaxHealth();
     }
 
-    public void SetMaxStamina()
+    public void SetMaxHealth()
     {
         networkHealthBar.Value = MAX_BOSS_HEALTH;
     }
