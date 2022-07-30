@@ -66,14 +66,26 @@ public class HealthBar : NetworkBehaviour
         networkHealthBar.Value = health;
         if (networkHealthBar.Value <= 0)
         {
-            gameObject.GetComponentsInParent<PlayerControlNew>()[0].transform.position = new Vector3(-4.53f, 2.0f, 0);
-            networkHealthBar.Value = MAX_HEALTH;
+            ReturnDeadPlayerToStartingPosition();
         }
     }
+
+    private void ReturnDeadPlayerToStartingPosition()
+    {
+        gameObject.GetComponentsInParent<PlayerControlNew>()[0].transform.position = new Vector3(-4.53f, 2.0f, 0);
+        networkHealthBar.Value = MAX_HEALTH / 10;
+    }
+
     public void takeDamage(float damage)
     {
         networkHealthBar.Value = Math.Max(networkHealthBar.Value - damage, 0);
+        if (networkHealthBar.Value == 0)
+        {
+            ReturnDeadPlayerToStartingPosition();
+        }
     }
+    
+    
     
     public void heal(float healValue)
     {
