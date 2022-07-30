@@ -40,7 +40,6 @@ public class DamageTakerScript: NetworkBehaviour
                     healthBar.heal(20);
                     Destroy(GameObject.FindGameObjectWithTag("Heart"));
                 }
-                
             }
             else if (col.gameObject.CompareTag("BigHeart"))
             {
