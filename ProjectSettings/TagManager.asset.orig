@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Coin
+  - Water
+  - End
+  - Heart
+  - NextLevel
+  - Destroy
+  - key
+  - CityEnterance
+  - GroundCheck
+  - ClockTower
+  - ClockTowerSign
+  - Void
+  - PillarToDestroy
+  - SoulPush
+  - SoulFragment
+  - Boss
+  - BloodBall
+  - FireBall
+  - Thorns
+  - Teleporter
+  - House
+  - AcidWaste
+  - BigHeart
+  - Stamina
+  - Stamina1
+<<<<<<< HEAD
+  - boss_third_attack
+=======
+  - CameraCollider
+  - AudioTrigger
+>>>>>>> eac34104bcb909a728192bc3e593c4b23092fe45
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Player
+  - Water
+  - UI
+  - Glow
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Sky
+    uniqueID: 3737896267
+    locked: 0
+  - name: Background
+    uniqueID: 3292707577
+    locked: 0
+  - name: ForestBack
+    uniqueID: 1808893855
+    locked: 0
+  - name: BackgroundEnv
+    uniqueID: 1333958167
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 1320262573
+    locked: 0
+  - name: Foreground
+    uniqueID: 3902266629
+    locked: 0
+  - name: ForestFront
+    uniqueID: 2330814979
+    locked: 0
+  - name: Front
+    uniqueID: 598184821
+    locked: 0
