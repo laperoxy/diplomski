@@ -70,6 +70,10 @@ public class DamageTakerScript: NetworkBehaviour
                     audioToPlay.PlayOneShot(refillSound,Volume);
                 }
             }
+            else if (col.gameObject.CompareTag("SoulFragment") || col.gameObject.CompareTag("SoulPush"))
+            {
+                Destroy(col.gameObject);
+            }
         }
     }
 }
