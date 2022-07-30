@@ -159,6 +159,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints:
   - {x: 196.8709, y: 10.4}
+  - {x: 230.2521, y: 10.4}
   - {x: 269.2521, y: 10.4}
   speed: 1
 --- !u!82 &6718152024112383226
