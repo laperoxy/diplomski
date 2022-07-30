@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Enums;
 using Unity.Netcode;
 using UnityEngine;
@@ -8,12 +9,14 @@ public class FinalBossPhaseScript : NetworkBehaviour
 
     private readonly float MAX_BOSS_HEALTH = 100;
     private float COOLDOWN_BETWEEN_ATTACKS = 6f;
+    private readonly int MAX_SPAWNED_OBJECTS = 4;
     
     public AudioClip SoundToPlay;
     public float Volume;
     private AudioSource audioToPlay;
     private DateTime lastTimeAttackWasDone = new DateTime(0);
     private int state = 0;
+    private int spawnedObjects = 0;
     [SerializeField] private GameObject leftAcidBall;
     [SerializeField] private GameObject rightAcidBall;
 
@@ -64,17 +67,20 @@ public class FinalBossPhaseScript : NetworkBehaviour
 
     private void SpawnAcidBall()
     {
-        if (state == 0)
+        if (spawnedObjects < MAX_SPAWNED_OBJECTS)
         {
-            Instantiate(rightAcidBall).GetComponent<NetworkObject>().Spawn();
-        }
-        else
-        {
-            Instantiate(leftAcidBall).GetComponent<NetworkObject>().Spawn();
-        }
+            if (state == 0)
+            {
+                Instantiate(rightAcidBall).GetComponent<NetworkObject>().Spawn();
+            }
+            else
+            {
+                Instantiate(leftAcidBall).GetComponent<NetworkObject>().Spawn();
+            }
 
-        state = (state + 1) % 2;
-
+            state = (state + 1) % 2;
+            ++spawnedObjects;
+        }
     }
 
     public void reduceHealth(float healthToLose)
