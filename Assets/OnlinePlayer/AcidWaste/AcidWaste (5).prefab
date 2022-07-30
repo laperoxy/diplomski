@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1088892856719485439}
   - component: {fileID: 1007946495676092485}
   - component: {fileID: 1084592275961864893}
-  - component: {fileID: 1084592275961864892}
   - component: {fileID: 1084592275961864890}
   - component: {fileID: 7252436465538382055}
+  - component: {fileID: 1910689745090489725}
   m_Layer: 0
   m_Name: AcidWaste (5)
   m_TagString: AcidWaste
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085039762316757033}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -117.9, y: -4.5, z: 0}
+  m_LocalPosition: {x: -70, y: -4.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -102,25 +102,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.00851953}
   serializedVersion: 2
   m_Radius: 0.68363404
---- !u!95 &1084592275961864892
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1085039762316757033}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: abb914eaabc24e5479e4d79913642e18, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1084592275961864890
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,3 +144,20 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
+--- !u!114 &1910689745090489725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085039762316757033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0d0a8b08194ec9a2bbd7b26e13055c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: -70.82, y: -4.77}
+  - {x: -75.05, y: 10.07}
+  - {x: -81.87, y: -4}
+  speed: 2

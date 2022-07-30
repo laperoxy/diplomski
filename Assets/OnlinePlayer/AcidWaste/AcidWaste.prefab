@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 2402173704003347511}
   - component: {fileID: 2573327758155406733}
   - component: {fileID: 2398031444305260396}
-  - component: {fileID: 2398031444305260397}
   - component: {fileID: 2398031444305260386}
   - component: {fileID: 2398031444305260387}
+  - component: {fileID: 6948554318181159999}
   m_Layer: 0
   m_Name: AcidWaste
   m_TagString: AcidWaste
@@ -102,25 +102,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.00851953}
   serializedVersion: 2
   m_Radius: 0.68363404
---- !u!95 &2398031444305260397
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2397163923906119137}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c45a8965cdd8bf04fb1de65abc04de68, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &2398031444305260386
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,3 +144,24 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
+--- !u!114 &6948554318181159999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2397163923906119137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e0d0a8b08194ec9a2bbd7b26e13055c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints:
+  - {x: -43.52, y: -2.95}
+  - {x: -43.52, y: 6.94}
+  - {x: -44.59, y: 8.69}
+  - {x: -62.29, y: 8.17}
+  - {x: -53.87, y: 10.49}
+  - {x: -42.71, y: 7.23}
+  - {x: -42.71, y: -2.65}
+  speed: 3

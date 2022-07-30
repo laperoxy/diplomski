@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class Vector2Follower : MonoBehaviour
@@ -21,7 +22,7 @@ public class Vector2Follower : MonoBehaviour
             }
         }
 
-        transform.position = Vector2.MoveTowards(transform.position, waypoints[currentWaypointIndex],
+        transform.position = Vector2.Lerp(transform.position, waypoints[currentWaypointIndex],
             Time.deltaTime * speed);
     }
 }
