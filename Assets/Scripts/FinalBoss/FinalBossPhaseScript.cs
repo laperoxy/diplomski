@@ -24,6 +24,7 @@ public class FinalBossPhaseScript : NetworkBehaviour
     void Start()
     {
         audioToPlay = GetComponent<AudioSource>();
+        lastTimeAttackWasDone = DateTime.Now;
     }
     
     private void OnTriggerEnter2D(Collider2D col)
