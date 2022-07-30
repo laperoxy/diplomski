@@ -55,7 +55,7 @@ public class CharacterController2D : MonoBehaviour
         {
             if (highestPos - transform.position.y > 10)
             {
-                Debug.Log("Fall damage");
+                healthbar.takeDamage(30);
             }
 
             isFalling = false;
