@@ -34,7 +34,7 @@ public class HealthBar : NetworkBehaviour
             }
             else
             {
-                if (Math.Abs(slider.value - networkHealthBar.Value) > 0.1)
+                if (FloatComparator.NotEqual(slider.value,networkHealthBar.Value))
                 {
                     slider.value = networkHealthBar.Value;
                 }
