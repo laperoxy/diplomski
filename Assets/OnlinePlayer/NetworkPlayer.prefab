@@ -606,6 +606,8 @@ MonoBehaviour:
   slider: {fileID: 5658177991270160682}
   networkStaminaBar:
     m_InternalValue: 0
+  networkStaminaPacks:
+    m_InternalValue: 0
 --- !u!1 &5658177991503817315
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,7 +1637,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2cd7619b07f480a9789c0a515758f62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SoundToPlay: {fileID: 8300000, guid: a37f44cbf8c2a7443a3c361efa2f233a, type: 3}
+  bloodyPunchSound: {fileID: 8300000, guid: a37f44cbf8c2a7443a3c361efa2f233a, type: 3}
+  refillSound: {fileID: 8300000, guid: e0687a3feca937646a447f9441c33420, type: 3}
   Volume: 0.7
   audioToPlay: {fileID: 8144546707438718148}
   healthBar: {fileID: 5658177991908827861}
