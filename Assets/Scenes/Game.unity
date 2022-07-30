@@ -11583,7 +11583,7 @@ GameObject:
   - component: {fileID: 338075428}
   m_Layer: 0
   m_Name: Parkour Camera Zoom In
-  m_TagString: Untagged
+  m_TagString: CameraCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13042,7 +13042,7 @@ GameObject:
   - component: {fileID: 393447298}
   m_Layer: 0
   m_Name: ScaryStepsFast
-  m_TagString: Untagged
+  m_TagString: AudioTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17879,7 +17879,7 @@ GameObject:
   - component: {fileID: 529334848}
   m_Layer: 0
   m_Name: Parkour Camera Zoom out
-  m_TagString: Untagged
+  m_TagString: CameraCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22809,7 +22809,7 @@ GameObject:
   - component: {fileID: 692482567}
   m_Layer: 0
   m_Name: Ghosts
-  m_TagString: Untagged
+  m_TagString: AudioTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -23341,7 +23341,7 @@ GameObject:
   - component: {fileID: 707396858}
   m_Layer: 0
   m_Name: Parkour Camera Zoom out small
-  m_TagString: Untagged
+  m_TagString: CameraCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44436,7 +44436,7 @@ GameObject:
   - component: {fileID: 1303475418}
   m_Layer: 0
   m_Name: BossCameraTrigger
-  m_TagString: Untagged
+  m_TagString: CameraCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45373,7 +45373,7 @@ GameObject:
   - component: {fileID: 1315025947}
   m_Layer: 0
   m_Name: UpstairsFall
-  m_TagString: Untagged
+  m_TagString: AudioTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50248,7 +50248,7 @@ GameObject:
   - component: {fileID: 1466328143}
   m_Layer: 0
   m_Name: Shhhhhh
-  m_TagString: Untagged
+  m_TagString: AudioTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52661,7 +52661,7 @@ GameObject:
   - component: {fileID: 1543719281}
   m_Layer: 0
   m_Name: Base camera zoom
-  m_TagString: Untagged
+  m_TagString: CameraCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -54574,7 +54574,7 @@ GameObject:
   - component: {fileID: 1591567671}
   m_Layer: 0
   m_Name: Parkour Camera Zoom out (1)
-  m_TagString: Untagged
+  m_TagString: CameraCollider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
