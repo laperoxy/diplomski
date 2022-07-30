@@ -52,14 +52,14 @@ public class DamageTakerScript: NetworkBehaviour
             }
             else if (col.gameObject.CompareTag("Stamina"))
             {
-                if (staminabar.RepleanishStamina())
+                if (staminabar.ReplenishStamina())
                 {
                     Destroy(GameObject.FindGameObjectWithTag("Stamina"));
                 }
             }
             else if (col.gameObject.CompareTag("Stamina1"))
             {
-                if (staminabar.RepleanishStamina())
+                if (staminabar.ReplenishStamina())
                 {
                     Destroy(GameObject.FindGameObjectWithTag("Stamina1"));
                 }
