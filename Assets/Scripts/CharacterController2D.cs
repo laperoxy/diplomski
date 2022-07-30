@@ -36,7 +36,7 @@ public class CharacterController2D : MonoBehaviour
         // This can be done using layers instead but Sample Assets will not overwrite your project settings.
         var colliders = Physics2D.OverlapCircleAll(m_GroundCheck.position, GroundedRadius, m_WhatIsGround);
         foreach (var colliderElement in colliders)
-            if (colliderElement.gameObject != gameObject)
+            if (colliderElement.gameObject != gameObject && !colliderElement.gameObject.CompareTag("CameraCollider"))
             {
                 m_Grounded = true;
                 if (!wasGrounded)
