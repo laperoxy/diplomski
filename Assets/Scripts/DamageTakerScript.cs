@@ -76,7 +76,7 @@ public class DamageTakerScript : NetworkBehaviour
             // }
             else if (col.gameObject.CompareTag("boss_third_attack"))
             {
-                //healthBar.takeDamage(15);
+                healthBar.takeDamage(15);
                 audioToPlay.PlayOneShot(bloodyPunchSound, Volume);
             }
         }
