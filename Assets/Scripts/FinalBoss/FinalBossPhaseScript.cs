@@ -18,6 +18,7 @@ public class FinalBossPhaseScript : NetworkBehaviour
     private int spawnedObjects = 0;
     [SerializeField] private GameObject leftAcidBall;
     [SerializeField] private GameObject rightAcidBall;
+    [SerializeField] private GameObject endgameLight;
 
     [SerializeField] private NetworkVariable<float> networkHealthBar = new NetworkVariable<float>();
 
@@ -103,7 +104,7 @@ public class FinalBossPhaseScript : NetworkBehaviour
             {
                 Destroy(projectile);
             }
-            EndGameScript.FinishGameIfAllBossesAreDead();
+            EndGameScript.FinishGameIfAllBossesAreDead(endgameLight);
             Destroy(gameObject);
         }
     }

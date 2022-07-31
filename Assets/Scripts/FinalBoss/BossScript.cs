@@ -18,6 +18,7 @@ public class BossScript : NetworkBehaviour
     [SerializeField] private Transform shotPoint;
     [SerializeField] private GameObject bloodBall;
     [SerializeField] private GameObject fireBall;
+    [SerializeField] private GameObject endgameLight;
 
     [SerializeField] private GameObject bossClone;
     [SerializeField] private GameObject finalPhase;
@@ -99,7 +100,7 @@ public class BossScript : NetworkBehaviour
         if (networkHealthBar.Value <= 0)
         {
             Instantiate(finalPhase).GetComponent<NetworkObject>().Spawn();
-            EndGameScript.FinishGameIfAllBossesAreDead();
+            EndGameScript.FinishGameIfAllBossesAreDead(endgameLight);
             Destroy(gameObject);
         }
     }

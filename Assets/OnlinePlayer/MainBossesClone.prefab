@@ -6081,6 +6081,7 @@ MonoBehaviour:
   Volume: 0.6
   shotPoint: {fileID: 5580170030993862404}
   fireBall: {fileID: 1964433284427432, guid: e1df107d3f83dde41a5d8edf7bff3b95, type: 3}
+  endgameLight: {fileID: 4596601715283331078, guid: a7f81999aac3bef44aba20844315f771, type: 3}
   networkHealthBar:
     m_InternalValue: 0
 --- !u!1 &3688055970112297289

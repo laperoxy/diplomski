@@ -15,6 +15,7 @@ public class BossCloneScript : NetworkBehaviour
     private DateTime lastTimeAttackWasDone = new DateTime(0);
     [SerializeField] private Transform shotPoint;
     [SerializeField] private GameObject fireBall;
+    [SerializeField] private GameObject endgameLight;
 
     [SerializeField] private NetworkVariable<float> networkHealthBar = new NetworkVariable<float>();
 
@@ -68,7 +69,7 @@ public class BossCloneScript : NetworkBehaviour
         networkHealthBar.Value -= healthToLose;
         if (networkHealthBar.Value <= 0)
         {
-            EndGameScript.FinishGameIfAllBossesAreDead();
+            EndGameScript.FinishGameIfAllBossesAreDead(endgameLight);
             Destroy(gameObject);
         }
     }
