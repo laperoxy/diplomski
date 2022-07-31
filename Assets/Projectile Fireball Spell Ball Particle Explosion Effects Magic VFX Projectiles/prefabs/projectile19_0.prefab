@@ -122,6 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 2.5
+  speed: 13.5
 --- !u!82 &3505198858746880784
 AudioSource:
   m_ObjectHideFlags: 0
