@@ -99,6 +99,7 @@ public class BossScript : NetworkBehaviour
         if (networkHealthBar.Value <= 0)
         {
             Instantiate(finalPhase).GetComponent<NetworkObject>().Spawn();
+            EndGameScript.FinishGameIfAllBossesAreDead();
             Destroy(gameObject);
         }
     }

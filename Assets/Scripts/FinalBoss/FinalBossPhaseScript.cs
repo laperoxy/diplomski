@@ -103,6 +103,7 @@ public class FinalBossPhaseScript : NetworkBehaviour
             {
                 Destroy(projectile);
             }
+            EndGameScript.FinishGameIfAllBossesAreDead();
             Destroy(gameObject);
         }
     }

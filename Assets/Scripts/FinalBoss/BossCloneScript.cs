@@ -68,6 +68,7 @@ public class BossCloneScript : NetworkBehaviour
         networkHealthBar.Value -= healthToLose;
         if (networkHealthBar.Value <= 0)
         {
+            EndGameScript.FinishGameIfAllBossesAreDead();
             Destroy(gameObject);
         }
     }
