@@ -12,28 +12,42 @@ public class DamageTakerScript : NetworkBehaviour
     public HealthBar healthBar;
     public StaminaBar staminabar;
 
+    public bool dont_take_damage = false;
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (IsServer)
         {
             if (col.gameObject.CompareTag("BloodBall"))
             {
-                healthBar.takeDamage(5);
+                if (!dont_take_damage)
+                {
+                    healthBar.takeDamage(5);
+                }
                 audioToPlay.PlayOneShot(bloodyPunchSound, Volume);
             }
             else if (col.gameObject.CompareTag("FireBall"))
             {
-                healthBar.takeDamage(10);
+                if (!dont_take_damage)
+                {
+                    healthBar.takeDamage(10);
+                }
                 audioToPlay.PlayOneShot(bloodyPunchSound, Volume);
             }
             else if (col.gameObject.CompareTag("Thorns"))
             {
-                healthBar.takeDamage(5);
+                if (!dont_take_damage)
+                {
+                    healthBar.takeDamage(5);
+                }
                 audioToPlay.PlayOneShot(thornsSound, Volume);
             }
             else if (col.gameObject.CompareTag("AcidWaste"))
             {
-                healthBar.takeDamage(10);
+                if (!dont_take_damage)
+                {
+                    healthBar.takeDamage(10);
+                }
                 audioToPlay.PlayOneShot(acidSound, 0.8f);
             }
             else if (col.gameObject.CompareTag("Heart"))
@@ -76,7 +90,10 @@ public class DamageTakerScript : NetworkBehaviour
             // }
             else if (col.gameObject.CompareTag("boss_third_attack"))
             {
-                healthBar.takeDamage(15);
+                if (!dont_take_damage)
+                {
+                    healthBar.takeDamage(15);
+                }
                 audioToPlay.PlayOneShot(bloodyPunchSound, Volume);
             }
         }

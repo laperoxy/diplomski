@@ -1645,6 +1645,7 @@ MonoBehaviour:
   audioToPlay: {fileID: 8144546707438718148}
   healthBar: {fileID: 5658177991908827861}
   staminabar: {fileID: 5658177991270160684}
+  dont_take_damage: 1
 --- !u!61 &8322391903337695265
 BoxCollider2D:
   m_ObjectHideFlags: 0

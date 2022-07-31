@@ -8,6 +8,7 @@ public class BossScript : NetworkBehaviour
 
     private readonly float MAX_BOSS_HEALTH = 200;
     private float COOLDOWN_BETWEEN_ATTACKS = 1.5f;
+    private Animator animator;
     
     public AudioClip SoundToPlay;
     public float Volume;
@@ -51,7 +52,9 @@ public class BossScript : NetworkBehaviour
         {
             if (!IsCooldownActive())
             {
-                AttackWithSkill();
+                animator.SetTrigger("boss_attack");
+                Invoke(nameof(AttackWithSkill),0.25f);
+                //AttackWithSkill();
                 lastTimeAttackWasDone = DateTime.Now;
             }
         }
@@ -93,7 +96,7 @@ public class BossScript : NetworkBehaviour
 
     public void reduceHealth(float healthToLose)
     {
-        
+        animator.SetTrigger("boss_hurt");
         audioToPlay.PlayOneShot(SoundToPlay,Volume);
         networkHealthBar.Value -= healthToLose;
         ProgressToNextPhaseIfNeeded();
@@ -121,6 +124,7 @@ public class BossScript : NetworkBehaviour
     private void Awake()
     {
         SetMaxHealth();
+        animator =  GetComponent<Animator>();
     }
 
     public void SetMaxHealth()
