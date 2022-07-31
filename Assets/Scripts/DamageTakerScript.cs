@@ -18,12 +18,12 @@ public class DamageTakerScript : NetworkBehaviour
         {
             if (col.gameObject.CompareTag("BloodBall"))
             {
-                //healthBar.takeDamage(5);
+                healthBar.takeDamage(5);
                 audioToPlay.PlayOneShot(bloodyPunchSound, Volume);
             }
             else if (col.gameObject.CompareTag("FireBall"))
             {
-                //healthBar.takeDamage(10);
+                healthBar.takeDamage(10);
                 audioToPlay.PlayOneShot(bloodyPunchSound, Volume);
             }
             else if (col.gameObject.CompareTag("Thorns"))
