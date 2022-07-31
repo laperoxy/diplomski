@@ -113,6 +113,12 @@ public class PauseSettings : MonoBehaviour
         File.WriteAllText(Application.dataPath + SAVE_FILE_EXTENSION, json);
     }
 
+    public void ExitGame()
+    {
+        Debug.Log("Exited game");
+        Application.Quit();
+    }
+
     private class SaveObject
     {
         public float volume;

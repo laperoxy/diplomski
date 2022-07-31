@@ -4947,6 +4947,7 @@ GameObject:
   - component: {fileID: 3525086386355808311}
   - component: {fileID: 8768024141333888819}
   - component: {fileID: -1862759274484530892}
+  - component: {fileID: 3698120467338590718}
   m_Layer: 0
   m_Name: FinalBoss
   m_TagString: Boss
@@ -4985,7 +4986,7 @@ Animator:
   m_GameObject: {fileID: 552894133292726817}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: be5995a9158bda9459c22d48acd79a3f, type: 3}
-  m_Controller: {fileID: 9100000, guid: 700d9bf6b23d6c7478ef89bf23dd2558, type: 2}
+  m_Controller: {fileID: 9100000, guid: 8eccd754766314344aadcdb816e3041f, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -5198,6 +5199,19 @@ MonoBehaviour:
   endgameLight: {fileID: 4596601715283331078, guid: a7f81999aac3bef44aba20844315f771, type: 3}
   networkHealthBar:
     m_InternalValue: 0
+--- !u!114 &3698120467338590718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552894133292726817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 8989674638682514718}
 --- !u!1 &619273280191140077
 GameObject:
   m_ObjectHideFlags: 0

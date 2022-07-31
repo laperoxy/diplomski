@@ -5831,6 +5831,7 @@ GameObject:
   - component: {fileID: 553335809622393581}
   - component: {fileID: 5685811127809152489}
   - component: {fileID: 3486559831901115425}
+  - component: {fileID: 4285194348041418566}
   m_Layer: 0
   m_Name: MainBossesClone
   m_TagString: Boss
@@ -6084,6 +6085,19 @@ MonoBehaviour:
   endgameLight: {fileID: 4596601715283331078, guid: a7f81999aac3bef44aba20844315f771, type: 3}
   networkHealthBar:
     m_InternalValue: 0
+--- !u!114 &4285194348041418566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3524645945390731515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8d0727d5ae3244e3b569694d3912374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Animator: {fileID: 5442589071585316804}
 --- !u!1 &3688055970112297289
 GameObject:
   m_ObjectHideFlags: 0

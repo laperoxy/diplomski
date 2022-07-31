@@ -21,6 +21,8 @@ public class FinalBossPhaseScript : NetworkBehaviour
 
     [SerializeField] private NetworkVariable<float> networkHealthBar = new NetworkVariable<float>();
 
+    private Animator animator;
+
     void Start()
     {
         audioToPlay = GetComponent<AudioSource>();
@@ -85,6 +87,7 @@ public class FinalBossPhaseScript : NetworkBehaviour
 
     public void reduceHealth(float healthToLose)
     {
+        animator.SetTrigger("boss_hurt");
         audioToPlay.PlayOneShot(SoundToPlay, Volume);
         networkHealthBar.Value -= healthToLose;
         if (networkHealthBar.Value <= 0)
@@ -104,6 +107,7 @@ public class FinalBossPhaseScript : NetworkBehaviour
     private void Awake()
     {
         SetMaxHealth();
+        animator =  GetComponent<Animator>();
     }
 
     public void SetMaxHealth()
