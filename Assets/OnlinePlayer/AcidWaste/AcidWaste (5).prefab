@@ -133,14 +133,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SyncPositionX: 1
   SyncPositionY: 1
-  SyncPositionZ: 1
+  SyncPositionZ: 0
   SyncRotAngleX: 1
   SyncRotAngleY: 1
-  SyncRotAngleZ: 1
+  SyncRotAngleZ: 0
   SyncScaleX: 1
   SyncScaleY: 1
-  SyncScaleZ: 1
-  PositionThreshold: 0.001
+  SyncScaleZ: 0
+  PositionThreshold: 0.05
   RotAngleThreshold: 0.01
   ScaleThreshold: 0.01
   InLocalSpace: 0
@@ -160,7 +160,9 @@ MonoBehaviour:
   waypoints:
   - {x: -70.82, y: -4.77}
   - {x: -75.05, y: 10.07}
-  - {x: -81.87, y: -4}
+  - {x: -94.9, y: 9.1}
+  - {x: -101.8, y: 5.9}
+  - {x: -97.61, y: -4}
   speed: 2
 --- !u!82 &-4489800328373257219
 AudioSource:
