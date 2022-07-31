@@ -5,11 +5,10 @@ using UnityEngine;
 
 public class FinalBossPhaseScript : NetworkBehaviour
 {
-
     private readonly float MAX_BOSS_HEALTH = 100;
     private float COOLDOWN_BETWEEN_ATTACKS = 6f;
     private readonly int MAX_SPAWNED_OBJECTS = 4;
-    
+
     public AudioClip SoundToPlay;
     public float Volume;
     private AudioSource audioToPlay;
@@ -27,7 +26,7 @@ public class FinalBossPhaseScript : NetworkBehaviour
         audioToPlay = GetComponent<AudioSource>();
         lastTimeAttackWasDone = DateTime.Now;
     }
-    
+
     private void OnTriggerEnter2D(Collider2D col)
     {
         if (IsServer)
@@ -68,8 +67,9 @@ public class FinalBossPhaseScript : NetworkBehaviour
 
     private void SpawnAcidBall()
     {
-        if (state == 0)
-            if (spawnedObjects < MAX_SPAWNED_OBJECTS)
+        if (spawnedObjects < MAX_SPAWNED_OBJECTS)
+        {
+            if (state == 0)
             {
                 Instantiate(rightAcidBall).GetComponent<NetworkObject>().Spawn();
             }
@@ -78,24 +78,14 @@ public class FinalBossPhaseScript : NetworkBehaviour
                 Instantiate(leftAcidBall).GetComponent<NetworkObject>().Spawn();
             }
 
-        state = (state + 1) % 2;
-        if (state == 0)
-        {
-            Instantiate(rightAcidBall).GetComponent<NetworkObject>().Spawn();
+            state = (state + 1) % 2;
+            ++spawnedObjects;
         }
-        else
-        {
-            Instantiate(leftAcidBall).GetComponent<NetworkObject>().Spawn();
-        }
-
-        state = (state + 1) % 2;
-        ++spawnedObjects;
     }
 
     public void reduceHealth(float healthToLose)
     {
-        
-        audioToPlay.PlayOneShot(SoundToPlay,Volume);
+        audioToPlay.PlayOneShot(SoundToPlay, Volume);
         networkHealthBar.Value -= healthToLose;
         if (networkHealthBar.Value <= 0)
         {
@@ -104,12 +94,13 @@ public class FinalBossPhaseScript : NetworkBehaviour
             {
                 Destroy(projectile);
             }
+
             EndGameScript.FinishGameIfAllBossesAreDead(endgameLight);
             Destroy(gameObject);
         }
     }
-    
-    
+
+
     private void Awake()
     {
         SetMaxHealth();
