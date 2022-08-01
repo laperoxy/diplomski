@@ -1512,7 +1512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05a819ec207de87448355a26098b6954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gotKey: 0
+  networkGotKey:
+    m_InternalValue: 0
   floatingText: {fileID: 8084587822698253834, guid: 92c7122bd53f1434899944057d796814, type: 3}
   SoundToPlay: {fileID: 8300000, guid: fe8631c7a6adaa049a20f7395e9cbc51, type: 3}
   Volume: 1
