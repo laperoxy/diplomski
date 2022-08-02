@@ -64,7 +64,7 @@ public class ItemCollectionScript : NetworkBehaviour
 
             if (collision.gameObject.CompareTag("EndgameLight"))
             {
-                if (IsServer)
+                if (IsClient && IsOwner)
                 {
                     UI.SetActive(true);
                 }
