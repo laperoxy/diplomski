@@ -94,7 +94,7 @@ public class BossScript : NetworkBehaviour
         }
     }
 
-    public void reduceHealth(float healthToLose)
+    private void reduceHealth(float healthToLose)
     {
         animator.SetTrigger("boss_hurt");
         audioToPlay.PlayOneShot(SoundToPlay,Volume);
