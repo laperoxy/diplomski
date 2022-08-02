@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Slider = UnityEngine.UI.Slider;
 using Toggle = UnityEngine.UI.Toggle;
 
 public class PauseSettings : MonoBehaviour
 {
-    
     [SerializeField] private GameObject muteIcon;
     [SerializeField] private GameObject Fog;
     [SerializeField] private Slider volumeSlider = null;
@@ -20,9 +20,9 @@ public class PauseSettings : MonoBehaviour
     private int my_resolutionIndex;
     private int my_qualityIndex;
     private readonly string SAVE_FILE_EXTENSION = "/settings.json";
-    
+
     private string json;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,7 +50,6 @@ public class PauseSettings : MonoBehaviour
 
             my_resolutionIndex = loadedSavedSettings.resolutionIndex;
             my_qualityIndex = loadedSavedSettings.qualityIndex;
-            
         }
     }
 
@@ -113,7 +112,12 @@ public class PauseSettings : MonoBehaviour
         File.WriteAllText(Application.dataPath + SAVE_FILE_EXTENSION, json);
     }
 
-    public void ExitGame()
+    public void StopGame()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void QuitGame()
     {
         Debug.Log("Exited game");
         Application.Quit();

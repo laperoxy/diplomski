@@ -15,6 +15,7 @@ public class ItemCollectionScript : NetworkBehaviour
     private AudioSource audioToPlay;
 
     //public GameObject endGame;
+    [SerializeField] private GameObject UI  = null;
 
     void Start()
     {
@@ -63,8 +64,12 @@ public class ItemCollectionScript : NetworkBehaviour
 
             if (collision.gameObject.CompareTag("EndgameLight"))
             {
-                //endGame.SetActive(true);
+                if (IsServer)
+                {
+                    UI.SetActive(true);
+                }
             }
+            
     }
 
     private void transitionKeyOwnershipToGrabber()
