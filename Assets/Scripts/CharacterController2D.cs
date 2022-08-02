@@ -13,6 +13,7 @@ public class CharacterController2D : MonoBehaviour
     [SerializeField] private Transform m_GroundCheck; // A position marking where to check if the player is grounded.
     [SerializeField] private Transform m_CeilingCheck; // A position marking where to check for ceilings
     [SerializeField] private Transform playerLight;
+    [SerializeField] private RectTransform playerCanvas;
 
     [Header("Events")] [Space] public UnityEvent OnLandEvent;
 
@@ -95,7 +96,11 @@ public class CharacterController2D : MonoBehaviour
 
         theScale.x *= -1;
         lightdir.z *= -1;
+        
+        var PlayerCanvasScale = playerCanvas.localScale;
 
+        PlayerCanvasScale.x *= -1;
+        playerCanvas.localScale = PlayerCanvasScale;
         transform.localScale = theScale;
 
         playerLight.rotation = lightdir;
