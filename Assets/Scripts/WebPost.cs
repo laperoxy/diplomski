@@ -5,10 +5,8 @@ using System.IO;
 
 public class WebPost: MonoBehaviour
 {
-
-    private string my_username;
-    private string my_token;
-    private readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
+    
+    private static readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
     void Start()
     {
         if (File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
@@ -20,7 +18,7 @@ public class WebPost: MonoBehaviour
         }
     }
     
-    IEnumerator LogIn(string username, string password)
+    public static IEnumerator LogIn(string username, string password)
     {
         WWWForm form = new WWWForm();
         form.AddField("username", username);
@@ -46,13 +44,13 @@ public class WebPost: MonoBehaviour
         www.Dispose();
     }
 
-    private LoginData ExtractLoginDataFromResult(string username, string result)
+    private static LoginData ExtractLoginDataFromResult(string username, string result)
     {
         TokenTimeAchievementResponse tokenTimeAchievementResponse = JsonUtility.FromJson<TokenTimeAchievementResponse>(result);
         return new LoginData(username,tokenTimeAchievementResponse);
     }
 
-    IEnumerator Register(string username, string password)
+    public static IEnumerator Register(string username, string password)
     {
         WWWForm form = new WWWForm();
         form.AddField("username", username);
@@ -79,7 +77,7 @@ public class WebPost: MonoBehaviour
         www.Dispose();
     }
     
-    IEnumerator ExitGame(string username)
+    public static IEnumerator ExitGame(string username)
     {
         WWWForm form = new WWWForm();
         form.AddField("username", username);
@@ -90,7 +88,7 @@ public class WebPost: MonoBehaviour
 
         www.Dispose();
     }
-    IEnumerator TokenLogIn(string username, string token)
+    public static IEnumerator TokenLogIn(string username, string token)
     {
         WWWForm form = new WWWForm();
         form.AddField("username", username);
@@ -118,7 +116,7 @@ public class WebPost: MonoBehaviour
         www.Dispose();
     }
     
-    public void SaveLoginData(LoginData loginData)
+    public static void SaveLoginData(LoginData loginData)
     {
         string loginDataJSON = JsonUtility.ToJson(loginData);
         File.WriteAllText(Application.dataPath + SAVE_FILE_EXTENSION, loginDataJSON);
