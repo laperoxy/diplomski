@@ -15,7 +15,7 @@ public class InputManagerScript : MonoBehaviour
     public GameObject inputUI;
     public GameObject errorUI;
 
-    public void StoreCred()
+    public void RegisterUser()
     {
         username = usernameInput.GetComponent<TextMeshProUGUI>().text;
         password = passwordInput.GetComponent<TextMeshProUGUI>().text;
@@ -27,7 +27,7 @@ public class InputManagerScript : MonoBehaviour
         }
     }
 
-    public void GetCred()
+    public void LoginUser()
     {
         username = usernameInput.GetComponent<TextMeshProUGUI>().text;
         password = passwordInput.GetComponent<TextMeshProUGUI>().text;
