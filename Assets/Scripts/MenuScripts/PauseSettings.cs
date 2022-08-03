@@ -103,6 +103,7 @@ public class PauseSettings : MonoBehaviour
         {
             volume = my_volume,
             isFullscreen = my_isFullscreen,
+            isFogOn = my_isfogOn,
             resolutionIndex = my_resolutionIndex,
             qualityIndex = my_qualityIndex
         };
