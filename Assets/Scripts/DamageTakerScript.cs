@@ -24,6 +24,7 @@ public class DamageTakerScript : NetworkBehaviour
                 {
                     healthBar.takeDamage(5);
                 }
+
                 audioToPlay.PlayOneShot(bloodyPunchSound, Volume);
             }
             else if (col.gameObject.CompareTag("FireBall"))
@@ -32,22 +33,34 @@ public class DamageTakerScript : NetworkBehaviour
                 {
                     healthBar.takeDamage(10);
                 }
+
+                audioToPlay.PlayOneShot(bloodyPunchSound, Volume);
+            }
+            else if (col.gameObject.CompareTag("boss_third_attack"))
+            {
+                if (!dont_take_damage)
+                {
+                    healthBar.takeDamage(15);
+                }
+
                 audioToPlay.PlayOneShot(bloodyPunchSound, Volume);
             }
             else if (col.gameObject.CompareTag("Thorns"))
             {
                 if (!dont_take_damage)
                 {
-                    healthBar.takeDamage(5);
+                    healthBar.takeDamage(3);
                 }
+
                 audioToPlay.PlayOneShot(thornsSound, Volume);
             }
             else if (col.gameObject.CompareTag("AcidWaste"))
             {
                 if (!dont_take_damage)
                 {
-                    healthBar.takeDamage(10);
+                    healthBar.takeDamage(4);
                 }
+
                 audioToPlay.PlayOneShot(acidSound, 0.8f);
             }
             else if (col.gameObject.CompareTag("Heart"))
@@ -75,26 +88,6 @@ public class DamageTakerScript : NetworkBehaviour
                     Destroy(col.gameObject);
                     audioToPlay.PlayOneShot(refillSound, Volume);
                 }
-            }
-            else if (col.gameObject.CompareTag("Stamina1"))
-            {
-                if (staminabar.ReplenishStamina())
-                {
-                    Destroy(col.gameObject);
-                    audioToPlay.PlayOneShot(refillSound, Volume);
-                }
-            }
-            // else if (col.gameObject.CompareTag("SoulFragment") || col.gameObject.CompareTag("SoulPush"))
-            // {
-            //     Destroy(col.gameObject);
-            // }
-            else if (col.gameObject.CompareTag("boss_third_attack"))
-            {
-                if (!dont_take_damage)
-                {
-                    healthBar.takeDamage(15);
-                }
-                audioToPlay.PlayOneShot(bloodyPunchSound, Volume);
             }
         }
     }
