@@ -31,7 +31,7 @@ public class InputManagerScript : MonoBehaviour
     {
         username = usernameInput.GetComponent<TextMeshProUGUI>().text;
         password = passwordInput.GetComponent<TextMeshProUGUI>().text;
-        if (username.Equals(null) || password.Equals(null))
+        if (username.Length < 3 || password.Length < 3)
         {
             inputUI.SetActive(false);
             errorUI.SetActive(true);
