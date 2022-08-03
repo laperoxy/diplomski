@@ -22,6 +22,10 @@ public class InputManagerScript : MonoBehaviour
             inputUI.SetActive(false);
             errorUI.SetActive(true);
         }
+        else
+        {
+            StartCoroutine(WebPost.Register(username, password));
+        }
     }
 
     public void LoginUser()
@@ -32,6 +36,10 @@ public class InputManagerScript : MonoBehaviour
         {
             inputUI.SetActive(false);
             errorUI.SetActive(true);
+        }
+        else
+        {
+            StartCoroutine(WebPost.LogIn(username, password));
         }
     }
 }
