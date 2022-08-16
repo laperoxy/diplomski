@@ -33,6 +33,8 @@ public class WebPost : MonoBehaviour
 
             Debug.Log(result);
 
+            inputPanel.SetActive(false);
+            playerPanel.SetActive(true);
             offlineTag.SetActive(false);
             on_off_tag.GetComponent<TextMeshProUGUI>().text = "ONLINE";
         }
@@ -120,7 +122,7 @@ public class WebPost : MonoBehaviour
             TimePlayedAchievementInstance timePlayedAchievements =
                 JsonUtility.FromJson<TimePlayedAchievementInstance>(result);
             LoginData loginData = new LoginData(username, token, timePlayedAchievements.TimePlayed,
-                timePlayedAchievements.Achievements);
+                timePlayedAchievements.Achievements, timePlayedAchievements.GamesPlayed);
             SaveLoginData(loginData);
             Debug.Log(result);
             inputPanel.SetActive(false);
