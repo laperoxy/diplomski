@@ -1,3 +1,4 @@
+using System.IO;
 using TMPro;
 using UnityEngine;
 
@@ -11,6 +12,20 @@ public class InputManagerScript : MonoBehaviour
 
     public GameObject inputUI;
     public GameObject errorUI;
+
+    public GameObject InputPanel;
+    public GameObject PlayedPanel;
+
+    private readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
+
+    void Start()
+    {
+        if (File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
+        {
+            InputPanel.SetActive(false);
+            PlayedPanel.SetActive(true);
+        }
+    }
 
     public void RegisterUser()
     {
