@@ -5493,6 +5493,8 @@ MonoBehaviour:
   inputUI: {fileID: 1697419881}
   errorUI: {fileID: 346548031}
   returnButton: {fileID: 717070408}
+  InputPanel: {fileID: 1697419881}
+  PlayerPanel: {fileID: 1358893865}
   on_off_tag: {fileID: 34005088}
   offlineTag: {fileID: 1251473208}
 --- !u!1 &1347328759

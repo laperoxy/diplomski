@@ -17,6 +17,9 @@ public class InputManagerScript : MonoBehaviour
 
     public GameObject returnButton;
 
+    public GameObject InputPanel;
+    public GameObject PlayerPanel;
+
     public GameObject on_off_tag;
     public GameObject offlineTag;
 
@@ -35,7 +38,7 @@ public class InputManagerScript : MonoBehaviour
         }
         else
         {
-            StartCoroutine(WebPost.Register(username, password, on_off_tag, offlineTag));
+            StartCoroutine(WebPost.Register(username, password, InputPanel, PlayerPanel, on_off_tag, offlineTag));
         }
     }
 
@@ -51,7 +54,7 @@ public class InputManagerScript : MonoBehaviour
         }
         else
         {
-            StartCoroutine(WebPost.LogIn(username, password, on_off_tag, offlineTag));
+            StartCoroutine(WebPost.LogIn(username, password, InputPanel, PlayerPanel, on_off_tag, offlineTag));
         }
     }
 }
