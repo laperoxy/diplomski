@@ -96,6 +96,18 @@ public class WebPost : MonoBehaviour
 
         www.Dispose();
     }
+    
+    public static IEnumerator StartGame(string username)
+    {
+        WWWForm form = new WWWForm();
+        form.AddField("username", username);
+
+        UnityWebRequest www = UnityWebRequest.Post("http://localhost:8080/start", form);
+
+        yield return www.SendWebRequest();
+
+        www.Dispose();
+    }
 
     public static IEnumerator TokenLogIn(string username, string token, GameObject inputPanel, GameObject playerPanel,
         GameObject on_off_tag, GameObject offlineTag)
