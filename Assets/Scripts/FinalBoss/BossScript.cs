@@ -37,7 +37,7 @@ public class BossScript : NetworkBehaviour
         {
             if (col.gameObject.CompareTag("SoulPush"))
             {
-                reduceHealth(30);
+                reduceHealth(15);
             }
             else if (col.gameObject.CompareTag("SoulFragment"))
             {

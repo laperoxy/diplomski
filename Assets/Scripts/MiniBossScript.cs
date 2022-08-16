@@ -2,11 +2,9 @@ using System;
 using Enums;
 using Unity.Netcode;
 using UnityEngine;
-
-public class BossCloneScript : NetworkBehaviour
+public class MiniBossScript : NetworkBehaviour
 {
-
-    private readonly float MAX_BOSS_HEALTH = 100;
+     private readonly float MAX_BOSS_HEALTH = 100;
     private float COOLDOWN_BETWEEN_ATTACKS = 2.5f;
     
     public AudioClip SoundToPlay;
@@ -15,7 +13,6 @@ public class BossCloneScript : NetworkBehaviour
     private DateTime lastTimeAttackWasDone = new DateTime(0);
     [SerializeField] private Transform shotPoint;
     [SerializeField] private GameObject fireBall;
-    [SerializeField] private GameObject endgameLight;
 
     [SerializeField] private NetworkVariable<float> networkHealthBar = new NetworkVariable<float>();
 
@@ -73,7 +70,7 @@ public class BossCloneScript : NetworkBehaviour
         networkHealthBar.Value -= healthToLose;
         if (networkHealthBar.Value <= 0)
         {
-            EndGameScript.FinishGameIfAllBossesAreDead(endgameLight);
+            //EndGameScript.FinishGameIfAllBossesAreDead(endgameLight);
             Destroy(gameObject);
         }
     }
