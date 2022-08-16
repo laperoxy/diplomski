@@ -23,8 +23,6 @@ public class InputManagerScript : MonoBehaviour
     public GameObject on_off_tag;
     public GameObject offlineTag;
 
-    private readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
-
     public void RegisterUser()
     {
         username = usernameInput.GetComponent<TextMeshProUGUI>().text;
