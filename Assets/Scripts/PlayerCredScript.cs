@@ -14,6 +14,10 @@ public class PlayerCredScript : MonoBehaviour
     public GameObject username;
     public GameObject timePlayed;
     public GameObject achievements;
+
+    public GameObject leaf1;
+    public GameObject leaf2;
+    public GameObject crown;
     
     void Start()
     {
@@ -30,6 +34,27 @@ public class PlayerCredScript : MonoBehaviour
             username.GetComponent<TextMeshProUGUI>().text = loadedCredentials.Username;
             timePlayed.GetComponent<TextMeshProUGUI>().text = loadedCredentials.TimePlayed;
             achievements.GetComponent<TextMeshProUGUI>().text = loadedCredentials.Achievements;
+
+            int myAchievements = int.Parse(loadedCredentials.Achievements);
+
+            if (myAchievements >= 10 && myAchievements < 20)
+            {
+                leaf1.SetActive(true);
+            }else if (myAchievements >= 20 && myAchievements < 30)
+            {
+                leaf1.SetActive(false);
+                leaf2.SetActive(true);
+            }else if (myAchievements >= 30)
+            {
+                leaf2.SetActive(false);
+                crown.SetActive(true);
+            }
+            else
+            {
+                leaf1.SetActive(false);
+                leaf2.SetActive(false);
+                crown.SetActive(false);
+            }
             
 
         }
