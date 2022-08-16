@@ -5491,7 +5491,7 @@ MonoBehaviour:
   inputUI: {fileID: 1697419881}
   errorUI: {fileID: 346548031}
   InputPanel: {fileID: 1697419881}
-  PlayedPanel: {fileID: 1358893865}
+  PlayerPanel: {fileID: 1358893865}
   returnButton: {fileID: 717070408}
 --- !u!1 &1347328759
 GameObject:

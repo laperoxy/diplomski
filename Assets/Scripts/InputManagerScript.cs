@@ -14,7 +14,7 @@ public class InputManagerScript : MonoBehaviour
     public GameObject errorUI;
 
     public GameObject InputPanel;
-    public GameObject PlayedPanel;
+    public GameObject PlayerPanel;
 
     public GameObject returnButton;
 
@@ -24,8 +24,10 @@ public class InputManagerScript : MonoBehaviour
     {
         if (File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
         {
-            InputPanel.SetActive(false);
-            PlayedPanel.SetActive(true);
+            string savedCredentials = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
+            LoginData loadedLoginData = JsonUtility.FromJson<LoginData>(savedCredentials);
+            StartCoroutine(WebPost.TokenLogIn(loadedLoginData.Username, loadedLoginData.Token, InputPanel,
+                PlayerPanel));
         }
     }
 
