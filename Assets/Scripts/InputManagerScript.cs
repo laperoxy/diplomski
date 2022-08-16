@@ -16,6 +16,8 @@ public class InputManagerScript : MonoBehaviour
     public GameObject InputPanel;
     public GameObject PlayedPanel;
 
+    public GameObject returnButton;
+
     private readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
 
     void Start()
@@ -35,6 +37,7 @@ public class InputManagerScript : MonoBehaviour
         if (username.Length < 3 || password.Length < 3)
         {
             inputUI.SetActive(false);
+            returnButton.SetActive(false);
             errorUI.SetActive(true);
         }
         else
@@ -50,6 +53,7 @@ public class InputManagerScript : MonoBehaviour
         if (username.Length < 3 || password.Length < 3)
         {
             inputUI.SetActive(false);
+            returnButton.SetActive(false);
             errorUI.SetActive(true);
         }
         else
