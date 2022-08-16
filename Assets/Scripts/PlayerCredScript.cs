@@ -12,6 +12,7 @@ public class PlayerCredScript : MonoBehaviour
     public GameObject username;
     public GameObject timePlayed;
     public GameObject achievements;
+    public GameObject gamesPlayed;
 
     public GameObject leaf1;
     public GameObject leaf2;
@@ -32,7 +33,7 @@ public class PlayerCredScript : MonoBehaviour
             username.GetComponent<TextMeshProUGUI>().text = loadedLoginData.Username;
             timePlayed.GetComponent<TextMeshProUGUI>().text = Convert.ToString(loadedLoginData.TimePlayed);
             achievements.GetComponent<TextMeshProUGUI>().text = Convert.ToString(loadedLoginData.Achievements);
-            Convert.ToString(loadedLoginData.GamesPlayed);
+            gamesPlayed.GetComponent<TextMeshProUGUI>().text = Convert.ToString(loadedLoginData.GamesPlayed);
 
             long myAchievements = loadedLoginData.Achievements;
 
