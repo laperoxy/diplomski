@@ -6,9 +6,12 @@ public class TimePlayedAchievementInstance
 
     public long Achievements;
 
-    public TimePlayedAchievementInstance(long timePlayed, long achievements)
+    public long GamesPlayed;
+
+    public TimePlayedAchievementInstance(long timePlayed, long achievements, long gamesPlayed)
     {
         TimePlayed = timePlayed;
         Achievements = achievements;
+        GamesPlayed = gamesPlayed;
     }
 }

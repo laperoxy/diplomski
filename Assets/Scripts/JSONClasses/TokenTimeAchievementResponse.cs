@@ -7,10 +7,13 @@ public class TokenTimeAchievementResponse
 
     public long Achievements;
 
-    public TokenTimeAchievementResponse(string token, long timePlayed, long achievements)
+    public long GamesPlayed;
+
+    public TokenTimeAchievementResponse(string token, long timePlayed, long achievements, long gamesPlayed)
     {
         Token = token;
         TimePlayed = timePlayed;
         Achievements = achievements;
+        GamesPlayed = gamesPlayed;
     }
 }
