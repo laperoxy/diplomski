@@ -344,7 +344,7 @@ GameObject:
   - component: {fileID: 34005091}
   - component: {fileID: 34005090}
   m_Layer: 5
-  m_Name: Online_OfflineButton
+  m_Name: Online_Offline
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2764,8 +2764,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7ab9b15b84381a469bd7d2e46efcac7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  on_off_button: {fileID: 34005088}
+  on_off_tag: {fileID: 34005088}
   offlineTag: {fileID: 1251473208}
+  InputPanel: {fileID: 1697419881}
+  PlayerPanel: {fileID: 1358893865}
 --- !u!1 &680537696
 GameObject:
   m_ObjectHideFlags: 0
@@ -5490,9 +5492,9 @@ MonoBehaviour:
   passwordInput: {fileID: 1472039750}
   inputUI: {fileID: 1697419881}
   errorUI: {fileID: 346548031}
-  InputPanel: {fileID: 1697419881}
-  PlayerPanel: {fileID: 1358893865}
   returnButton: {fileID: 717070408}
+  on_off_tag: {fileID: 34005088}
+  offlineTag: {fileID: 1251473208}
 --- !u!1 &1347328759
 GameObject:
   m_ObjectHideFlags: 0

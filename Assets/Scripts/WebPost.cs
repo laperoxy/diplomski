@@ -2,23 +2,14 @@
 using UnityEngine;
 using UnityEngine.Networking;
 using System.IO;
+using TMPro;
 
 public class WebPost: MonoBehaviour
 {
     
     private static readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
-    // void Start()
-    // {
-    //     if (File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
-    //     {
-    //         string savedCredentials = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
-    //         LoginData loadedLoginData = JsonUtility.FromJson<LoginData>(savedCredentials);
-    //         StartCoroutine(TokenLogIn(loadedLoginData.Username, loadedLoginData.Token));
-    //         Debug.Log(savedCredentials);
-    //     }
-    // }
-    
-    public static IEnumerator LogIn(string username, string password)
+
+    public static IEnumerator LogIn(string username, string password, GameObject on_off_tag, GameObject offlineTag)
     {
         WWWForm form = new WWWForm();
         form.AddField("username", username);
@@ -31,6 +22,8 @@ public class WebPost: MonoBehaviour
         if (www.result != UnityWebRequest.Result.Success)
         {
             Debug.Log(www.error);
+            on_off_tag.GetComponent<TextMeshProUGUI>().text = "OFFLINE";
+            offlineTag.SetActive(true);
         }
         else
         {
@@ -39,6 +32,9 @@ public class WebPost: MonoBehaviour
             SaveLoginData(loginData);
             
             Debug.Log(result);
+            
+            offlineTag.SetActive(false);
+            on_off_tag.GetComponent<TextMeshProUGUI>().text = "ONLINE";
         }
         
         www.Dispose();
@@ -50,7 +46,7 @@ public class WebPost: MonoBehaviour
         return new LoginData(username,tokenTimeAchievementResponse);
     }
 
-    public static IEnumerator Register(string username, string password)
+    public static IEnumerator Register(string username, string password, GameObject on_off_tag, GameObject offlineTag)
     {
         WWWForm form = new WWWForm();
         form.AddField("username", username);
@@ -64,6 +60,8 @@ public class WebPost: MonoBehaviour
         if (www.result != UnityWebRequest.Result.Success)
         {
             Debug.Log(www.error);
+            on_off_tag.GetComponent<TextMeshProUGUI>().text = "OFFLINE";
+            offlineTag.SetActive(true);
         }
         else
         {
@@ -72,6 +70,9 @@ public class WebPost: MonoBehaviour
             SaveLoginData(loginData);
             
             Debug.Log(result);
+            
+            offlineTag.SetActive(false);
+            on_off_tag.GetComponent<TextMeshProUGUI>().text = "ONLINE";
         }
         
         www.Dispose();
@@ -88,7 +89,7 @@ public class WebPost: MonoBehaviour
 
         www.Dispose();
     }
-    public static IEnumerator TokenLogIn(string username, string token, GameObject inputPanel, GameObject playerPanel)
+    public static IEnumerator TokenLogIn(string username, string token, GameObject inputPanel, GameObject playerPanel, GameObject on_off_tag, GameObject offlineTag)
     {
         WWWForm form = new WWWForm();
         form.AddField("username", username);
@@ -103,6 +104,8 @@ public class WebPost: MonoBehaviour
         if (www.result != UnityWebRequest.Result.Success)
         {
             Debug.Log(www.error);
+            on_off_tag.GetComponent<TextMeshProUGUI>().text = "OFFLINE";
+            offlineTag.SetActive(true);
         }
         else
         {
@@ -113,6 +116,8 @@ public class WebPost: MonoBehaviour
             Debug.Log(result);
             inputPanel.SetActive(false);
             playerPanel.SetActive(true);
+            offlineTag.SetActive(false);
+            on_off_tag.GetComponent<TextMeshProUGUI>().text = "ONLINE";
         }
         
         www.Dispose();

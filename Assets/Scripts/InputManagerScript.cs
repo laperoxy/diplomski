@@ -1,6 +1,8 @@
+using System;
 using System.IO;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class InputManagerScript : MonoBehaviour
 {
@@ -13,23 +15,12 @@ public class InputManagerScript : MonoBehaviour
     public GameObject inputUI;
     public GameObject errorUI;
 
-    public GameObject InputPanel;
-    public GameObject PlayerPanel;
-
     public GameObject returnButton;
 
-    private readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
+    public GameObject on_off_tag;
+    public GameObject offlineTag;
 
-    void Start()
-    {
-        if (File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
-        {
-            string savedCredentials = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
-            LoginData loadedLoginData = JsonUtility.FromJson<LoginData>(savedCredentials);
-            StartCoroutine(WebPost.TokenLogIn(loadedLoginData.Username, loadedLoginData.Token, InputPanel,
-                PlayerPanel));
-        }
-    }
+    private readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
 
     public void RegisterUser()
     {
@@ -44,7 +35,7 @@ public class InputManagerScript : MonoBehaviour
         }
         else
         {
-            StartCoroutine(WebPost.Register(username, password));
+            StartCoroutine(WebPost.Register(username, password, on_off_tag, offlineTag));
         }
     }
 
@@ -60,7 +51,7 @@ public class InputManagerScript : MonoBehaviour
         }
         else
         {
-            StartCoroutine(WebPost.LogIn(username, password));
+            StartCoroutine(WebPost.LogIn(username, password, on_off_tag, offlineTag));
         }
     }
 }
