@@ -33,6 +33,8 @@ public class WebPost : MonoBehaviour
 
             Debug.Log(result);
 
+            inputPanel.SetActive(false);
+            playerPanel.SetActive(true);
             offlineTag.SetActive(false);
             on_off_tag.GetComponent<TextMeshProUGUI>().text = "ONLINE";
         }
