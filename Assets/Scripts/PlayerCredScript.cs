@@ -7,8 +7,6 @@ using UnityEngine;
 
 public class PlayerCredScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    
     private readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
 
     public GameObject username;
@@ -28,14 +26,15 @@ public class PlayerCredScript : MonoBehaviour
     {
         if (File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
         {
-            string saveString = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
-            SaveObject loadedCredentials = JsonUtility.FromJson<SaveObject>(saveString);
+            string loadedCredentials = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
+            LoginData loadedLoginData = JsonUtility.FromJson<LoginData>(loadedCredentials);
 
-            username.GetComponent<TextMeshProUGUI>().text = loadedCredentials.Username;
-            timePlayed.GetComponent<TextMeshProUGUI>().text = loadedCredentials.TimePlayed;
-            achievements.GetComponent<TextMeshProUGUI>().text = loadedCredentials.Achievements;
+            username.GetComponent<TextMeshProUGUI>().text = loadedLoginData.Username;
+            timePlayed.GetComponent<TextMeshProUGUI>().text = Convert.ToString(loadedLoginData.TimePlayed);
+            achievements.GetComponent<TextMeshProUGUI>().text = Convert.ToString(loadedLoginData.Achievements);
+            Convert.ToString(loadedLoginData.GamesPlayed);
 
-            int myAchievements = int.Parse(loadedCredentials.Achievements);
+            long myAchievements = loadedLoginData.Achievements;
 
             if (myAchievements >= 10 && myAchievements < 20)
             {
@@ -55,17 +54,6 @@ public class PlayerCredScript : MonoBehaviour
                 leaf2.SetActive(false);
                 crown.SetActive(false);
             }
-            
-
         }
     }
-
-    private class SaveObject
-    {
-        public string Username;
-        public string Token;
-        public string TimePlayed;
-        public string Achievements;
-    }
-    
 }
