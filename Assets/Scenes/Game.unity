@@ -2204,6 +2204,16 @@ MonoBehaviour:
       SourcePrefabToOverride: {fileID: 0}
       SourceHashToOverride: 0
       OverridingTargetPrefab: {fileID: 0}
+    - Override: 0
+      Prefab: {fileID: 3514854401077903137, guid: c8c38387706523948ac9243b27d92f7c, type: 3}
+      SourcePrefabToOverride: {fileID: 0}
+      SourceHashToOverride: 0
+      OverridingTargetPrefab: {fileID: 0}
+    - Override: 0
+      Prefab: {fileID: 1964433284427432, guid: c1e07c4f1fc014c43be9a7f66edd9c57, type: 3}
+      SourcePrefabToOverride: {fileID: 0}
+      SourceHashToOverride: 0
+      OverridingTargetPrefab: {fileID: 0}
     TickRate: 30
     ClientConnectionBufferTimeout: 10
     ConnectionApproval: 0
@@ -35616,6 +35626,8 @@ MonoBehaviour:
   - {fileID: 3898448985911600493, guid: 67e0e84b6d5f5964eb9190f3e7c5cda0, type: 3}
   - {fileID: 9119749253441571152, guid: fd2371ac0adf5544491d9c0ee935c769, type: 3}
   - {fileID: 1804996697804589924, guid: 57fcc0cddd5859741871648f76e1a472, type: 3}
+  - {fileID: 3514854401077903137, guid: c8c38387706523948ac9243b27d92f7c, type: 3}
+  - {fileID: 1964433284427432, guid: c1e07c4f1fc014c43be9a7f66edd9c57, type: 3}
 --- !u!4 &1099284957
 Transform:
   m_ObjectHideFlags: 0
