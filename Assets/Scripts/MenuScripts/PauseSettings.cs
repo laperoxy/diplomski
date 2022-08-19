@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Slider = UnityEngine.UI.Slider;
 using Toggle = UnityEngine.UI.Toggle;
 
-public class PauseSettings : MonoBehaviour
+public class PauseSettings : NetworkBehaviour
 {
     [SerializeField] private GameObject muteIcon;
     [SerializeField] private GameObject Fog;
@@ -115,12 +116,15 @@ public class PauseSettings : MonoBehaviour
 
     public void StopGame()
     {
+        Debug.Log("Returning to menu and disconnecting");
+        NetworkManager.Singleton.Shutdown();
         SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
     {
-        Debug.Log("Exited game");
+        Debug.Log("Exiting game and disconnecting");
+        NetworkManager.Singleton.Shutdown();
         Application.Quit();
     }
 

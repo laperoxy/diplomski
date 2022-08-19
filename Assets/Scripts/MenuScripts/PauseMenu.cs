@@ -1,9 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class PauseMenu : NetworkBehaviour
 {
     public static bool gameIsPaused = false;
     [SerializeField] private GameObject pauseMenuUI = null;
@@ -40,6 +41,8 @@ public class PauseMenu : MonoBehaviour
 
     public void QuitGame()
     {
+        Debug.Log("Quitting game and disconnecting");
+        NetworkManager.Singleton.Shutdown();
         Application.Quit();
     }
 }
