@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 using Slider = UnityEngine.UI.Slider;
 using Toggle = UnityEngine.UI.Toggle;
 
-public class PauseSettings : NetworkBehaviour
+public class PauseSettings : MonoBehaviour
 {
     [SerializeField] private GameObject muteIcon;
     [SerializeField] private GameObject Fog;
