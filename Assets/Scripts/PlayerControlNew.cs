@@ -8,6 +8,8 @@ public class PlayerControlNew : NetworkBehaviour
 
     private CharacterController2D controller;
     private Animator animator;
+    private FollowPlayerScript followPlayerScript;
+    private Camera mainCamera;
 
     [SerializeField] private NetworkVariable<float> networkXAxisOffset = new NetworkVariable<float>();
     [SerializeField] private NetworkVariable<bool> networkJump = new NetworkVariable<bool>();
@@ -27,6 +29,8 @@ public class PlayerControlNew : NetworkBehaviour
         if (IsClient && IsOwner)
         {
             transform.position = new Vector3(-4.53f, 2.0f, 0);
+            mainCamera = Camera.main;
+            followPlayerScript = mainCamera.GetComponent<FollowPlayerScript>();
             focusCameraOnPlayer();
         }
     }
@@ -34,17 +38,23 @@ public class PlayerControlNew : NetworkBehaviour
     
     private void focusCameraOnPlayer()
     {
-        Camera mainCamera = Camera.main;
-        mainCamera.GetComponent<FollowPlayerScript>().target = transform;
-        mainCamera.GetComponent<FollowPlayerScript>().followedGameObject = gameObject;
+        followPlayerScript.target = transform;
+        followPlayerScript.followedGameObject = gameObject;
         mainCamera.orthographicSize = 6.0f;
-
     }
 
     // Update is called once per frame
     private void Update()
     {
-        if (IsClient && IsOwner) UpdateClientInput();
+        if (IsClient && IsOwner)
+        {
+            if (!ReferenceEquals(followPlayerScript.target, transform) ||
+                !ReferenceEquals(followPlayerScript.followedGameObject, gameObject))
+            {
+                focusCameraOnPlayer();
+            }
+            UpdateClientInput();
+        }
         UpdateClientPosition();
 
     }
