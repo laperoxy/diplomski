@@ -42,7 +42,7 @@ public class PauseMenu : NetworkBehaviour
     public void QuitGame()
     {
         Debug.Log("Quitting game and disconnecting");
-        NetworkManager.Singleton.Shutdown();
+        NetworkManager.Singleton.Shutdown(true);
         Application.Quit();
     }
 }

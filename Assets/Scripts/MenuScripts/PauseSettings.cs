@@ -117,14 +117,14 @@ public class PauseSettings : NetworkBehaviour
     public void StopGame()
     {
         Debug.Log("Returning to menu and disconnecting");
-        NetworkManager.Singleton.Shutdown();
+        NetworkManager.Singleton.Shutdown(true);
         SceneManager.LoadScene(0);
     }
 
     public void QuitGame()
     {
         Debug.Log("Exiting game and disconnecting");
-        NetworkManager.Singleton.Shutdown();
+        NetworkManager.Singleton.Shutdown(true);
         Application.Quit();
     }
 
