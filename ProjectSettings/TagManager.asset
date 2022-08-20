@@ -32,6 +32,7 @@ TagManager:
   - CameraCollider
   - AudioTrigger
   - EndgameLight
+  - MiniBoss
   layers:
   - Default
   - TransparentFX
