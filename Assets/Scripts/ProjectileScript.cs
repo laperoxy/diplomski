@@ -24,7 +24,7 @@ public class ProjectileScript : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D col)
     {
-        if (col.gameObject.CompareTag("Boss"))
+        if (col.gameObject.CompareTag("Boss") || col.gameObject.CompareTag("MiniBoss"))
         {
             DestroyProjectile();
         }
