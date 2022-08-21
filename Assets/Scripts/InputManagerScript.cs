@@ -27,7 +27,7 @@ public class InputManagerScript : MonoBehaviour
     {
         username = usernameInput.GetComponent<TextMeshProUGUI>().text;
         password = passwordInput.GetComponent<TextMeshProUGUI>().text;
-        if ((username.Length < 3 || password.Length < 3) || (username.Length > 8 || password.Length > 8))
+        if ((username.Length < 3 || password.Length < 3) || (username.Length > 12 || password.Length > 12))
         {
             inputUI.SetActive(false);
             returnButton.SetActive(false);
@@ -43,7 +43,7 @@ public class InputManagerScript : MonoBehaviour
     {
         username = usernameInput.GetComponent<TextMeshProUGUI>().text;
         password = passwordInput.GetComponent<TextMeshProUGUI>().text;
-        if ((username.Length < 3 || password.Length < 3) || (username.Length > 8 || password.Length > 8))
+        if ((username.Length < 3 || password.Length < 3) || (username.Length > 12 || password.Length > 12))
         {
             inputUI.SetActive(false);
             returnButton.SetActive(false);

@@ -2229,7 +2229,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: Username or Password must be atleast three characters and not more than
-    eight characters long.
+    twelve characters long.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 07df2b529821563469342110a374e60b, type: 2}
   m_sharedMaterial: {fileID: 8603324345769491094, guid: 07df2b529821563469342110a374e60b, type: 2}
