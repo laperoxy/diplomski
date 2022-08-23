@@ -76,9 +76,15 @@ public class SettingsMenu : MonoBehaviour
                 resolutionDropwdown.value = loadedSavedSettings.resolutionIndex;
                 resolutionDropwdown.RefreshShownValue();
                 SetResolution(loadedSavedSettings.resolutionIndex);
-            }            
+            }
 
             SetFullScreen(loadedSavedSettings.isFullscreen);
+            if (!loadedSavedSettings.isFullscreen)
+            {
+                Screen.SetResolution(loadedSavedSettings.screen_width, loadedSavedSettings.screen_height,
+                    Screen.fullScreen);
+            }
+
             SetFog(loadedSavedSettings.isFogOn);
 
             if (loadedSavedSettings.qualityIndex < 0 || loadedSavedSettings.qualityIndex > 2)
@@ -93,7 +99,7 @@ public class SettingsMenu : MonoBehaviour
                 graphicsDropdown.RefreshShownValue();
                 SetQuality(loadedSavedSettings.qualityIndex);
             }
-            
+
 
             //Debug.Log(saveString);
         }
@@ -153,13 +159,18 @@ public class SettingsMenu : MonoBehaviour
         Screen.fullScreen = isFullscreen;
         my_isFullscreen = isFullscreen;
         toggle.isOn = isFullscreen;
+        if (my_isFullscreen)
+        {
+            Resolution resolution = resolutions[my_resolutionIndex];
+            Screen.SetResolution(resolution.width, resolution.height, true);
+        }
     }
 
     public void SetFog(bool isFogOn)
     {
         Fog.SetActive(isFogOn);
         fogToggle.isOn = isFogOn;
-        my_isfogOn=isFogOn;
+        my_isfogOn = isFogOn;
     }
 
     public void SetQuality(int qualityIndex)
@@ -170,13 +181,12 @@ public class SettingsMenu : MonoBehaviour
 
     public void SaveBeforeReturn()
     {
-
         if (!my_isFullscreen)
         {
             my_screen_width = Screen.width;
             my_screen_height = Screen.height;
         }
-        
+
         SaveObject saveObject = new SaveObject
         {
             volume = my_volume,

@@ -14,12 +14,17 @@ public class PauseSettings : MonoBehaviour
     [SerializeField] private Slider volumeSlider = null;
     [SerializeField] private Toggle toggle = null;
     [SerializeField] private Toggle fogToggle = null;
-
+    private Resolution[] resolutions;
+    
     private float my_volume;
     private bool my_isFullscreen;
     private bool my_isfogOn;
     private int my_resolutionIndex;
     private int my_qualityIndex;
+    
+    private int my_screen_width;
+    private int my_screen_height;
+    
     private readonly string SAVE_FILE_EXTENSION = "/settings.json";
 
     private string json;
@@ -27,6 +32,7 @@ public class PauseSettings : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        resolutions = Screen.resolutions;
         LoadSettings();
     }
 
@@ -47,6 +53,12 @@ public class PauseSettings : MonoBehaviour
             }
 
             SetFullScreen(loadedSavedSettings.isFullscreen);
+            if (!loadedSavedSettings.isFullscreen)
+            {
+                Screen.SetResolution(loadedSavedSettings.screen_width, loadedSavedSettings.screen_height,
+                    Screen.fullScreen);
+            }
+            
             SetFog(loadedSavedSettings.isFogOn);
 
             my_resolutionIndex = loadedSavedSettings.resolutionIndex;
@@ -89,6 +101,11 @@ public class PauseSettings : MonoBehaviour
         Screen.fullScreen = isFullscreen;
         my_isFullscreen = isFullscreen;
         toggle.isOn = isFullscreen;
+        if (my_isFullscreen)
+        {
+            Resolution resolution = resolutions[my_resolutionIndex];
+            Screen.SetResolution(resolution.width, resolution.height, true);
+        }
     }
 
     public void SetFog(bool isFogOn)
@@ -100,13 +117,22 @@ public class PauseSettings : MonoBehaviour
 
     public void SaveBeforeReturn()
     {
+        
+        if (!my_isFullscreen)
+        {
+            my_screen_width = Screen.width;
+            my_screen_height = Screen.height;
+        }
+        
         SaveObject saveObject = new SaveObject
         {
             volume = my_volume,
             isFullscreen = my_isFullscreen,
             isFogOn = my_isfogOn,
             resolutionIndex = my_resolutionIndex,
-            qualityIndex = my_qualityIndex
+            qualityIndex = my_qualityIndex,
+            screen_width = my_screen_width,
+            screen_height = my_screen_height
         };
 
         json = JsonUtility.ToJson(saveObject);
@@ -135,5 +161,7 @@ public class PauseSettings : MonoBehaviour
         public bool isFogOn;
         public int resolutionIndex;
         public int qualityIndex;
+        public int screen_width;
+        public int screen_height;
     }
 }
