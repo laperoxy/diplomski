@@ -22,6 +22,9 @@ public class SettingsMenu : MonoBehaviour
     private int my_resolutionIndex;
     private int my_qualityIndex;
 
+    private int my_screen_width;
+    private int my_screen_height;
+
     private readonly string SAVE_FILE_EXTENSION = "/settings.json";
 
     private string json;
@@ -167,13 +170,22 @@ public class SettingsMenu : MonoBehaviour
 
     public void SaveBeforeReturn()
     {
+
+        if (!my_isFullscreen)
+        {
+            my_screen_width = Screen.width;
+            my_screen_height = Screen.height;
+        }
+        
         SaveObject saveObject = new SaveObject
         {
             volume = my_volume,
             isFullscreen = my_isFullscreen,
             isFogOn = my_isfogOn,
             resolutionIndex = my_resolutionIndex,
-            qualityIndex = my_qualityIndex
+            qualityIndex = my_qualityIndex,
+            screen_width = my_screen_width,
+            screen_height = my_screen_height
         };
 
         json = JsonUtility.ToJson(saveObject);
@@ -188,5 +200,7 @@ public class SettingsMenu : MonoBehaviour
         public bool isFogOn;
         public int resolutionIndex;
         public int qualityIndex;
+        public int screen_width;
+        public int screen_height;
     }
 }
