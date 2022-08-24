@@ -44,7 +44,7 @@ public class WebPost : MonoBehaviour
         www.Dispose();
     }
     
-    public static IEnumerator GetTop10Players()
+    public static IEnumerator GetTop10Players(GameObject[] players, GameObject[] trophies)
     {
         WWWForm form = new WWWForm();
 
@@ -61,6 +61,11 @@ public class WebPost : MonoBehaviour
             string result = www.downloadHandler.text;
             Debug.Log(result);
             Top10PlayerData[] top10Players = ExtractTop10PlayerDataFromResult(result);
+            for (int i = 0; i < top10Players.Length; ++i)
+            {
+                players[i].GetComponent<TextMeshProUGUI>().text = top10Players[i].Username;
+                trophies[i].GetComponent<TextMeshProUGUI>().text = top10Players[i].Achievements.ToString();
+            }
             Debug.Log(top10Players.Length);
         }
 
