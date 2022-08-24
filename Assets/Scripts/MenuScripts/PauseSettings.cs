@@ -42,6 +42,9 @@ public class PauseSettings : MonoBehaviour
         {
             string saveString = File.ReadAllText(Application.dataPath + SAVE_FILE_EXTENSION);
             SaveObject loadedSavedSettings = JsonUtility.FromJson<SaveObject>(saveString);
+            
+            my_resolutionIndex = loadedSavedSettings.resolutionIndex;
+            my_qualityIndex = loadedSavedSettings.qualityIndex;
 
             if (loadedSavedSettings.volume > 1f || loadedSavedSettings.volume < 0f)
             {
@@ -60,9 +63,7 @@ public class PauseSettings : MonoBehaviour
             }
             
             SetFog(loadedSavedSettings.isFogOn);
-
-            my_resolutionIndex = loadedSavedSettings.resolutionIndex;
-            my_qualityIndex = loadedSavedSettings.qualityIndex;
+            
         }
     }
 
