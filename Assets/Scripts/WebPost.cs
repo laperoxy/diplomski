@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using System.IO;
@@ -41,12 +43,45 @@ public class WebPost : MonoBehaviour
 
         www.Dispose();
     }
+    
+    public static IEnumerator GetTop10Players()
+    {
+        WWWForm form = new WWWForm();
+
+        UnityWebRequest www = UnityWebRequest.Post("http://localhost:8080/top10", form);
+
+        yield return www.SendWebRequest();
+
+        if (www.result != UnityWebRequest.Result.Success)
+        {
+            Debug.Log(www.error);
+        }
+        else
+        {
+            string result = www.downloadHandler.text;
+            Debug.Log(result);
+            Top10PlayerData[] top10Players = ExtractTop10PlayerDataFromResult(result);
+            Debug.Log(top10Players.Length);
+        }
+
+        www.Dispose();
+    }
 
     private static LoginData ExtractLoginDataFromResult(string username, string result)
     {
         TokenTimeAchievementResponse tokenTimeAchievementResponse =
             JsonUtility.FromJson<TokenTimeAchievementResponse>(result);
         return new LoginData(username, tokenTimeAchievementResponse);
+    }
+    
+    private static Top10PlayerData[] ExtractTop10PlayerDataFromResult(string result)
+    {
+        return JsonUtility.FromJson<Wrapper<Top10PlayerData>>(result).Items;
+    }
+    [Serializable]
+    private class Wrapper<T>
+    {
+        public T[] Items;
     }
 
     public static IEnumerator Register(string username, string password, GameObject inputPanel, GameObject playerPanel,
