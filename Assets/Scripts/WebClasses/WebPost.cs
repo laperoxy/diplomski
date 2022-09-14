@@ -11,7 +11,7 @@ public class WebPost : MonoBehaviour
     private static readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
 
     public static IEnumerator LogIn(string username, string password, GameObject inputPanel, GameObject playerPanel,
-        GameObject on_off_tag, GameObject offlineTag)
+        GameObject on_off_tag)
     {
         WWWForm form = new WWWForm();
         form.AddField("username", username);
@@ -25,7 +25,7 @@ public class WebPost : MonoBehaviour
         {
             Debug.Log(www.error);
             on_off_tag.GetComponent<TextMeshProUGUI>().text = "OFFLINE";
-            offlineTag.SetActive(true);
+           
         }
         else
         {
@@ -37,7 +37,7 @@ public class WebPost : MonoBehaviour
 
             inputPanel.SetActive(false);
             playerPanel.SetActive(true);
-            offlineTag.SetActive(false);
+            
             on_off_tag.GetComponent<TextMeshProUGUI>().text = "ONLINE";
         }
 
@@ -90,7 +90,7 @@ public class WebPost : MonoBehaviour
     }
 
     public static IEnumerator Register(string username, string password, GameObject inputPanel, GameObject playerPanel,
-        GameObject on_off_tag, GameObject offlineTag)
+        GameObject on_off_tag)
     {
         WWWForm form = new WWWForm();
         form.AddField("username", username);
@@ -105,7 +105,7 @@ public class WebPost : MonoBehaviour
         {
             Debug.Log(www.error);
             on_off_tag.GetComponent<TextMeshProUGUI>().text = "OFFLINE";
-            offlineTag.SetActive(true);
+            
         }
         else
         {
@@ -115,7 +115,7 @@ public class WebPost : MonoBehaviour
 
             Debug.Log(result);
 
-            offlineTag.SetActive(false);
+           
             on_off_tag.GetComponent<TextMeshProUGUI>().text = "ONLINE";
 
             inputPanel.SetActive(false);
@@ -162,7 +162,7 @@ public class WebPost : MonoBehaviour
     }
 
     public static IEnumerator TokenLogIn(string username, string token, GameObject inputPanel, GameObject playerPanel,
-        GameObject on_off_tag, GameObject offlineTag)
+        GameObject on_off_tag)
     {
         WWWForm form = new WWWForm();
         form.AddField("username", username);
@@ -178,7 +178,6 @@ public class WebPost : MonoBehaviour
         {
             Debug.Log(www.error);
             on_off_tag.GetComponent<TextMeshProUGUI>().text = "OFFLINE";
-            offlineTag.SetActive(true);
         }
         else
         {
@@ -191,7 +190,6 @@ public class WebPost : MonoBehaviour
             Debug.Log(result);
             inputPanel.SetActive(false);
             playerPanel.SetActive(true);
-            offlineTag.SetActive(false);
             on_off_tag.GetComponent<TextMeshProUGUI>().text = "ONLINE";
         }
 

@@ -8,8 +8,6 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject pauseMenuUI = null;
     [SerializeField] private GameObject settingsMenuUI = null;
 
-    private readonly string SAVE_FILE_EXTENSION = "/credentials.txt";
-
     // Update is called once per frame
     void Update()
     {
@@ -37,10 +35,10 @@ public class PauseMenu : MonoBehaviour
     void Pause()
     {
         pauseMenuUI.SetActive(true);
-        if (!File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
-        {
+        //if (!File.Exists(Application.dataPath + SAVE_FILE_EXTENSION))
+        //{
             Time.timeScale = 0f;
-        }
+        //}
         gameIsPaused = true;
     }
 
