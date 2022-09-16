@@ -1938,12 +1938,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   networkGotKey:
-    m_InternalValue: 0
+    m_InternalValue: 1
   floatingText: {fileID: 8084587822698253834, guid: 92c7122bd53f1434899944057d796814, type: 3}
   SoundToPlay: {fileID: 8300000, guid: fe8631c7a6adaa049a20f7395e9cbc51, type: 3}
   Volume: 1
   weapon: {fileID: 5658177992814803522}
   keyInventory: {fileID: 4561237283234898105}
+  playerName: {fileID: 35240667209571715}
   UI: {fileID: 7915117482180615246}
 --- !u!114 &3798150478370565037
 MonoBehaviour:

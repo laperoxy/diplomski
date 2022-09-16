@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -18,6 +19,8 @@ public class ItemCollectionScript : NetworkBehaviour
     private Animator animator;
 
     public GameObject keyInventory;
+
+    public GameObject playerName;
 
     //public GameObject endGame;
     [SerializeField] private GameObject UI  = null;
@@ -76,6 +79,7 @@ public class ItemCollectionScript : NetworkBehaviour
                     animator.SetTrigger("Victory");
                     weapon.SetActive(false);
                     UI.SetActive(true);
+                    StartCoroutine(WebPost.WonGame(playerName.GetComponent<TextMeshProUGUI>().text));
                 }
             }
             
