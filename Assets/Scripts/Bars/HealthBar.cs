@@ -1,6 +1,7 @@
 using System;
 using Unity.Netcode;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class HealthBar : NetworkBehaviour
@@ -12,16 +13,27 @@ public class HealthBar : NetworkBehaviour
     public Image fill;
     
     [SerializeField] private NetworkVariable<float> networkHealthBar = new NetworkVariable<float>();
+    [SerializeField] private NetworkVariable<bool> networkDisconnected = new NetworkVariable<bool>(false);
 
 
     private void Awake()
     {
         SetMaxHealth();
+        InvokeRepeating(nameof(DisconnectIfNeeded), 5, 1);
     }
 
     private void Update()
     {
         UpdateHealthStatus();
+    }
+
+    private void DisconnectIfNeeded()
+    {
+        if (IsOwner && !IsHost && networkDisconnected.Value)
+        {
+            NetworkManager.Singleton.Shutdown(true);
+            SceneManager.LoadScene(0);
+        }
     }
 
     private void UpdateHealthStatus()
@@ -39,8 +51,6 @@ public class HealthBar : NetworkBehaviour
                     slider.value = networkHealthBar.Value;
                 }
             }
-
-            
         }
     }
 
@@ -63,15 +73,25 @@ public class HealthBar : NetworkBehaviour
     [ServerRpc]
     void updateHealthServerRpc(float health)
     {
+        validateHealth(health);
         networkHealthBar.Value = health;
         if (networkHealthBar.Value <= 0)
         {
             ReturnDeadPlayerToStartingPosition();
         }
     }
+    
+    private void validateHealth(float health)
+    {
+        if (health > 40) throw new ArgumentException();
+    }
 
     private void ReturnDeadPlayerToStartingPosition()
     {
+        if (gameObject.transform.position.x > 183)
+        {
+            networkDisconnected.Value = true;
+        }
         gameObject.GetComponentsInParent<PlayerControlNew>()[0].transform.position = new Vector3(-4.53f, 2.0f, 0);
         networkHealthBar.Value = MAX_HEALTH / 10;
     }
