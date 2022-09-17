@@ -88,12 +88,15 @@ public class HealthBar : NetworkBehaviour
 
     private void ReturnDeadPlayerToStartingPosition()
     {
-        if (gameObject.transform.position.x > 183)
-        {
-            networkDisconnected.Value = true;
-        }
+        var positionX = gameObject.transform.position.x;
         gameObject.GetComponentsInParent<PlayerControlNew>()[0].transform.position = new Vector3(-4.53f, 2.0f, 0);
         networkHealthBar.Value = MAX_HEALTH / 10;
+        
+        if (positionX > 183)
+        {
+            networkDisconnected.Value = true;
+            EndGameScript.FinishGameIfAllBossesAreDead(null);
+        }
     }
 
     public void takeDamage(float damage)
